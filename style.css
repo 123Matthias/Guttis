@@ -6,7 +6,7 @@ body {
   }
   
   .header {
-    background: linear-gradient(135deg, rgb(255, 255, 255) 32%, rgb(237, 124, 2) 32%);
+    background: linear-gradient(135deg, rgb(255, 255, 255) 36%, rgb(237, 124, 2) 37%);
     color: white;
     padding: 30px 20px;
     text-shadow: 
@@ -15,6 +15,14 @@ body {
       -1px  1px 0 #a04000,
       1px  1px 0 #145a32;
     animation: glowEffect 1.5s ease-in-out infinite alternate;
+  }
+
+  /* Handy: Kein Gradient */
+@media (max-width: 600px) {
+    .header {
+      background: rgb(255, 255, 255);
+      border-bottom: 2px solid orangered;
+    }
   }
   
   .logo-container {
@@ -71,24 +79,45 @@ body {
   
   .footer {
     color: black;
-    padding: 20px;
+    padding: 30px;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    background: #fff;
   }
   
   .footer-content {
     text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 100%;
+    background: #fdfdfd;
   }
   
   .footer a {
-    color: #00d8ff;
+    color: #007acc;
     text-decoration: none;
   }
   
   .footer a:hover {
     text-decoration: underline;
   }
+  
+  .intro {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  address {
+    font-style: normal;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  
   
   
 
