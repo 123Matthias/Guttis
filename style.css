@@ -69,6 +69,28 @@ body {
     transform: translateX(5px);
   }
   
+  .footer {
+    color: black;
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    text-align: left;
+  }
+  
+  .footer a {
+    color: #00d8ff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
 
   @keyframes slideInWithTail {
     0% {
