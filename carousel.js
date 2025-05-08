@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         img.style.objectFit = 'contain';  
         img.style.width = '100%';   
         img.style.height = '100%'; 
+        img.style.zIndex = 2;
   
         div.appendChild(img);
         carouselContainer.appendChild(div);

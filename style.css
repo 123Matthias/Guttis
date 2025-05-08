@@ -8,6 +8,7 @@ body {
   .header {
     display: flex; 
     align-items: center;
+    z-index: 1000;
     min-height: 200pt;
     background: linear-gradient(135deg, rgb(255, 255, 255) 430px, rgb(237, 124, 2) 430px);
     color: white;
@@ -31,7 +32,8 @@ body {
   }
   
   #logo {
-    z-index: 1;
+    z-index: 999;
+    position: relative;
     width: 280pt;
     height: auto;
     transition: all 0.6s ease-in-out;
@@ -59,6 +61,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        z-index: 2;
         min-height: 300pt;
         background: white;
         border-bottom: 2px solid orangered !important;
@@ -70,6 +73,7 @@ body {
       }
 
       #logo {
+        z-index: 999;
         width: 320pt;
         height: auto;
       }
@@ -174,7 +178,7 @@ body {
       opacity: 0;
     }
     70% {
-      right: 10%; /* Der Text kommt fast an der Endposition an */
+      right: 10%; 
       opacity: 1;
     }
     100% {
@@ -186,23 +190,22 @@ body {
 
 /* Dunkle Pfeile */
 .carousel-control-prev-icon {
-  background-image: none !important; /* Entfernt das Standard-Icon */
-  border: solid 3px black; /* Fügt einen schwarzen Rahmen hinzu */
-  border-width: 0 3px 3px 0; /* Ändert den Pfeil in den gewünschten Stil */
-  transform: rotate(135deg); /* Dreht den Pfeil in die richtige Richtung */
+  background-image: none !important; 
+  border: solid 3px black; 
+  border-width: 0 3px 3px 0;
+  transform: rotate(135deg); 
 }
 
 /* Dunkle Pfeile */
 .carousel-control-next-icon {
   background-image: none !important;
-  border: solid 3px black; /* Fügt einen schwarzen Rahmen hinzu */
-  border-width: 0 3px 3px 0; /* Ändert den Pfeil in den gewünschten Stil */
-  transform: rotate(-45deg); /* Dreht den Pfeil in die richtige Richtung */
+  border: solid 3px black; 
+  border-width: 0 3px 3px 0;
+  transform: rotate(-45deg); 
 }
 
-/* Optionale Anpassung für Hover-Effekt */
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
   background-image: none;
-  border-color: orangered; /* Dunklerer Farbton bei Hover */
+  border-color: orangered;
 }
 
