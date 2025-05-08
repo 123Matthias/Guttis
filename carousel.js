@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const imageFolder = './images/';
-    const totalImages = 3;
+    const totalImages = 6;
   
     function loadCarouselImages() {
       const carouselContainer = document.getElementById('carouselImages');
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         carouselContainer.appendChild(div);
       }
     }
-  
     loadCarouselImages();
   });
   
