@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const img = document.createElement('img');
         img.src = imageFolder + 'img' + i + '.jpeg';
         img.alt = 'Bild ' + i;
+
+        img.loading = 'lazy';
         
         img.style.objectFit = 'contain';  
         img.style.width = '100%';   
