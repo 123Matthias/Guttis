@@ -58,8 +58,11 @@
             height: 60vh;
             overflow: hidden;
             position: relative;
-            border: 1px solid black;
+            border: 2px solid black;
             border-radius: 20px; background-color: rgba(228, 228, 228, 0.25);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
+
+
             ">
       <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: contain;">
         <!-- Bilder werden hier mit js eingefügt -->
@@ -89,7 +92,9 @@
       margin: 10px;
       border-radius: 20px;
       background: linear-gradient(135deg, rgba(228, 228, 228, 0.4), rgba(200, 200, 200, 0.2));
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
+
+
     ">
 
       <video
@@ -109,18 +114,30 @@
 
 
   <footer class="footer">
-    <div class="footer-card">
+
+    <card class="footer-card">
+      <h5 style=" 
+                    font-weight: 600;
+                    font-size: 1.6em;
+                    color: darkgreen;
+                    text-transform: capitalize;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 15px;
+                    line-height: 1.3;
+                    text-align: center;">
+      Gutti's Hausmeisterservice</h5>
+      
       <p class="intro">🛠️ Ganzjährig für Sie im Einsatz</p>
       <p class="intro">🤝 Individuelle Betreuung & faire Preise</p>
       <address>
-        <p><strong>Daniel Guttenbrunner</strong><br>
+        <p style="padding-left: 1.7em;"><strong>Daniel Guttenbrunner</strong><br>
           Annaberg 237<br>
           5524 Annaberg</p>
 
         <p>📞 <a href="tel:+4367763688365">0677 / 636 88 365</a><br>
           📧 <a href="mailto:danielguttenbrunner14@gmail.com">danielguttenbrunner14@gmail.com</a></p>
       </address>
-    </div>
+    </card>
 
     <div class="footer-link">
       <a href="impressum.html">Impressum</a>

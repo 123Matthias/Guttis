@@ -93,20 +93,36 @@ li:hover {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  border-top: 1px solid black;
-  padding: 10pt;
+  padding: 40pt;
   margin: auto;
 }
 
+
 .footer-card {
+  position: relative;
   text-align: left;
-  border: 2px solid orangered;
-  border-radius: 12px;
   padding: 20pt;
-  width: 250pt;
+  width: 300pt;
   max-width: 550pt;
   background: #f5f4f4;
+  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
+  border: 2px solid orangered;
 }
+
+
+.footer-card::after {
+  content: "";
+  position: absolute;
+  bottom: 5pt;
+  right: -18pt;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  background-image: url('./svg/Heckenschere.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 .footer a {
   color: #007acc;
@@ -120,8 +136,8 @@ li:hover {
 .footer-link {
   display: flex;
   float: right;
-  margin-top: 15pt;
-  font-size: 0.8em;
+  margin-top: 30pt;
+  font-size: 1.5em;
 }
 
 .intro {
