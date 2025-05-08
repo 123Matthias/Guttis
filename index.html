@@ -58,10 +58,10 @@
             height: 60vh;
             overflow: hidden;
             position: relative;
-            border: 1px solid black; margin: 10px;
+            border: 1px solid black;
             border-radius: 20px; background-color: rgba(228, 228, 228, 0.25);
             ">
-      <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: scale-down;">
+      <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: contain;">
         <!-- Bilder werden hier mit js eingefügt -->
       </div>
 
@@ -97,12 +97,12 @@
         height="100%"
         controls
         preload="none"
-        poster="./images/vorschaubild.jpg"
-        style="object-fit: cover; border-radius: 20px;">
+        poster="./images/video1.jpeg"
+        style="object-fit: contain">
         <source src="./images/video1.mp4" type="video/mp4">
         Dein Browser unterstützt das Video-Tag nicht.
       </video>
-      
+
     </div>
   </div>
   
