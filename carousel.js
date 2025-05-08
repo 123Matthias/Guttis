@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = imageFolder + 'img' + i + '.jpeg';
         img.alt = 'Bild ' + i;
         
-        img.style.objectFit = 'contain';  
+        img.style.objectFit = 'scale-down';  
         img.style.width = '100%';   
         img.style.height = '100%'; 
         img.style.zIndex = 2;
