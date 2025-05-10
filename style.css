@@ -104,9 +104,10 @@ li:hover {
   padding: 20pt;
   width: 300pt;
   max-width: 550pt;
-  background: #f5f4f4;
+  background: whitesmoke;
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border: 2px solid orangered;
+  max-width: 95vw;
 }
 
 
