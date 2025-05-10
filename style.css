@@ -101,10 +101,10 @@ li:hover {
 .footer-card {
   position: relative;
   text-align: left;
-  padding: 20pt;
+  padding: 0pt;
   width: 300pt;
   max-width: 550pt;
-  background: whitesmoke;
+  background: linear-gradient(to bottom right, #fff5eb, #ffe0cc);
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border: 2px solid orangered;
   max-width: 95vw;
