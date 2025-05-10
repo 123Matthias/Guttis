@@ -79,6 +79,7 @@ li {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 li:hover {
@@ -128,17 +129,21 @@ li:hover {
 .footer a {
   color: #007acc;
   text-decoration: none;
+  padding: 10px;
 }
 
 .footer a:hover {
   text-decoration: underline;
 }
 
-.footer-link {
+.footer-link-container {
   display: flex;
-  float: right;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 30px;
   font-size: 1.5em;
+  width: 90%;
+
 }
 
 .intro {
@@ -242,4 +247,8 @@ address {
 .carousel-control-next-icon:hover {
   background-image: none;
   border-color: orangered;
+}
+
+.basic-shadow{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
 }
