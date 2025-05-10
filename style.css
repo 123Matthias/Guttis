@@ -67,7 +67,7 @@ ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0 5px 0 5px;
-  width: 100% !important;
+  width: 95% !important;
   max-width: 1000px !important;
 }
 
@@ -102,22 +102,22 @@ li:hover {
   position: relative;
   text-align: left;
   padding: 0pt;
-  width: 300pt;
+  width: 100%;
   max-width: 550pt;
   background: linear-gradient(to bottom right, #fff5eb, #ffe0cc);
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border: 2px solid orangered;
-  max-width: 95vw;
+  max-width: 300pt;
 }
 
 
 .footer-card::after {
   content: "";
   position: absolute;
-  bottom: 5pt;
-  right: -18pt;
-  width: 120px;
-  height: 120px;
+  bottom: 25pt;
+  right: -5px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
   background-image: url('./svg/Heckenschere.svg');
   background-size: contain;
