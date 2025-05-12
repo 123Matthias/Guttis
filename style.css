@@ -66,10 +66,13 @@ body {
     background-color: transparent;
     background-size: 30% auto;
     }
+
+  .content-list{
+    width: 68% !important;
+    max-width: 1400px;
   }
-
-
-
+  
+}
 
 h2 {
   border-left: 5px solid orangered;
@@ -83,8 +86,13 @@ ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0 5px 0 5px;
-  width: 100% !important;
-  max-width: 68% !important;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content-list{
+  width: 100%;
+  max-width: 1400px;
 }
 
 li {
@@ -198,11 +206,11 @@ address {
     min-height: 150pt;
     max-height: 250pt;
     background: white;
-    border-bottom: 2px solid orangered !important;
+    border-bottom: 3px solid orangered !important;
+    border-bottom-right-radius: 85px;
     text-shadow: none;
     animation: slideInWithTail 2s ease-out forwards;
     opacity: 0;
-
   }
 
   #logo {
