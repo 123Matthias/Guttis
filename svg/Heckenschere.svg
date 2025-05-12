@@ -2,18 +2,60 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="104.18909mm"
-   height="136.15718mm"
-   viewBox="0 0 104.18909 136.15718"
+   width="140mm"
+   height="140mm"
+   viewBox="0 0 140 140"
    version="1.1"
    id="svg1"
+   sodipodi:docname="Heckenschere.svg"
+   inkscape:export-filename="../images/Heckenschere.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.706147"
+     inkscape:cx="282.21484"
+     inkscape:cy="243.23813"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
   <defs
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-50.278436,-73.753736)">
+     transform="translate(-32.372981,-71.832321)">
     <g
        id="g72"
        transform="matrix(0.07666606,0.0034445,0.00198171,-0.04410806,-21.750757,286.07813)"
