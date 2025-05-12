@@ -55,7 +55,21 @@ body {
   width: 100%;
   padding: 10px;
   margin: auto;
+  background-image: none;
 }
+
+@media (min-width: 1200px) {
+  .content {
+    background-image: url('./images/background-content.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 30% auto;
+    }
+  }
+
+
+
 
 h2 {
   border-left: 5px solid orangered;
@@ -70,7 +84,7 @@ ul {
   padding-left: 0;
   margin: 0 5px 0 5px;
   width: 100% !important;
-  max-width: 1000px !important;
+  max-width: 68% !important;
 }
 
 li {
@@ -159,6 +173,8 @@ address {
   font-size: 0.8em;
   margin-top: 15px;
 }
+
+
 
 
 
