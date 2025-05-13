@@ -163,8 +163,8 @@ text-shadow:
   border-bottom: 1px solid orangered;
 
   opacity: 0;
-  transform: translateY(250px);
-  transition: opacity 0.8s ease-out, transform 1.5s ease-out;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease-out, transform 3s ease-out;
 }
 
 .footer-card.visible {
@@ -188,8 +188,8 @@ text-shadow:
 
 .hidden-link {
   opacity: 0;
-  transform: translateY(300px);
-  transition: opacity 0.8s ease-out, transform 2.5s ease-out;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 4s ease-out;
 }
 
 .hidden-link.visible {
