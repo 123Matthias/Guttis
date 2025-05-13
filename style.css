@@ -161,8 +161,17 @@ text-shadow:
   border-right: 4px solid orangered;
   border-top:  1px solid orangered;
   border-bottom: 1px solid orangered;
+
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 0.8s ease-out, transform 1.5s ease-out;
 }
 
+.footer-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+
+}
 
 .footer-card::after {
   content: "";
@@ -177,6 +186,19 @@ text-shadow:
   background-repeat: no-repeat;
 }
 
+.hidden-link {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: opacity 0.8s ease-out, transform 2.5s ease-out;
+}
+
+.hidden-link.visible {
+  font-size: 1.3rem;
+  opacity: 1;
+  transform: translateY(0);
+  font-weight: it; 
+  color: rgb(255, 0, 89);
+}
 
 .footer a {
   color: #007acc;
@@ -205,6 +227,7 @@ text-shadow:
 }
 
 address {
+  color: #000000;
   font-style: normal;
   font-size: 0.9em;
   margin-top: 15px;
@@ -313,17 +336,4 @@ address {
 }
 
 
-.hidden-link {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.hidden-link.visible {
-  font-size: 1.3rem;
-  opacity: 1;
-  transform: translateY(0);
-  font-weight: it; 
-  color: rgb(255, 0, 89);
-}
 

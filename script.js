@@ -18,6 +18,7 @@ window.onscroll = function() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         link.classList.add('visible');
+        card.classList.add('visible');
         observer.unobserve(card);
       }
     });
