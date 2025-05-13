@@ -8,3 +8,23 @@ window.onscroll = function() {
     }
   };
   
+
+  document.addEventListener('DOMContentLoaded', function(){
+
+  const card = document.querySelector('#footer-card');
+  const link = document.querySelector('#contact-download');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        link.classList.add('visible');
+        observer.unobserve(card);
+      }
+    });
+  }, {
+    threshold: 1
+
+  });
+
+  observer.observe(card);
+  });

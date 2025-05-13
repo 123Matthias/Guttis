@@ -140,14 +140,14 @@ text-shadow:
     repeating-linear-gradient(
       135deg,
       rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 2px,
+      rgba(255, 128, 64, 0.3) 1px,
       transparent 2px,
       transparent 20px
     ),
     repeating-linear-gradient(
       45deg,
       rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 2px,
+      rgba(255, 128, 64, 0.3) 1px,
       transparent 2px,
       transparent 20px
     ),
@@ -311,3 +311,19 @@ address {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
 
 }
+
+
+.hidden-link {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hidden-link.visible {
+  font-size: 1.3rem;
+  opacity: 1;
+  transform: translateY(0);
+  font-weight: it; 
+  color: rgb(255, 0, 89);
+}
+
