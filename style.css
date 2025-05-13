@@ -128,12 +128,35 @@ li:hover {
   padding: 0pt;
   margin-top: 30px;
   width: 90%;
-  max-width: 550pt;
-  background: linear-gradient(to bottom right, #fff5eb, #ffe0cc);
-  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
-  border: 2px solid orangered;
   max-width: 300pt;
+  background: 
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 128, 64, 0.3) 0,
+      rgba(255, 128, 64, 0.3) 2px,
+      transparent 2px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 128, 64, 0.3) 0,
+      rgba(255, 128, 64, 0.3) 2px,
+      transparent 2px,
+      transparent 20px
+    ),
+    linear-gradient(
+      to bottom left,
+      rgba(255, 128, 64, 0.5) 0%,
+      #fff5eb 60%
+    );
+  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
+  border-left: 4px solid orangered;
+  border-right: 4px solid orangered;
+  border-top:  1px solid orangered;
+  border-bottom: 1px solid orangered;
 }
+
+
 
 
 .footer-card::after {
