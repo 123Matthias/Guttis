@@ -127,12 +127,15 @@ li:hover {
 
 
 .footer-card {
+text-shadow: 
+  0 0 3px #ffffff,
+  0 0 6px #6cc7ff;
   position: relative;
   text-align: left;
   padding: 0pt;
   margin-top: 30px;
-  width: 90%;
-  max-width: 300pt;
+  width: 95%;
+  max-width: 325pt;
   background: 
     repeating-linear-gradient(
       135deg,
@@ -197,13 +200,13 @@ li:hover {
 
 .intro {
   font-weight: bold;
-  font-size: 0.85em;
+  font-size: 0.9rem;
   margin-bottom: 4px;
 }
 
 address {
   font-style: normal;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: 15px;
 }
 
