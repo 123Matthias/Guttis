@@ -188,16 +188,17 @@ text-shadow:
 
 .hidden-link {
   opacity: 0;
+  color: rgb(255, 0, 89) !important;
   transform: translateY(40px);
+  font-size: 1.3rem;
   transition: opacity 2s ease-out, transform 4s ease-out;
+  font-style: italic; 
 }
 
 .hidden-link.visible {
-  font-size: 1.3rem;
   opacity: 1;
   transform: translateY(0);
-  font-weight: it; 
-  color: rgb(255, 0, 89);
+
 }
 
 .footer a {
@@ -217,6 +218,7 @@ text-shadow:
   justify-content: space-between;
   font-size: 1.5em;
   width: 90%;
+  margin-top: 30px;
 
 }
 
