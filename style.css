@@ -1,6 +1,6 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: snow !important;
 
 }
 
@@ -12,7 +12,7 @@ body {
   min-height: 250t;
   height: auto;
   max-height: 350pt;
-  background: linear-gradient(135deg, rgb(255, 255, 255) 430px, rgb(237, 124, 2) 430px);
+  background: linear-gradient(135deg, snow 430px, rgb(237, 124, 2) 430px);
   color: white;
   text-shadow:
     -1px -1px 0 #a04000,
@@ -50,7 +50,7 @@ body {
 }
 
 
-.outer-space{
+.outer-space {
   padding: 10px 10px 0 10px;
 }
 
@@ -63,19 +63,19 @@ body {
 
 @media (min-width: 1200px) {
   .content {
-    background-image: url('./images/background-content.jpg');
+    background-image: url('./images/background-content.png');
     background-position: right center;
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: 30% auto;
     background-clip: padding-box;
-    }
+  }
 
-  .content-list{
+  .content-list {
     width: 68% !important;
     max-width: 1400px;
   }
-  
+
 }
 
 h2 {
@@ -94,7 +94,7 @@ ul {
   max-width: 1000px;
 }
 
-.content-list{
+.content-list {
   width: 100%;
   max-width: 1400px;
 }
@@ -127,39 +127,33 @@ li:hover {
 
 
 .footer-card {
-text-shadow: 
-  0 0 3px #ffffff,
-  0 0 6px #6cc7ff;
+  text-shadow:
+    0 0 3px #ffffff,
+    0 0 6px #6cc7ff;
   position: relative;
   text-align: left;
   padding: 0pt;
   margin-top: 30px;
   width: 95%;
   max-width: 325pt;
-  background: 
-    repeating-linear-gradient(
-      135deg,
+  background:
+    repeating-linear-gradient(135deg,
       rgba(255, 128, 64, 0.3) 0,
       rgba(255, 128, 64, 0.3) 1px,
       transparent 2px,
-      transparent 20px
-    ),
-    repeating-linear-gradient(
-      45deg,
+      transparent 20px),
+    repeating-linear-gradient(45deg,
       rgba(255, 128, 64, 0.3) 0,
       rgba(255, 128, 64, 0.3) 1px,
       transparent 2px,
-      transparent 20px
-    ),
-    linear-gradient(
-      to bottom left,
+      transparent 20px),
+    linear-gradient(to bottom left,
       rgba(255, 128, 64, 0.5) 0%,
-      #fff5eb 60%
-    );
+      #fff5eb 60%);
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border-left: 4px solid orangered;
   border-right: 4px solid orangered;
-  border-top:  1px solid orangered;
+  border-top: 1px solid orangered;
   border-bottom: 1px solid orangered;
 
   opacity: 0;
@@ -192,7 +186,7 @@ text-shadow:
   transform: translateY(40px);
   font-size: 1.3rem;
   transition: opacity 2s ease-out, transform 4s ease-out;
-  font-style: italic; 
+  font-style: italic;
 }
 
 .hidden-link.visible {
@@ -261,33 +255,26 @@ address {
     height: auto;
     max-height: 250pt;
     background:
-      radial-gradient(
-        rgba(255,255,255,1) 60%,
-        transparent 90%
-      ),
-      repeating-linear-gradient(
-        135deg,
+      radial-gradient(ellipse at 50% 40%,
+        rgba(255, 255, 255, 1) 55%,
+        transparent 60%),
+      repeating-linear-gradient(135deg,
         rgba(255, 128, 64, 0.3) 0,
         rgba(255, 128, 64, 0.3) 1px,
         transparent 2px,
-        transparent 20px
-      ),
-      repeating-linear-gradient(
-        45deg,
+        transparent 20px),
+      repeating-linear-gradient(45deg,
         rgba(255, 128, 64, 0.3) 0,
         rgba(255, 128, 64, 0.3) 1px,
         transparent 2px,
-        transparent 20px
-      );
-
+        transparent 20px);
     border-bottom: 3px solid orangered;
-    border-bottom-right-radius: 85px;
     text-shadow: none;
     animation: slideInWithTail 2s ease-out forwards;
     opacity: 0;
   }
 
-  ul{
+  ul {
     padding: 0 !important;
     width: 100%;
   }
@@ -303,7 +290,7 @@ address {
     height: auto;
   }
 
-  .content-list{
+  .content-list {
     padding: 5px;
   }
 
@@ -351,10 +338,7 @@ address {
   border-color: orangered;
 }
 
-.basic-shadow{
+.basic-shadow {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
 
 }
-
-
-
