@@ -239,7 +239,7 @@ address {
 
 
 
-/* Mobile-Ansicht -----------------*/
+/* ------------ Mobile-Ansicht -----------------*/
 @media (max-width: 900px) {
 
   .slogan {
@@ -260,7 +260,26 @@ address {
     min-height: 150pt;
     height: auto;
     max-height: 250pt;
-    background: linear-gradient(to bottom right, rgba(250,250,250,0.7), rgba(200,200,200,0.25));
+    background:
+      radial-gradient(
+        rgba(255,255,255,1) 60%,
+        transparent 90%
+      ),
+      repeating-linear-gradient(
+        135deg,
+        rgba(255, 128, 64, 0.3) 0,
+        rgba(255, 128, 64, 0.3) 1px,
+        transparent 2px,
+        transparent 20px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        rgba(255, 128, 64, 0.3) 0,
+        rgba(255, 128, 64, 0.3) 1px,
+        transparent 2px,
+        transparent 20px
+      );
+
     border-bottom: 3px solid orangered;
     border-bottom-right-radius: 85px;
     text-shadow: none;
