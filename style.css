@@ -246,50 +246,33 @@ address {
   }
 
   .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 900;
-  position: relative;
-  min-height: 150pt;
-  height: auto;
-  max-height: 250pt;
-  text-shadow: none;
-  animation: slideInWithTail 2s ease-out forwards;
-  opacity: 0;
-  background: none;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 50% 40%,
-      rgba(255, 255, 255, 1) 55%,
-      transparent 60%),
-    repeating-linear-gradient(135deg,
-      rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 1px,
-      transparent 2px,
-      transparent 20px),
-    repeating-linear-gradient(45deg,
-      rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 1px,
-      transparent 2px,
-      transparent 20px);
-  border-bottom: 3px solid orangered;
-  opacity: 0;
-  animation: headerFadeIn 1s ease-in 2s forwards;
-  z-index: -1;
-}
-
-@keyframes headerFadeIn {
-  to {
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 900;
+    position: relative;
+    min-height: 150pt;
+    height: auto;
+    max-height: 250pt;
+    background:
+      radial-gradient(ellipse at 50% 40%,
+        rgba(255, 255, 255, 1) 55%,
+        transparent 60%),
+      repeating-linear-gradient(135deg,
+        rgba(255, 128, 64, 0.3) 0,
+        rgba(255, 128, 64, 0.3) 1px,
+        transparent 2px,
+        transparent 20px),
+      repeating-linear-gradient(45deg,
+        rgba(255, 128, 64, 0.3) 0,
+        rgba(255, 128, 64, 0.3) 1px,
+        transparent 2px,
+        transparent 20px);
+    border-bottom: 3px solid orangered;
+    text-shadow: none;
+    animation: slideInWithTail 2s ease-out forwards;
+    opacity: 0;
   }
-}
-
 
   ul {
     padding: 0 !important;
