@@ -104,7 +104,7 @@ li {
   margin: 10px;
   padding: 15px;
   border-left: 5px solid green;
-  border-radius: 10px;
+  border-radius: 10px 35px 10px 35px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
@@ -116,13 +116,13 @@ li:hover {
 }
 
 .footer {
-  color: black;
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  background-image: url('./images/platte2.png');
+  background-size: cover;
 }
 
 
@@ -148,7 +148,7 @@ li:hover {
       transparent 2px,
       transparent 20px),
     linear-gradient(to bottom left,
-      rgba(255, 128, 64, 0.5) 0%,
+      rgb(251, 165, 122) 0%,
       #fff5eb 60%);
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border-left: 4px solid orangered;
