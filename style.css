@@ -260,7 +260,42 @@ address {
     background: none;
   }
 
-  .header::before {
+.header::before {
+  content: "";
+  position: absolute;
+  bottom: 0px; 
+  left: 0;
+  width: 100%;
+  height: 130px; 
+  background: 
+    /* Erste Reihe (tiefer) */
+    url('./svg/flower.svg') 5% 30% / 25px 25px no-repeat,
+    url('./svg/flower.svg') 15% 25% / 30px 30px no-repeat,
+    url('./svg/flower.svg') 25% 30% / 20px 20px no-repeat,
+    
+    /* Zweite Reihe (mittlere Höhe) */
+    url('./svg/flower.svg') 35% 28% / 35px 35px no-repeat,
+    url('./svg/flower.svg') 45% 34% / 25px 25px no-repeat,
+    url('./svg/flower.svg') 55% 26% / 30px 30px no-repeat,
+    
+    /* Dritte Reihe (höher) */
+    url('./svg/flower.svg') 65% 31% / 25px 25px no-repeat,
+    url('./svg/flower.svg') 75% 25% / 35px 35px no-repeat,
+    url('./svg/flower.svg') 85% 32% / 20px 20px no-repeat,
+    url('./svg/flower.svg') 95% 20% / 30px 30px no-repeat;
+  opacity: 0;
+  z-index: 10;
+  animation: flowerShow 1s ease-in 0.5s forwards;
+}
+
+    @keyframes flowerShow {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .header::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -269,16 +304,16 @@ address {
         rgba(255, 255, 255, 1) 55%,
         transparent 60%),
       repeating-linear-gradient(135deg,
-        rgba(255, 128, 64, 0.3) 0,
-        rgba(255, 128, 64, 0.3) 1px,
+        rgba(21, 133, 1, 0.3) 0,
+        rgba(21, 133, 1, 0.3) 1px,
         transparent 2px,
         transparent 20px),
       repeating-linear-gradient(45deg,
-        rgba(255, 128, 64, 0.3) 0,
-        rgba(255, 128, 64, 0.3) 1px,
+        rgba(21, 133, 1, 0.3) 0,
+        rgba(21, 133, 1, 0.3) 1px,
         transparent 2px,
         transparent 20px);
-    border-bottom: 3px solid orangered;
+    border-bottom: 3px solid darkgreen;
     opacity: 0;
     animation: headerFadeIn 1s ease-in 2s forwards;
     z-index: -1;
