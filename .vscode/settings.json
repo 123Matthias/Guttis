@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Guttis"
+    "liveServer.settings.multiRootWorkspaceName": "Guttis",
+    "liveServer.settings.CustomBrowser": "safari"
+
 }
