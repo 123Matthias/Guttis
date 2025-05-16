@@ -196,7 +196,7 @@ li:hover {
 }
 
 .footer a {
-  color: #007acc;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
   text-align: center;
@@ -345,6 +345,12 @@ address {
     padding: 5px;
   }
 
+  .footer-card{
+      transform: translateY(40px);
+  }
+  .footer-card.visible{
+      transform: translateY(0px);
+  }
 
 
 }
