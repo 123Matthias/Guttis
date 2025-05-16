@@ -122,7 +122,7 @@ li:hover {
   margin-top: 20px;
 }
 
-.footer-bg-wood{
+.footer-bg-wood {
   background-image: url('./images/platte2.jpg');
   background-size: cover;
 }
@@ -198,7 +198,7 @@ li:hover {
 }
 
 
-.footer-whiteLink{
+.footer-whiteLink {
   color: white;
 }
 
@@ -214,11 +214,12 @@ li:hover {
   text-align: center;
 }
 
-.footer-link:hover, .footer-whiteLink:hover {
+.footer-link:hover,
+.footer-whiteLink:hover {
   text-decoration: underline;
 }
 
-.footer-link:visited{
+.footer-link:visited {
   color: purple;
 
 }
@@ -277,35 +278,35 @@ address {
     background: none;
   }
 
-.header::before {
-  content: "";
-  position: absolute;
-  bottom: 0px; 
-  left: 0;
-  width: 100%;
-  height: 100%; 
-  background: 
-    /* Erste Reihe (tiefer) */
-    url('./svg/flower.svg') 25% 73% / 30px 30px no-repeat,
-    url('./svg/flower.svg') 30% 74% / 24px 24px no-repeat,
-    url('./svg/flower.svg') 34% 76% / 28px 28px no-repeat,
-    
-    /* Zweite Reihe (mittlere Höhe) */
-    url('./svg/flower.svg') 41% 76% / 25px 25px no-repeat,
-    url('./svg/flower.svg') 47% 75% / 23px 23px no-repeat,
-    url('./svg/flower.svg') 53% 74% / 27px 27px no-repeat,
-    
-    /* Dritte Reihe (höher) */
-    url('./svg/flower.svg') 59% 75% / 30px 30px no-repeat,
-    url('./svg/flower.svg') 64% 73% / 30px 30px no-repeat,
-    url('./svg/flower.svg') 69% 74% / 24px 24px no-repeat,
-    url('./svg/flower.svg') 75% 73% / 30px 30px no-repeat;
-  opacity: 0;
-  z-index: 10;
-  animation: flowerShow 1s ease-in 1.5s forwards;
-}
+  .header::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      /* Erste Reihe (tiefer) */
+      url('./svg/flower.svg') 25% 73% / 30px 30px no-repeat,
+      url('./svg/flower.svg') 30% 74% / 24px 24px no-repeat,
+      url('./svg/flower.svg') 34% 76% / 28px 28px no-repeat,
 
-    @keyframes flowerShow {
+      /* Zweite Reihe (mittlere Höhe) */
+      url('./svg/flower.svg') 41% 76% / 25px 25px no-repeat,
+      url('./svg/flower.svg') 47% 75% / 23px 23px no-repeat,
+      url('./svg/flower.svg') 53% 74% / 27px 27px no-repeat,
+
+      /* Dritte Reihe (höher) */
+      url('./svg/flower.svg') 59% 75% / 30px 30px no-repeat,
+      url('./svg/flower.svg') 64% 73% / 30px 30px no-repeat,
+      url('./svg/flower.svg') 69% 74% / 24px 24px no-repeat,
+      url('./svg/flower.svg') 75% 73% / 30px 30px no-repeat;
+    opacity: 0;
+    z-index: 10;
+    animation: flowerShow 1s ease-in 1.5s forwards;
+  }
+
+  @keyframes flowerShow {
     to {
       opacity: 1;
     }
@@ -362,11 +363,12 @@ address {
     padding: 5px;
   }
 
-  .footer-card{
-      transform: translateY(40px);
+  .footer-card {
+    transform: translateY(40px);
   }
-  .footer-card.visible{
-      transform: translateY(0px);
+
+  .footer-card.visible {
+    transform: translateY(0px);
   }
 
 
