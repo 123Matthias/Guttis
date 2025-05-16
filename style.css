@@ -9,8 +9,7 @@ background-color: rgb(252, 232, 199) !important;
   align-items: center;
   z-index: 1000;
   position: relative;
-  min-height: 35vh;
-  height: auto;
+  height: 35vh;
   background: linear-gradient(135deg, rgb(247, 216, 178) 60vh, rgb(237, 124, 2) 60vh);
   color: white;
   text-shadow:
@@ -38,7 +37,7 @@ background-color: rgb(252, 232, 199) !important;
   justify-content: left;
   padding-left: 15px;
   width: auto;
-  height: 33vh;
+  height: 90%;
   transition: all 1s ease-in-out; 
 }
 
@@ -74,7 +73,7 @@ background-color: rgb(252, 232, 199) !important;
   top: 10px;
   right: 15px;
   width: 180px;
-  height: 80px;
+  height: auto;
   animation: logoLump 1s ease-in-out; 
 }
 
@@ -403,8 +402,8 @@ address {
 
   #logo {
     z-index: 999;
-    width: 85%;
-    height: auto;
+    width: auto;
+    height: 70%;
   }
 
   .scrolled #logo {
