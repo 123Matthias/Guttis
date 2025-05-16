@@ -151,21 +151,41 @@ li:hover {
     linear-gradient(to bottom left,
       rgb(251, 165, 122) 0%,
       #fff5eb 60%);
-  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 100px, 100% 100%, 0 100%);
   border-left: 4px solid orangered;
   border-right: 4px solid orangered;
   border-top: 1px solid orangered;
   border-bottom: 1px solid orangered;
-
   opacity: 0;
   transform: translateY(40px) rotate(-8deg);
   transition: opacity 1.5s ease-out, transform 3s ease-out;
+   overflow: visible;
+}
+
+.footer-card::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  background-image: url('./images/hand.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: translateY(40px) scale(1); /* <- hier Handposition & Größe einstellen */
+  transition: opacity 3s ease-out 3s, transform 3s ease-out;
+  pointer-events: none;
+  z-index: 1500;
 }
 
 .footer-card.visible {
   opacity: 1;
   transform: translateY(0) rotate(-3deg);
+}
 
+.footer-card.visible::before {
+  opacity: 0;
+  transform: translateY(0);
 }
 
 .footer-card::after {
