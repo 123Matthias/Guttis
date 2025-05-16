@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: snow !important;
+background-color: rgb(252, 232, 199) !important;
 
 }
 
@@ -11,7 +11,7 @@ body {
   position: relative;
   min-height: 35vh;
   height: auto;
-  background: linear-gradient(135deg, snow 430px, rgb(237, 124, 2) 430px);
+  background: linear-gradient(135deg, rgb(247, 216, 178) 60vh, rgb(237, 124, 2) 60vh);
   color: white;
   text-shadow:
     -1px -1px 0 #a04000,
@@ -33,12 +33,40 @@ body {
 
 #logo {
   display: flex;
-  z-index: 999;
   position: relative;
+  z-index: 999;
   justify-content: left;
+  padding-left: 15px;
   width: auto;
   height: 33vh;
-  transition: all 0.6s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+
+@keyframes logoLump {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    top: 33vh;  
+    right: 0;  
+    width: auto;
+    height: 33vh;
+  }
+  50% {
+    transform: scale(1.2);  
+    opacity: 0.8;
+    top: 20px; 
+    right: 15px;
+    width: 180px;
+    height: 80px; 
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    top: 10px;
+    right: 15px;
+    width: 180px;
+    height: 80px;
+  }
 }
 
 .scrolled #logo {
@@ -46,8 +74,10 @@ body {
   top: 10px;
   right: 15px;
   width: 180px;
-  height: min-content;
+  height: 80px;
+  animation: logoLump 1s ease-in-out; 
 }
+
 
 
 .outer-space {
@@ -58,7 +88,7 @@ body {
   width: 100%;
   padding: 10px;
   margin: auto;
-  background-image: none;
+      background-color: rgb(252, 227, 208);
 }
 
 @media (min-width: 1200px) {
@@ -69,6 +99,7 @@ body {
     background-color: transparent;
     background-size: 30% auto;
     background-clip: padding-box;
+    background-color: rgb(252, 227, 208);
   }
 
   .content-list {
@@ -341,7 +372,7 @@ address {
     inset: 0;
     background:
       radial-gradient(ellipse at 50% 40%,
-        rgba(255, 255, 255, 1) 55%,
+        rgb(249, 237, 197) 55%,
         transparent 60%),
       repeating-linear-gradient(135deg,
         rgba(21, 133, 1, 0.3) 0,
