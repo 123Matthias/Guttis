@@ -188,6 +188,7 @@ li:hover {
   font-size: 1.3rem;
   transition: opacity 2s ease-out, transform 4s ease-out;
   font-style: italic;
+  margin-top: 20px;
 }
 
 .hidden-link.visible {
@@ -230,7 +231,6 @@ li:hover {
   width: 90%;
   margin-top: 30px;
   padding-bottom: 30px;
-
 }
 
 .intro {
