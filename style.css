@@ -19,7 +19,7 @@ background-color: rgb(252, 232, 199) !important;
     -1px 1px 0 #a04000,
     1px 1px 0 #145a32;
   animation: slideInWithTail 2s ease-out forwards;
-  width: 110%;
+  width: 100%;
 }
 
 .slogan {
@@ -28,7 +28,7 @@ background-color: rgb(252, 232, 199) !important;
   width: 100%;
   font-size: 2rem;
   font-weight: 500;
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 #logo {
