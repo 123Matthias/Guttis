@@ -9,7 +9,8 @@ background-color: rgb(252, 232, 199) !important;
   align-items: center;
   z-index: 1000;
   position: relative;
-  height: 35vh;
+  min-height: 35vh;
+  height: auto;
   background: linear-gradient(135deg, rgb(247, 216, 178) 60vh, rgb(237, 124, 2) 60vh);
   color: white;
   text-shadow:
@@ -18,17 +19,16 @@ background-color: rgb(252, 232, 199) !important;
     -1px 1px 0 #a04000,
     1px 1px 0 #145a32;
   animation: slideInWithTail 2s ease-out forwards;
-  width: 100%;
+  width: 110%;
 }
 
 .slogan {
   display: flex;
   justify-content: right;
   width: 100%;
-  font-size: 3em;
-  font-weight: 600;
-  font-variant: small-caps;
-  margin-right: 2.5%;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 10%;
 }
 
 #logo {
@@ -38,15 +38,34 @@ background-color: rgb(252, 232, 199) !important;
   justify-content: left;
   padding-left: 15px;
   width: auto;
-  height: 90%; 
+  height: 33vh;
+  transition: all 1s ease-in-out; 
 }
 
 @keyframes logoLump {
-  from {
-    transform: translate(-100vw, -10px) scale(1.8);
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    top: 33vh;  
+    right: 0;  
+    width: auto;
+    height: 33vh;
   }
-  to {
-    transform: translate(0, 0) scale(1);
+  50% {
+    transform: scale(1.2);  
+    opacity: 0.8;
+    top: 20px; 
+    right: 15px;
+    width: 180px;
+    height: 80px; 
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    top: 10px;
+    right: 15px;
+    width: 180px;
+    height: 80px;
   }
 }
 
@@ -55,8 +74,8 @@ background-color: rgb(252, 232, 199) !important;
   top: 10px;
   right: 15px;
   width: 180px;
-  height: auto;
-  animation: logoLump 1.5s ease-in-out forwards; 
+  height: 80px;
+  animation: logoLump 1s ease-in-out; 
 }
 
 
@@ -294,7 +313,7 @@ address {
     font-size: 1.4rem;
     font-style: italic;
     color: #000000;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 10px;
     margin-right: 0;
   }
@@ -384,8 +403,8 @@ address {
 
   #logo {
     z-index: 999;
-    width: auto;
-    height: 70%;
+    width: 85%;
+    height: auto;
   }
 
   .scrolled #logo {
