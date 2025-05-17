@@ -1,14 +1,13 @@
-
 /* CSS color variablen */
-:root{
-  --col-winter:  rgb(34, 168, 251);
+:root {
+  --col-winter: rgb(34, 168, 251);
   --col-summer: green;
 }
 
 
 body {
   font-family: 'Segoe UI', sans-serif;
-background-color: rgb(252, 232, 199) !important;
+  background-color: rgb(252, 232, 199) !important;
 
 }
 
@@ -47,13 +46,14 @@ background-color: rgb(252, 232, 199) !important;
   padding-left: 15px;
   width: auto;
   height: 33vh;
-  transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out;
 }
 
 @keyframes logoJump {
   from {
     transform: translate(-90vw, -10px) scale(1.8);
   }
+
   to {
     transform: translate(0, 0) scale(1);
   }
@@ -65,7 +65,7 @@ background-color: rgb(252, 232, 199) !important;
   right: 15px;
   width: 180px;
   height: 80px;
-  animation: logoJump 1s ease-in-out; 
+  animation: logoJump 1s ease-in-out;
 }
 
 .outer-space {
@@ -76,15 +76,16 @@ background-color: rgb(252, 232, 199) !important;
   width: 100%;
   padding: 10px;
   margin: auto;
-      background-color: rgb(252, 227, 208);
+  background-color: rgb(252, 227, 208);
 }
 
 @media (min-width: 1200px) {
 
 
-  .slogan{
+  .slogan {
     font-size: 3.2rem;
   }
+
   .content {
     background-image: url('./images/background-content.png');
     background-position: right center;
@@ -109,11 +110,11 @@ background-color: rgb(252, 232, 199) !important;
   font-weight: 600;
 }
 
- .summer_h{
-    color: var(--col-summer);
+.summer_h {
+  color: var(--col-summer);
 }
 
- .winter_h{
+.winter_h {
   color: var(--col-winter);
 }
 
@@ -131,7 +132,7 @@ ul {
 }
 
 li {
-  background-color: rgba(255, 255, 255, 0.398);
+  background-color: rgba(255, 255, 255, 0.45);
   margin: 10px;
   padding: 15px;
   border-radius: 10px 35px 10px 35px;
@@ -140,12 +141,12 @@ li {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.winter li{
-    border-left: 5px solid var(--col-winter);
+.winter li {
+  border-left: 5px solid var(--col-winter);
 }
 
 .summer li {
-    border-left: 5px solid var(--col-summer);
+  border-left: 5px solid var(--col-summer);
 }
 
 li:hover {
@@ -196,7 +197,7 @@ li:hover {
   opacity: 0;
   transform: translateY(40px) rotate(-8deg);
   transition: opacity 1.5s ease-out, transform 3s ease-out;
-   overflow: visible;
+  overflow: visible;
 }
 
 .footer-card::before {
@@ -210,7 +211,8 @@ li:hover {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
-  transform: translateY(40px) scale(1); /* <- hier Handposition & Größe einstellen */
+  transform: translateY(40px) scale(1);
+  /* <- hier Handposition & Größe einstellen */
   transition: opacity 3s ease-out 3s, transform 3s ease-out;
   pointer-events: none;
   z-index: 1500;
@@ -419,7 +421,7 @@ address {
     padding: 5px;
   }
 
-    .footer-card {
+  .footer-card {
     transform: translateY(40px);
   }
 
