@@ -1,3 +1,11 @@
+
+/* CSS color variablen */
+:root{
+  --col-winter:  rgb(34, 168, 251);
+  --col-summer: green;
+}
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
 background-color: rgb(252, 232, 199) !important;
@@ -42,7 +50,7 @@ background-color: rgb(252, 232, 199) !important;
   transition: all 1s ease-in-out; 
 }
 
-@keyframes logoLump {
+@keyframes logoJump {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -75,7 +83,7 @@ background-color: rgb(252, 232, 199) !important;
   right: 15px;
   width: 180px;
   height: 80px;
-  animation: logoLump 1s ease-in-out; 
+  animation: logoJump 1s ease-in-out; 
 }
 
 
@@ -114,7 +122,14 @@ background-color: rgb(252, 232, 199) !important;
   padding-left: 10px;
   margin-top: 40px;
   font-weight: 600;
-  color: green;
+}
+
+ .summer_h{
+    color: var(--col-summer);
+}
+
+ .winter_h{
+  color: var(--col-winter);
 }
 
 ul {
@@ -131,14 +146,21 @@ ul {
 }
 
 li {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.398);
   margin: 10px;
   padding: 15px;
-  border-left: 5px solid green;
   border-radius: 10px 35px 10px 35px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.winter li{
+    border-left: 5px solid var(--col-winter);
+}
+
+.summer li {
+    border-left: 5px solid var(--col-summer);
 }
 
 li:hover {
