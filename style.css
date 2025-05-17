@@ -34,7 +34,7 @@ background-color: rgb(252, 232, 199) !important;
   display: flex;
   justify-content: right;
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 500;
   margin-right: 2%;
 }
@@ -51,29 +51,11 @@ background-color: rgb(252, 232, 199) !important;
 }
 
 @keyframes logoJump {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-    top: 33vh;  
-    right: 0;  
-    width: auto;
-    height: 33vh;
+  from {
+    transform: translate(-90vw, -10px) scale(1.8);
   }
-  50% {
-    transform: scale(1.2);  
-    opacity: 0.8;
-    top: 20px; 
-    right: 15px;
-    width: 180px;
-    height: 80px; 
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    top: 10px;
-    right: 15px;
-    width: 180px;
-    height: 80px;
+  to {
+    transform: translate(0, 0) scale(1);
   }
 }
 
@@ -85,8 +67,6 @@ background-color: rgb(252, 232, 199) !important;
   height: 80px;
   animation: logoJump 1s ease-in-out; 
 }
-
-
 
 .outer-space {
   padding: 10px 10px 0 10px;
@@ -100,6 +80,11 @@ background-color: rgb(252, 232, 199) !important;
 }
 
 @media (min-width: 1200px) {
+
+
+  .slogan{
+    font-size: 3.2rem;
+  }
   .content {
     background-image: url('./images/background-content.png');
     background-position: right center;
@@ -325,7 +310,7 @@ address {
 
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY ------------------------------*/
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .slogan {
     display: flex;
@@ -336,7 +321,6 @@ address {
     font-style: italic;
     color: #000000;
     font-weight: 500;
-    margin-bottom: 10px;
     margin-right: 0;
   }
 
@@ -344,13 +328,12 @@ address {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 350px;
+    min-height: 400px;
     height: 40vh;
     width: 100%;
     z-index: 900;
     position: relative;
     text-shadow: none;
-    animation: slideInWithTail 1.5s ease-out forwards;
     opacity: 0;
     background: none;
   }
@@ -359,7 +342,7 @@ address {
     content: "";
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background:
       /* Erste Reihe (tiefer) */
       url('./svg/flower.svg') 25% 80% / 30px 30px no-repeat,
@@ -424,27 +407,26 @@ address {
   }
 
   #logo {
+    margin-top: 15px;
     z-index: 999;
     width: 85%;
     height: auto;
+    max-height: 250px;
   }
 
-  .scrolled #logo {
-    width: 120pt;
-    height: auto;
-  }
 
   .content-list {
     padding: 5px;
   }
 
-  .footer-card {
+    .footer-card {
     transform: translateY(40px);
   }
 
   .footer-card.visible {
     transform: translateY(0px);
   }
+
 
 
 }
