@@ -51,6 +51,7 @@ body {
   z-index: 999;
   justify-content: left;
   padding-left: 15px;
+  padding-right: 15px;
   width: auto;
   height: 33vh;
   transition: all 1s ease-in-out;
@@ -348,14 +349,14 @@ address {
 @media (max-width: 1000px) {
 
   .slogan {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-style: italic;
-    color: #000000;
-    font-weight: 500;
+    color: darkgreen;
+    font-weight: 800;
     margin-right: 0;
   }
 
@@ -375,25 +376,12 @@ address {
 
   .slogan::before {
     content: "";
-    position: relative;
-    width: 100%;
+    width: 50px;
     height: 50px;
+    position: relative;
     background:
       /* Erste Reihe (tiefer) */
-      url('./svg/flower.svg') 25% 80% / 30px 30px no-repeat,
-      url('./svg/flower.svg') 30% 77% / 24px 24px no-repeat,
-      url('./svg/flower.svg') 34% 78% / 28px 28px no-repeat,
-
-      /* Zweite Reihe (mittlere Höhe) */
-      url('./svg/flower.svg') 41% 78% / 25px 25px no-repeat,
-      url('./svg/flower.svg') 47% 77% / 23px 23px no-repeat,
-      url('./svg/flower.svg') 53% 76% / 27px 27px no-repeat,
-
-      /* Dritte Reihe (höher) */
-      url('./svg/flower.svg') 59% 77% / 30px 30px no-repeat,
-      url('./svg/flower.svg') 64% 75% / 30px 30px no-repeat,
-      url('./svg/flower.svg') 69% 76% / 24px 24px no-repeat,
-      url('./svg/flower.svg') 75% 75% / 30px 30px no-repeat;
+      url('./svg/flower.svg')  5px 5px / 40px 40px no-repeat;
     opacity: 0;
     z-index: 1500;
     animation: flowerShow 1s ease-in 1.5s forwards;
@@ -405,23 +393,22 @@ address {
     }
   }
 
-
   .header::before {
     content: "";
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 50% 40%,
-        rgb(249, 237, 197) 55%,
-        transparent 60%),
+      radial-gradient(ellipse at 50% 50%,
+        rgb(249, 237, 197) 65%,
+        transparent 65%),
       repeating-linear-gradient(135deg,
-        rgba(21, 133, 1, 0.3) 0,
-        rgba(21, 133, 1, 0.3) 1px,
+        rgba(21, 133, 1, 0.75) 0,
+        rgba(21, 133, 1, 0.75) 1px,
         transparent 2px,
         transparent 20px),
       repeating-linear-gradient(45deg,
-        rgba(21, 133, 1, 0.3) 0,
-        rgba(21, 133, 1, 0.3) 1px,
+        rgba(21, 133, 1, 0.75) 0,
+        rgba(21, 133, 1, 0.75) 1px,
         transparent 2px,
         transparent 20px);
     border-bottom: 3px solid darkgreen;
