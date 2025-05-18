@@ -314,15 +314,23 @@ address {
   margin-top: 15px;
 }
 
-a i {
-  font-size: 3rem;
+.card-icon{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-icon i {
+  font-size: 2.6rem;
   color: silver;
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
 }
 
 
-a i:hover {
+.card-icon i:hover {
     color:goldenrod;
 }
 
