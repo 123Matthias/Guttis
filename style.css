@@ -1,11 +1,10 @@
-
 /* CSS color variablen */
 :root {
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -319,7 +318,7 @@ address {
   margin-top: 15px;
 }
 
-.card-icon{
+.card-icon {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -336,7 +335,7 @@ address {
 
 
 .card-icon i:hover {
-    color:goldenrod;
+  color: goldenrod;
 }
 
 @keyframes cardAppearing {
@@ -349,29 +348,35 @@ address {
 @media (max-width: 1000px) {
 
   .slogan {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    font-size: 1.5rem;
+    justify-content: center;
+    width: fit-content;
+    font-size: 1.3rem;
     font-style: italic;
     color: darkgreen;
-    font-weight: 800;
-    margin-right: 0;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
   }
 
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 450px;
-    height: 40vh;
+    justify-content: center;
+    min-height: 400px;
+    height: auto;
     width: 100%;
     z-index: 900;
     position: relative;
     text-shadow: none;
     opacity: 0;
     background: none;
+  }
+
+  .header * {
+    transform: translateY(-20px);
   }
 
   .slogan::before {
@@ -381,7 +386,7 @@ address {
     position: relative;
     background:
       /* Erste Reihe (tiefer) */
-      url('./svg/flower.svg')  5px 5px / 40px 40px no-repeat;
+      url('./svg/flower.svg') 5px 5px / 40px 40px no-repeat;
     opacity: 0;
     z-index: 1500;
     animation: flowerShow 1s ease-in 1.5s forwards;
@@ -423,9 +428,9 @@ address {
     }
   }
 
-h1 #contact-jump {
-  display: none !important;
-}
+  h1 #contact-jump {
+    display: none !important;
+  }
 
 
   ul {
@@ -434,7 +439,6 @@ h1 #contact-jump {
   }
 
   #logo {
-    margin-top: 15px;
     z-index: 999;
     width: 85%;
     height: auto;
