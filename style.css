@@ -1,9 +1,13 @@
+
 /* CSS color variablen */
 :root {
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -310,9 +314,23 @@ address {
   margin-top: 15px;
 }
 
+a i {
+  font-size: 3rem;
+  color: silver;
+  opacity: 0;
+  animation: cardAppearing 2s ease 2s forwards;
+}
 
 
+a i:hover {
+    color:goldenrod;
+}
 
+@keyframes cardAppearing {
+  to {
+    opacity: 1;
+  }
+}
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY ------------------------------*/
 @media (max-width: 1000px) {
