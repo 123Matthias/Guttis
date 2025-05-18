@@ -20,6 +20,9 @@
   <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 
+  <!-- Font Awesome für direkte Nutzung in HTML. Sonst import Bild .... -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Meta Description -->
   <meta name="description"
     content="Gutti's Hausmeisterservice bietet professionelle Dienstleistungen in Annaberg: Reparaturen, Gartenpflege und mehr. Kontaktieren Sie uns.">
@@ -79,7 +82,17 @@
 
   <div class="header">
     <img id="logo" src="svg/logo.svg" alt="Logo Guttenbrunner">
-    <h1 class="slogan">Zuverlässig. Vielseitig. <br> Ganzjährig für Sie da!</h1>
+    <h1 class="slogan">Zuverlässig. Vielseitig. <br> Ganzjährig für Sie da!
+      <span> 
+        <a href="#footer-card" id="contact-jump"  
+        style="position: relative; display: flex; flex-direction: column; cursor: pointer; text-decoration: none;;">
+          <i class="fa-solid fa-address-card" style="font-size: 3rem; color:silver; "></i>
+        </a>
+      </span>
+    </h1>
+
+
+
   </div>
 
   <div class="content">
@@ -110,7 +123,8 @@
             border: 3px solid black;
             border-radius: 20px; background-color: rgba(228, 228, 228, 0.25);
             ">
-      <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: contain;     background-color: rgb(252, 227, 208);">
+      <div class="carousel-inner" id="carouselImages"
+        style="height: 100%; display: flex; object-fit: contain; background-color: rgb(252, 227, 208);">
         <!-- Bilder werden hier mit js eingefügt -->
       </div>
 

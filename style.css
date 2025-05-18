@@ -31,7 +31,10 @@ body {
 
 .slogan {
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+  justify-content: center;
   width: 100%;
   font-size: 2.3rem;
   font-weight: 500;
@@ -330,7 +333,7 @@ address {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
+    min-height: 450px;
     height: 40vh;
     width: 100%;
     z-index: 900;
@@ -402,6 +405,11 @@ address {
       opacity: 1;
     }
   }
+
+h1 #contact-jump {
+  display: none !important;
+}
+
 
   ul {
     padding: 0 !important;
