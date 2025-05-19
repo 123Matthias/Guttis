@@ -376,8 +376,10 @@ address {
   }
 
   .header * {
-    transform: translateY(-20px);
+    position: relative;
+    top: -20px;
   }
+
 
   .slogan::before {
     content: "";
@@ -385,7 +387,6 @@ address {
     height: 50px;
     position: relative;
     background:
-      /* Erste Reihe (tiefer) */
       url('./svg/flower.svg') 5px 5px / 40px 40px no-repeat;
     opacity: 0;
     z-index: 1500;
