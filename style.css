@@ -384,9 +384,25 @@ address {
         rgba(179, 219, 150, 0.35) 75%,
         rgba(157, 206, 116, 0.4) 85%,
         rgba(135, 195, 82, 0.3) 95%,
-        rgba(115, 185, 66, 0.3) 100%)
+        rgba(115, 185, 66, 0.3) 100%);
+        animation: appearingHeader 2s ease-in forwards;
   }
 
+
+  @keyframes appearingHeader {
+  0% {
+    right: 0 !important;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
   .header a,
   .header .slogan {
     position: relative;
@@ -446,16 +462,16 @@ address {
     left: 50%;
     transform: translateX(-50%);
     background:
-radial-gradient(ellipse at 50% 50%,
-  transparent 58%,
-  rgba(255, 0, 0, 0.5) 60%, rgba(255, 0, 0, 0.5) 61.25%,
-  rgba(255, 165, 0, 0.5) 61.25%, rgba(255, 165, 0, 0.5) 62.5%,
-  rgba(255, 255, 0, 0.5) 62.5%, rgba(255, 255, 0, 0.5) 63.75%,
-  rgba(0, 128, 0, 0.5) 63.75%, rgba(0, 128, 0, 0.5) 65%,
-  rgba(0, 0, 255, 0.5) 65%, rgba(0, 0, 255, 0.5) 66.25%,
-  rgba(75, 0, 130, 0.5) 66.25%, rgba(75, 0, 130, 0.5) 67.5%,
-  rgba(238, 130, 238, 0.5) 67.5%, rgba(238, 130, 238, 0) 68.75%,
-  transparent 70.75%);
+      radial-gradient(ellipse at 50% 50%,
+        transparent 58%,
+        rgba(255, 0, 0, 0.5) 60%, rgba(255, 0, 0, 0.5) 61.25%,
+        rgba(255, 165, 0, 0.5) 61.25%, rgba(255, 165, 0, 0.5) 62.5%,
+        rgba(255, 255, 0, 0.5) 62.5%, rgba(255, 255, 0, 0.5) 63.75%,
+        rgba(0, 128, 0, 0.5) 63.75%, rgba(0, 128, 0, 0.5) 65%,
+        rgba(0, 0, 255, 0.5) 65%, rgba(0, 0, 255, 0.5) 66.25%,
+        rgba(75, 0, 130, 0.5) 66.25%, rgba(75, 0, 130, 0.5) 67.5%,
+        rgba(238, 130, 238, 0.5) 67.5%, rgba(238, 130, 238, 0) 68.75%,
+        transparent 70.75%);
 
     mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
@@ -507,6 +523,7 @@ radial-gradient(ellipse at 50% 50%,
 
 
 }
+
 
 /*-----------------------END OF MOBIELE VIEW MEDIA QUERY-------------------------------*/
 
