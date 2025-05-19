@@ -385,7 +385,7 @@ address {
         rgba(157, 206, 116, 0.4) 85%,
         rgba(135, 195, 82, 0.3) 95%,
         rgba(115, 185, 66, 0.3) 100%);
-        animation: appearingHeader 2s ease-in forwards;
+        animation: appearingHeader 2s ease-in forwards !important;
   }
 
 
@@ -402,7 +402,7 @@ address {
   100% {
     opacity: 1;
   }
-}
+  }
   .header a,
   .header .slogan {
     position: relative;
