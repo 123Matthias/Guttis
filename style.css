@@ -2,6 +2,7 @@
 :root {
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
+  --alpha-rainbow: 0.15;
 }
 
 html {
@@ -385,24 +386,25 @@ address {
         rgba(157, 206, 116, 0.4) 85%,
         rgba(135, 195, 82, 0.3) 95%,
         rgba(115, 185, 66, 0.3) 100%);
-        animation: appearingHeader 2s ease-in forwards !important;
+    animation: appearingHeader 2s ease-in forwards !important;
   }
 
 
   @keyframes appearingHeader {
-  0% {
-    right: 0 !important;
-    opacity: 0;
+    0% {
+      right: 0 !important;
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
-  70% {
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 1;
-  }
-  }
   .header a,
   .header .slogan {
     position: relative;
@@ -464,14 +466,15 @@ address {
     background:
       radial-gradient(ellipse at 50% 50%,
         transparent 58%,
-        rgba(255, 0, 0, 0.5) 60%, rgba(255, 0, 0, 0.5) 61.25%,
-        rgba(255, 165, 0, 0.5) 61.25%, rgba(255, 165, 0, 0.5) 62.5%,
-        rgba(255, 255, 0, 0.5) 62.5%, rgba(255, 255, 0, 0.5) 63.75%,
-        rgba(0, 128, 0, 0.5) 63.75%, rgba(0, 128, 0, 0.5) 65%,
-        rgba(0, 0, 255, 0.5) 65%, rgba(0, 0, 255, 0.5) 66.25%,
-        rgba(75, 0, 130, 0.5) 66.25%, rgba(75, 0, 130, 0.5) 67.5%,
-        rgba(238, 130, 238, 0.5) 67.5%, rgba(238, 130, 238, 0) 68.75%,
+        rgba(255, 0, 0, var(--alpha-rainbow)) 60%, rgba(255, 0, 0, var(--alpha-rainbow)) 61.25%,
+        rgba(255, 165, 0, var(--alpha-rainbow)) 61.25%, rgba(255, 165, 0, var(--alpha-rainbow)) 62.5%,
+        rgba(255, 255, 0, var(--alpha-rainbow)) 62.5%, rgba(255, 255, 0, var(--alpha-rainbow)) 63.75%,
+        rgba(0, 128, 0, var(--alpha-rainbow)) 63.75%, rgba(0, 128, 0, var(--alpha-rainbow)) 65%,
+        rgba(0, 0, 255, var(--alpha-rainbow)) 65%, rgba(0, 0, 255, var(--alpha-rainbow)) 66.25%,
+        rgba(75, 0, 130, var(--alpha-rainbow)) 66.25%, rgba(75, 0, 130, var(--alpha-rainbow)) 67.5%,
+        rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
         transparent 70.75%);
+
 
     mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
