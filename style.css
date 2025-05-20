@@ -3,6 +3,13 @@
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
   --alpha-rainbow: 0.15;
+
+  --col-bg-primary: rgb(252, 232, 199);
+  --col-bg-content: rgb(252, 227, 208);
+
+  --col-bg-primary-small-display: white;
+  --col-bg-content-small-display: white;
+
 }
 
 html {
@@ -11,8 +18,7 @@ html {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgb(252, 232, 199) !important;
-
+  background-color: var(--col-bg-primary) !important;
 }
 
 .header {
@@ -35,7 +41,7 @@ body {
 
 .slogan {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: end;
   text-align: end;
   justify-content: center;
@@ -43,6 +49,7 @@ body {
   font-size: 2.3rem;
   font-weight: 500;
   margin-right: 2%;
+  margin-bottom: 0;
 }
 
 .logo-link {
@@ -91,7 +98,7 @@ body {
   width: 100%;
   padding: 10px;
   margin: auto;
-  background-color: rgb(252, 227, 208);
+  background-color: var(--col-bg-content);
 }
 
 /*-------------------Large Screens -----------------------------  */
@@ -110,7 +117,7 @@ body {
     background-color: transparent;
     background-size: 30% auto;
     background-clip: padding-box;
-    background-color: rgb(252, 227, 208);
+    background-color: var(--col-bg-content);
   }
 
   .content-list {
@@ -122,19 +129,21 @@ body {
 
 /*------------------- END OF Large Screens -----------------------------  */
 
-.content-header {
-  border-left: 5px solid orangered;
+.content-header{
   padding-left: 10px;
   margin-top: 40px;
   font-weight: 600;
 }
 
+
 .summer_h {
-  color: var(--col-summer);
+  color: rgb(195, 52, 0);
+  border-left: 5px solid rgb(195, 52, 0);
 }
 
 .winter_h {
-  color: var(--col-winter);
+  color: blueviolet;
+  border-left: 5px solid blueviolet;
 }
 
 ul {
@@ -353,7 +362,16 @@ address {
 }
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY ------------------------------*/
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+
+  body{
+    background-color: var(--col-bg-primary-small-display) !important;
+  }
+
+  .content{
+    background-color: var(--col-bg-content-small-display);
+  }
+
 
   .slogan {
     display: flex;
@@ -363,15 +381,17 @@ address {
     font-size: 1.3rem;
     font-style: italic;
     color: darkgreen;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
     text-align: center;
+    margin-top: 25px;
   }
 
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 400px;
     height: auto;
     width: 100%;
@@ -394,8 +414,8 @@ address {
         rgba(135, 195, 82, 0.95) 95%,
         rgba(115, 185, 66, 1) 100%);
     animation: appearingHeader 2s ease-in forwards !important;
-    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.1) 100%);
-    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.1) 100%);
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
   }
 
 
@@ -421,11 +441,7 @@ address {
     }
   }
 
-  .logo-link,
-  .slogan {
-    position: relative;
-    top: 30px;
-  }
+
 
 
   .slogan::before {
