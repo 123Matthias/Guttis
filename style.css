@@ -412,20 +412,20 @@ address {
     text-shadow: none;
     opacity: 0;
     background:
-      linear-gradient(to bottom,
-        rgba(148, 201, 252, 1) 0%,
-        rgba(165, 208, 251, 0.95) 10%,
-        rgba(166, 203, 245, 0.85) 20%,
-        rgba(179, 218, 241, 0.75) 30%,
-        rgba(192, 217, 238, 0.6) 40%,
-        rgba(221, 247, 215, 0.6) 45%,
-        rgba(244, 255, 228, 0.6) 50%,
-        rgba(223, 244, 219, 0.6) 55%,
-        rgba(201, 232, 185, 0.6) 65%,
-        rgba(179, 219, 150, 0.75) 75%,
-        rgba(157, 206, 116, 0.85) 85%,
-        rgba(135, 195, 82, 0.95) 95%,
-        rgba(115, 185, 66, 1) 100%);
+linear-gradient(to bottom,
+  rgba(0, 156, 255, 1) 0%,     /* Intensives Himmelblau */
+  rgba(76, 180, 255, 1) 10%,
+  rgba(125, 198, 247, 0.95) 20%,
+  rgba(161, 212, 240, 0.85) 30%,
+  rgba(197, 226, 232, 0.7) 40%,
+  rgba(223, 243, 216, 0.6) 50%,
+  rgba(208, 237, 183, 0.6) 60%,
+  rgba(182, 227, 146, 0.75) 70%,
+  rgba(148, 208, 102, 0.85) 80%,
+  rgba(112, 188, 59, 0.95) 90%,
+  rgba(79, 168, 43, 1) 100%    /* Dunkles Grasgrün */
+);
+
     animation: appearingHeader 2s ease-in forwards !important;
     -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
     mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
