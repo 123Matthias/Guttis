@@ -45,17 +45,23 @@ body {
   margin-right: 2%;
 }
 
-#logo {
+.logo-link {
   display: flex;
   position: relative;
   z-index: 999;
   justify-content: left;
   padding-left: 15px;
   padding-right: 15px;
-  width: auto;
   height: 33vh;
   transition: all 1s ease-in-out;
+  text-decoration: none;
 }
+
+#logo {
+  height: 100%;
+  width: auto;
+}
+
 
 @keyframes logoJump {
   from {
@@ -74,6 +80,7 @@ body {
   width: 180px;
   height: 80px;
   animation: logoJump 1s ease-in-out;
+
 }
 
 .outer-space {
@@ -373,21 +380,30 @@ address {
     opacity: 0;
     background:
       linear-gradient(to bottom,
-        rgba(148, 201, 252, 0.35) 0%,
-        rgba(165, 208, 251, 0.3) 10%,
-        rgba(166, 203, 245, 0.25) 20%,
-        rgba(179, 218, 241, 0.4) 30%,
-        rgba(199, 219, 235, 0.2) 40%,
-        rgba(234, 249, 230, 0.15) 45%,
-        rgba(244, 255, 228, 0.15) 50%,
-        rgba(223, 244, 219, 0.25) 55%,
-        rgba(201, 232, 185, 0.3) 65%,
-        rgba(179, 219, 150, 0.35) 75%,
-        rgba(157, 206, 116, 0.4) 85%,
-        rgba(135, 195, 82, 0.3) 95%,
-        rgba(115, 185, 66, 0.3) 100%);
+        rgba(148, 201, 252, 1) 0%,
+        rgba(165, 208, 251, 0.95) 10%,
+        rgba(166, 203, 245, 0.85) 20%,
+        rgba(179, 218, 241, 0.75) 30%,
+        rgba(192, 217, 238, 0.6) 40%,
+        rgba(221, 247, 215, 0.6) 45%,
+        rgba(244, 255, 228, 0.6) 50%,
+        rgba(223, 244, 219, 0.6) 55%,
+        rgba(201, 232, 185, 0.6) 65%,
+        rgba(179, 219, 150, 0.75) 75%,
+        rgba(157, 206, 116, 0.85) 85%,
+        rgba(135, 195, 82, 0.95) 95%,
+        rgba(115, 185, 66, 1) 100%);
     animation: appearingHeader 2s ease-in forwards !important;
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.1) 100%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.1) 100%);
   }
+
+
+  .scrolled .header {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
 
 
   @keyframes appearingHeader {
@@ -405,11 +421,12 @@ address {
     }
   }
 
-  .header a,
-  .header .slogan {
+  .logo-link,
+  .slogan {
     position: relative;
     top: 30px;
   }
+
 
   .slogan::before {
     content: "";
@@ -427,32 +444,6 @@ address {
     to {
       opacity: 1;
     }
-  }
-
-  .header::before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    background:
-      repeating-linear-gradient(135deg,
-        rgba(21, 133, 1, 0.9) 0,
-        rgba(21, 133, 1, 0.9) 1px,
-        transparent 1px,
-        transparent 4px) 0 calc(100% - 4px) / 100% 4px repeat,
-      repeating-linear-gradient(45deg,
-        rgba(21, 133, 1, 0.9) 0,
-        rgba(21, 133, 1, 0.9) 1px,
-        transparent 1px,
-        transparent 4px) 0 calc(100% - 4px) / 100% 4px repeat;
-
-    border-bottom: 1px solid darkgreen;
-    border-top: 1px solid darkgreen;
-    opacity: 0;
-    animation: fenceFadeIn 1s ease-in 2.3s forwards;
-    z-index: -1;
   }
 
 
@@ -475,22 +466,15 @@ address {
         rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
         transparent 70.75%);
 
+    mask-image: linear-gradient(to bottom, black 0%, black 28%, transparent 40%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 28%, transparent 40%);
 
-    mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
     pointer-events: none;
     z-index: -1;
     width: 100%;
     max-width: 500px;
   }
 
-
-
-  @keyframes fenceFadeIn {
-    to {
-      opacity: 1;
-    }
-  }
 
   h1 #contact-jump {
     display: none !important;
@@ -502,12 +486,17 @@ address {
     width: 100%;
   }
 
-  #logo {
-    z-index: 999;
-    width: 85%;
+  .logo-link {
+    justify-content: center;
+    width: 80%;
     height: auto;
     max-height: 250px;
     padding: 0;
+  }
+
+  #logo {
+    width: 100%;
+    height: auto;
   }
 
 
