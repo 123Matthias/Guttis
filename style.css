@@ -19,6 +19,8 @@ html {
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--col-bg-primary) !important;
+  cursor: url('./Heckenschere_cursor.png'), auto;
+
 }
 
 .visually-hidden {
