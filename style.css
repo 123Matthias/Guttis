@@ -379,8 +379,25 @@ address {
   }
 }
 
-/* ----------------------- MOBILE VIEW MEDIA QUERY ------------------------------*/
-@media (max-width: 1100px) {
+/* ----------------------- MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
+
+@media (max-width: 600px) {
+
+  .content {
+    background-color: var(--col-bg-content-small-display);
+    background-image: none;
+  }
+
+    .content-list {
+    width: 100% !important;
+  }
+
+}
+
+/* ----------------------- END OF MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
+
+/* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
+@media (max-width: 900px) {
 
   body {
     background-color: var(--col-bg-primary-small-display) !important;
@@ -389,7 +406,6 @@ address {
   .content {
     background-color: var(--col-bg-content-small-display);
   }
-
 
   .slogan {
     display: flex;
