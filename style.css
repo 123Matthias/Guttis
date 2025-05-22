@@ -114,6 +114,12 @@ body {
   padding: 10px;
   margin: auto;
   background-color: var(--col-bg-content);
+  background-image: url('./images/Rosenranke.png');
+  background-position: right top;
+  background-repeat: repeat-y;
+  background-color: none;
+  background-size: 15% auto;
+  background-clip: padding-box;
 }
 
 /*-------------------Large Screens -----------------------------  */
@@ -144,7 +150,7 @@ body {
 
 /*------------------- END OF Large Screens -----------------------------  */
 
-.content-header{
+.content-header {
   padding-left: 10px;
   margin-top: 40px;
   font-weight: 600;
@@ -170,7 +176,7 @@ ul {
 }
 
 .content-list {
-  width: 100%;
+  width: 88%;
   max-width: 1400px;
 }
 
@@ -357,7 +363,7 @@ address {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-    font-size: 2.6rem;
+  font-size: 2.6rem;
   color: silver;
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
@@ -376,11 +382,11 @@ address {
 /* ----------------------- MOBILE VIEW MEDIA QUERY ------------------------------*/
 @media (max-width: 1100px) {
 
-  body{
+  body {
     background-color: var(--col-bg-primary-small-display) !important;
   }
 
-  .content{
+  .content {
     background-color: var(--col-bg-content-small-display);
   }
 
@@ -412,19 +418,21 @@ address {
     text-shadow: none;
     opacity: 0;
     background:
-linear-gradient(to bottom,
-  rgba(0, 156, 255, 1) 0%,     /* Intensives Himmelblau */
-  rgba(76, 180, 255, 1) 10%,
-  rgba(125, 198, 247, 0.95) 20%,
-  rgba(161, 212, 240, 0.85) 30%,
-  rgba(197, 226, 232, 0.7) 40%,
-  rgba(223, 243, 216, 0.6) 50%,
-  rgba(208, 237, 183, 0.6) 60%,
-  rgba(182, 227, 146, 0.75) 70%,
-  rgba(148, 208, 102, 0.85) 80%,
-  rgba(112, 188, 59, 0.95) 90%,
-  rgba(79, 168, 43, 1) 100%    /* Dunkles Grasgrün */
-);
+      linear-gradient(to bottom,
+        rgba(0, 156, 255, 1) 0%,
+        /* Intensives Himmelblau */
+        rgba(76, 180, 255, 1) 10%,
+        rgba(125, 198, 247, 0.95) 20%,
+        rgba(161, 212, 240, 0.85) 30%,
+        rgba(197, 226, 232, 0.7) 40%,
+        rgba(223, 243, 216, 0.6) 50%,
+        rgba(208, 237, 183, 0.6) 60%,
+        rgba(182, 227, 146, 0.75) 70%,
+        rgba(148, 208, 102, 0.85) 80%,
+        rgba(112, 188, 59, 0.95) 90%,
+        rgba(79, 168, 43, 1) 100%
+        /* Dunkles Grasgrün */
+      );
 
     animation: appearingHeader 2s ease-in forwards !important;
     -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
