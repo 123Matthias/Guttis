@@ -397,7 +397,7 @@ address {
 /* ----------------------- END OF MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
   body {
     background-color: var(--col-bg-primary-small-display) !important;
