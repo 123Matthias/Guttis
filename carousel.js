@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const imageFolder = './images/';
+    const imageFolder = './images/carousel/';
     const totalImages = 6;
   
     function loadCarouselImages() {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (i === 1) div.classList.add('active');
   
         const img = document.createElement('img');
-        img.src = imageFolder + 'img' + i + '.jpeg';
+        img.src = imageFolder + 'img' + i + '.jpg';
         img.alt = 'Bild ' + i;
 
         img.loading = 'lazy';
