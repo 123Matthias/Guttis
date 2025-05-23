@@ -211,8 +211,10 @@ li:hover {
 }
 
 .footer-bg-wood {
-  background-image: url('./images/platte2.jpg');
-  background-size: cover;
+  background-image: url('./images/footer-wood.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  padding: 10px 0 20px 0 ;
 }
 
 .footer-card {
@@ -308,11 +310,11 @@ li:hover {
 
 
 .footer-whiteLink {
-  color: white;
+
 }
 
 .footer-whiteLink:visited {
-  color: rgb(220, 0, 220);
+
 
 }
 
@@ -338,9 +340,10 @@ li:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 1.5em;
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px; 
+  
 }
 
 .intro {
