@@ -23,12 +23,10 @@ Diese Optimierung umfasst:
 - **HTTPS/SSL-Verschlüsselung**, da sichere Verbindungen ein SEO-Rankingfaktor sind. Viele Nutzer und Browser blockieren mittlerweile unsichere `http`-Verbindungen.
 - Eine **.vcf** Datei ermöglicht ein schnelles Speichern des Kontaktes auf jedem Gerät.
 
-
-Die Kombination all dieser Punkte beeinflusst das Ranking bei den Crawler-Programmen und damit das Suchergebnis. Außerdem sollte immer ein 301-Redirect auf die HTTPS-Seite in einer `.htaccess`-Datei oder auf andere Weise eingerichtet werden. Dasselbe gilt für die Weiterleitung der `www`-Subdomain auf die Hauptdomain — in diesem Fall also von  
-`https://www.guttis-hausmeisterservice.at` per 301-Redirect auf  
-`https://guttis-hausmeisterservice.at`.
-
----
+> Die Kombination all dieser Punkte beeinflusst das Ranking bei den Crawler-Programmen und damit das Suchergebnis. Außerdem sollte immer ein 301-Redirect auf die HTTPS-Seite in einer `.htaccess`-Datei oder auf andere Weise eingerichtet werden. Dasselbe gilt für die Weiterleitung der `www`-Subdomain auf die Hauptdomain — in diesem Fall also von  
+> `https://www.guttis-hausmeisterservice.at` per 301-Redirect auf  
+> `https://guttis-hausmeisterservice.at`.
+> Auf dieser Website wurde das mit dem CDN von Cloudflare umgesetzt. Cloudflare arbeitet hier als Proxy welcher alles zwischenspeichert auch HTML durch selbst eingetragene Regeln. Weiters sind HTTPS only und der angesprochene Redirect dort angegeben. 
 
 **Link zur Website:**  
 [https://guttis-hausmeisterservice.at](https://guttis-hausmeisterservice.at)
