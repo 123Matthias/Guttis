@@ -6,7 +6,7 @@ Diese Optimierung umfasst:
 
 ## SEO
 
-- **Meta-Tags** wie `title` und `description` zur besseren Auffindbarkeit in Suchmaschinen.
+- **Meta-Tags** wie `title` und `description` zur besseren Auffindbarkeit in Suchmaschinen. Der title sowie die h1 und die description sind für Suchanfragen sehr wichtig. Hier sollen keywords enthalten sein. Das ist auch der Teil der bei den Suchmaschinentreffern angezeigt wird. Darum wurde auch eine hidden h1 verwendet da der Slogan im header für die Suchmaschine keinen Sinn macht.
 - Eine **Sitemap**, die in der [Google Search Console](https://search.google.com/search-console/about) und beim [Bing Webmaster Tool](https://www.bing.com/webmasters) eingereicht werden kann. Ein `link`-Tag zur Sitemap ist ebenfalls enthalten, was auch ohne Einreichung sinnvoll ist.
 - **Open Graph**- und **Twitter Meta-Tags**, die die Darstellung auf Social Media verbessern.
 - Ein **canonical Meta-Tag**, das auf die korrekte URL verweist – in diesem Fall `https://guttis-hausmeisterservice.at`.
