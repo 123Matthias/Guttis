@@ -10,6 +10,8 @@
   --col-bg-primary-small-display: white;
   --col-bg-content-small-display: white;
 
+  --col-bg-content-important: rgb(252, 227, 208);
+
 }
 
 html {
@@ -114,12 +116,11 @@ body {
   padding: 10px;
   margin: auto;
   background-color: var(--col-bg-content);
-  background-image: url('./images/Rosenranke.png'),url('./images/Rosenranke.png'), url('./images/Schneeschaufel.png');
-  background-position: top 100px right,top 320px right, bottom right;
+  background-image: url('./images/Rosenranke.png'), url('./images/Schneeschaufel.png');
+  background-position: bottom 320px right, bottom right;
   background-repeat: no-repeat;
   background-color: none;
-  background-size: 15% auto, 15% auto;  
-
+  background-size: 15% auto, 15% auto;
 }
 
 /*-------------------Large Screens -----------------------------  */
@@ -211,10 +212,14 @@ li:hover {
 }
 
 .footer-bg-wood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: max-content;
   background-image: url('./images/footer-wood.png');
   background-size: contain;
   background-repeat: repeat-x;
-  padding: 10px 0 20px 0 ;
 }
 
 .footer-card {
@@ -226,7 +231,7 @@ li:hover {
   padding: 0pt;
   margin-top: 30px;
   width: 95%;
-  max-width: 325pt;
+  max-width: 420px;
   background:
     repeating-linear-gradient(135deg,
       rgba(255, 128, 64, 0.3) 0,
@@ -296,10 +301,11 @@ li:hover {
   opacity: 0;
   color: rgb(255, 0, 89) !important;
   transform: translateY(40px);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   transition: opacity 2s ease-out, transform 4s ease-out;
   font-style: italic;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hidden-link.visible {
@@ -309,14 +315,9 @@ li:hover {
 }
 
 
-.footer-whiteLink {
+.footer-whiteLink {}
 
-}
-
-.footer-whiteLink:visited {
-
-
-}
+.footer-whiteLink:visited {}
 
 .footer-link {
   color: blue;
@@ -339,11 +340,11 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 1.5em;
+  font-size: 1.25em;
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 30px; 
-  
+  margin-bottom: 30px;
+
 }
 
 .intro {
@@ -391,7 +392,7 @@ address {
     background-image: none;
   }
 
-    .content-list {
+  .content-list {
     width: 100% !important;
   }
 
@@ -616,5 +617,29 @@ address {
 
 .basic-shadow {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.datenschutz-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+  background-color: var(--col-bg-content-important);
+}
+
+.datenschutz-content * {
+  width: 95%;
+}
+
+.datenschutz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
 }
