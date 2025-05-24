@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://guttis-hausmeisterservice.at/sitemap.xml
