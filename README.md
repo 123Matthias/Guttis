@@ -14,7 +14,7 @@ Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO).
 
 - Ein **canonical Meta-Tag**, der auf die korrekte URL der Website verweist – in diesem Fall `https://guttis-hausmeisterservice.at`.
 
-- Ein **robots-Meta-Tag**, der Suchmaschinen anweist, die Seite zu indexieren und Links zu folgen. Eine zusätzliche `robots.txt`-Datei wäre ebenfalls eine Option.
+- Ein **robots-Meta-Tag**, der Suchmaschinen anweist, die Seite zu indexieren und Links zu folgen. Eine zusätzliche `robots.txt`-Datei wäre ebenfalls eine Option und ist kein muss. Möglicherweise schauen Suchmaschienen eher erst nach dieser Datei. Darum besser eine angeben.
 
 - Der **keywords Meta-Tag** ist veraltet, wurde aber dennoch angegeben, da er keinen negativen Einfluss hat.
 
