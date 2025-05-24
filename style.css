@@ -365,16 +365,19 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0.6rem;  /* Font Size Daniel Schriftzug */
+  justify-content: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2.6rem;
+  font-size: 3.2rem; /* Large Displays Font Size Slogan */
   color: silver;
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .card-icon:hover {
-  color: goldenrod;
+  transform: scale(1.2);
 }
 
 @keyframes cardAppearing {
