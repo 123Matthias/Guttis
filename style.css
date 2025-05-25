@@ -636,3 +636,12 @@ address {
   width: 100%;
 
 }
+
+.datenschutz-content h3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.datenschutz-content p{
+  text-align: justify;
+}
