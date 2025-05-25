@@ -314,11 +314,6 @@ li:hover {
 
 }
 
-
-.footer-whiteLink {}
-
-.footer-whiteLink:visited {}
-
 .footer-link {
   color: blue;
   text-decoration: none;
@@ -365,11 +360,13 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.6rem;  /* Font Size Daniel Schriftzug */
+  margin-top: 0.6rem;
+  /* Font Size Daniel Schriftzug */
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 3.2rem; /* Large Displays Font Size Slogan */
+  font-size: 3.2rem;
+  /* Large Displays Font Size Slogan */
   color: silver;
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
@@ -440,28 +437,21 @@ address {
     z-index: 900;
     text-shadow: none;
     opacity: 0;
-    background:
-      linear-gradient(to bottom,
+    background: linear-gradient(to bottom,
         rgba(0, 156, 255, 1) 0%,
-        /* Intensives Himmelblau */
-        rgba(76, 180, 255, 1) 10%,
-        rgba(125, 198, 247, 0.95) 20%,
-        rgba(161, 212, 240, 0.85) 30%,
-        rgba(197, 226, 232, 0.7) 40%,
-        rgba(223, 243, 216, 0.6) 50%,
-        rgba(208, 237, 183, 0.6) 60%,
-        rgba(182, 227, 146, 0.75) 70%,
-        rgba(148, 208, 102, 0.85) 80%,
-        rgba(112, 188, 59, 0.95) 90%,
+        rgba(76, 180, 255, 1) 15%,
+        rgba(161, 212, 240, 1) 30%,
+        rgba(255, 255, 255, 0) 49%,
+        rgba(255, 255, 255, 0) 51%,
+        rgba(148, 208, 102, 1) 65%,
+        rgba(112, 188, 59, 1) 80%,
         rgba(79, 168, 43, 1) 100%
-        /* Dunkles Grasgrün */
       );
-
+      
     animation: appearingHeader 2s ease-in forwards !important;
-    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
-    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%);
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0.85) 82%, rgba(0, 0, 0, 0.0) 98%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0.85) 82%, rgba(0, 0, 0, 0.0) 98%);
   }
-
 
   .scrolled .header {
     -webkit-mask-image: none !important;
