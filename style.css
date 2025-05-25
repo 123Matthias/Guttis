@@ -449,8 +449,8 @@ address {
       );
       
     animation: appearingHeader 2s ease-in forwards !important;
-    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0.85) 82%, rgba(0, 0, 0, 0.0) 98%);
-    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0.85) 82%, rgba(0, 0, 0, 0.0) 98%);
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
   }
 
   .scrolled .header {
