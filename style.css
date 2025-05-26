@@ -581,8 +581,8 @@ address {
   }
 
   .logo-link {
-    max-height: 350px;
-    width: 350px;
+    max-height: 360px;
+    width: 80vw;
     padding: 0;
   }
 
