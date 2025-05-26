@@ -435,6 +435,17 @@ address {
     width: 100%;
     z-index: 900;
     text-shadow: none;
+    background: none;
+    animation: none;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    z-index: -50;
+    width: 100%;
+    height: 100%;
+
     opacity: 0;
     background: linear-gradient(to bottom,
         rgba(0, 156, 255, 1) 0%,
@@ -444,13 +455,13 @@ address {
         rgba(255, 255, 255, 0) 51%,
         rgba(148, 208, 102, 1) 65%,
         rgba(112, 188, 59, 1) 80%,
-        rgba(79, 168, 43, 1) 100%
-      );
-      
+        rgba(79, 168, 43, 1) 100%);
+
     animation: appearingHeader 2s ease-in forwards !important;
     -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
     mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
   }
+
 
   .scrolled .header {
     -webkit-mask-image: none !important;
@@ -500,6 +511,7 @@ address {
     max-width: 500px;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
     background:
       radial-gradient(ellipse at 50% 50%,
         transparent 58%,
@@ -519,6 +531,7 @@ address {
     z-index: -1;
     width: 100%;
     max-width: 500px;
+    animation: flowerShow 1s ease-in 3s forwards !important;
   }
 
 
@@ -531,6 +544,7 @@ address {
     padding: 0 !important;
     width: 100%;
   }
+
 
   .logo-link {
     justify-content: center;
@@ -641,6 +655,6 @@ address {
   margin-top: 20px;
 }
 
-.datenschutz-content p{
+.datenschutz-content p {
   text-align: justify;
 }
