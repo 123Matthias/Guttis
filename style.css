@@ -581,14 +581,14 @@ address {
   }
 
   .logo-link {
-    max-height: 300px;
-    width: fit-content;
+    max-height: 350px;
+    width: 350px;
     padding: 0;
   }
 
   #logo {
-    width: auto;
-    height: 100%;
+    height: auto;
+    width: 100%;
   }
 
   .content-list {
