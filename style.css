@@ -481,7 +481,7 @@ address {
     font-weight: 800;
     margin: 0;
     text-align: center;
-    margin-top: 25px;
+    margin-bottom: 5px;
   }
 
   .header {
@@ -542,7 +542,7 @@ address {
 
   .logo-link {
     justify-content: center;
-    max-height: 250px;
+    max-height: 320px;
     height: 100%;
     padding: 0;
   }
