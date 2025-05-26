@@ -90,7 +90,7 @@ body {
 
 #logo {
   height: 100%;
-  width: fit-content;
+  width: auto;
 }
 
 
@@ -132,7 +132,7 @@ body {
 
 .carousel-container {
   width: 95%;
-  height: 95%;
+  height: 95vh;
   margin-top: 50px;
   border-radius: 20px;
   overflow: hidden;
@@ -230,6 +230,12 @@ li:hover {
   background-repeat: repeat-x;
 }
 
+@media (max-width: 400px) {
+  .footer-bg-wood {
+    background-size: cover;
+  }
+}
+
 .footer-card {
   text-shadow:
     0 0 3px #ffffff,
@@ -239,7 +245,7 @@ li:hover {
   padding: 0pt;
   margin-top: 30px;
   width: 95%;
-  max-width: 460px;
+  max-width: 430px;
   background:
     repeating-linear-gradient(135deg,
       rgba(255, 128, 64, 0.3) 0,
@@ -280,7 +286,7 @@ li:hover {
   transition: opacity 3s ease-out 3s, transform 3s ease-out;
   pointer-events: none;
   z-index: 1500;
- 
+
 }
 
 .footer-card.visible {
@@ -297,7 +303,7 @@ li:hover {
 .footer-card::after {
   content: "";
   position: absolute;
-  bottom: 33px;
+  bottom: 45px;
   right: -5px;
   width: 100px;
   height: 100px;
@@ -542,7 +548,8 @@ address {
   }
 
   #logo {
-    max-width: 80%;
+    width: auto;
+    max-width: 85%;
   }
 
   .slogan::before {
