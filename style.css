@@ -546,7 +546,6 @@ address {
     content: "";
     position: absolute;
     inset: 0;
-    max-width: 500px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -582,16 +581,14 @@ address {
   }
 
   .logo-link {
-    justify-content: center;
-    width: 600px;
-    height: auto;
-    max-height: 250px;
+    max-height: 300px;
+    width: fit-content;
     padding: 0;
   }
 
   #logo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
 
   .content-list {
