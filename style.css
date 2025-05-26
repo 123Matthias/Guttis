@@ -25,6 +25,13 @@ body {
 
 }
 
+@media (max-width: 1200px) {
+  body {
+    background-color: var(--col-bg-primary-small-display) !important;
+  }
+
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,6 +51,7 @@ body {
   z-index: 1000;
   position: relative;
   height: 300px;
+  width: 100%;
   background: linear-gradient(135deg, rgb(247, 216, 178) 470px, rgb(237, 124, 2) 470px);
   color: white;
   text-shadow:
@@ -52,7 +60,6 @@ body {
     -1px 1px 0 #a04000,
     1px 1px 0 #145a32;
   animation: slideInWithTail 1.75s ease-out forwards;
-  width: 100%;
 }
 
 .slogan {
@@ -76,14 +83,14 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   height: 250px;
-  width: auto;
+  width: fit-content;
   transition: all 1s ease-in-out;
   text-decoration: none;
 }
 
 #logo {
   height: 100%;
-  width: auto;
+  width: fit-content;
 }
 
 
@@ -120,13 +127,12 @@ body {
   background-image: url('./images/Rosenranke.png'), url('./images/Schneeschaufel.png');
   background-position: bottom 320px right, bottom right;
   background-repeat: no-repeat;
-  background-color: none;
   background-size: 15% auto, 15% auto;
 }
 
 .carousel-container {
-  width: 95vw;
-  height: 95vh;
+  width: 95%;
+  height: 95%;
   margin-top: 50px;
   border-radius: 20px;
   overflow: hidden;
@@ -155,36 +161,6 @@ body {
   background-image: none;
   border-color: orangered;
 }
-
-/*-------------------Large Screens -----------------------------  */
-
-@media (min-width: 1200px) {
-
-
-  .slogan {
-    font-size: 3.2rem;
-  }
-
-  .content {
-    background-image: url('./images/background-content.png');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 30% auto;
-    background-clip: padding-box;
-    background-color: var(--col-bg-content);
-  }
-
-  .content-list {
-    width: 68% !important;
-    max-width: 1400px;
-  }
-
-}
-
-
-
-/*------------------- END OF Large Screens -----------------------------  */
 
 .content-header {
   padding-left: 10px;
@@ -220,7 +196,6 @@ li {
   margin: 10px;
   padding: 15px;
   border-radius: 10px 35px 10px 35px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -250,7 +225,6 @@ li:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-width: max-content;
   background-image: url('./images/footer-wood.png');
   background-size: contain;
   background-repeat: repeat-x;
@@ -265,7 +239,7 @@ li:hover {
   padding: 0pt;
   margin-top: 30px;
   width: 95%;
-  max-width: 420px;
+  max-width: 460px;
   background:
     repeating-linear-gradient(135deg,
       rgba(255, 128, 64, 0.3) 0,
@@ -306,10 +280,12 @@ li:hover {
   transition: opacity 3s ease-out 3s, transform 3s ease-out;
   pointer-events: none;
   z-index: 1500;
+ 
 }
 
 .footer-card.visible {
   opacity: 1;
+  content: none;
   transform: translateY(0) rotate(-3deg);
 }
 
@@ -321,7 +297,7 @@ li:hover {
 .footer-card::after {
   content: "";
   position: absolute;
-  bottom: 25pt;
+  bottom: 33px;
   right: -5px;
   width: 100px;
   height: 100px;
@@ -330,6 +306,7 @@ li:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 
 .hidden-link {
   opacity: 0;
@@ -347,6 +324,7 @@ li:hover {
   transform: translateY(0);
 
 }
+
 
 .footer-link {
   color: blue;
@@ -417,36 +395,68 @@ address {
   }
 }
 
-/* ----------------------- MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
-@media (max-width: 600px) {
+
+@keyframes slideInWithTail {
+  0% {
+    right: -100%;
+    /* Start außerhalb des Bildschirms */
+    opacity: 0;
+  }
+
+  70% {
+    right: 10%;
+    opacity: 1;
+  }
+
+  100% {
+    right: 0;
+    /* Endposition */
+    opacity: 1;
+  }
+}
+
+
+
+.basic-shadow {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------Large Screens -----------------------------  */
+
+@media (min-width: 1200px) {
+
+
+  .slogan {
+    font-size: 3.2rem;
+  }
 
   .content {
-    background-color: var(--col-bg-content-small-display);
-    background-image: none;
+    background-image: url('./images/background-content.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 30% auto;
+    background-clip: padding-box;
+    background-color: var(--col-bg-content);
   }
 
   .content-list {
-    width: 100% !important;
-  }
-
-  .carousel-container {
-    width: 100vw;
-    border-radius: 0;
-    background-color: var(--col-bg-content-small-display);
-    border: 1px solid black;
-    box-shadow: none;
+    width: 68% !important;
+    max-width: 1400px;
   }
 
 }
 
-/* ----------------------- END OF MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
+
+
+/*------------------- END OF Large Screens -----------------------------  */
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
 @media (max-width: 1200px) {
 
   body {
-    background-color: var(--col-bg-primary-small-display) !important;
+    background-color: var(--col-bg-primary-small-display);
   }
 
   .content {
@@ -524,9 +534,20 @@ address {
     }
   }
 
+  .logo-link {
+    justify-content: center;
+    max-height: 250px;
+    height: fit-content;
+    padding: 0;
+  }
+
+  #logo {
+    max-width: 80%;
+  }
+
   .slogan::before {
     content: "";
-    width: 50px;
+    width: 45px;
     height: 50px;
     position: relative;
     background:
@@ -534,6 +555,7 @@ address {
     opacity: 0;
     z-index: 1500;
     animation: flowerShow 1.75s ease-in forwards;
+
   }
 
   @keyframes flowerShow {
@@ -580,17 +602,6 @@ address {
     width: 100%;
   }
 
-  .logo-link {
-    max-height: 360px;
-    width: 80vw;
-    padding: 0;
-  }
-
-  #logo {
-    height: auto;
-    width: 100%;
-  }
-
   .content-list {
     padding: 5px;
   }
@@ -604,7 +615,7 @@ address {
   }
 
   .carousel-container {
-    width: 100vw;
+    width: 100%;
     border-radius: 0;
     background-color: var(--col-bg-content-small-display);
     border: 1px solid black;
@@ -614,30 +625,25 @@ address {
 
 /*-----------------------END OF MOBIELE VIEW MEDIA QUERY-------------------------------*/
 
-@keyframes slideInWithTail {
-  0% {
-    right: -100%;
-    /* Start außerhalb des Bildschirms */
-    opacity: 0;
+/* ----------------------- MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
+
+@media (max-width: 600px) {
+
+  .content {
+    background-color: var(--col-bg-content-small-display);
+    background-image: none;
+    width: 100%;
   }
 
-  70% {
-    right: 10%;
-    opacity: 1;
+  .content-list {
+    width: 100%;
   }
 
-  100% {
-    right: 0;
-    /* Endposition */
-    opacity: 1;
-  }
+
 }
 
+/* ----------------------- END OF MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
-
-.basic-shadow {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
-}
 
 .datenschutz-content {
   display: flex;
