@@ -51,7 +51,7 @@ body {
     1px -1px 0 #145a32,
     -1px 1px 0 #a04000,
     1px 1px 0 #145a32;
-  animation: slideInWithTail 2s ease-out forwards;
+  animation: slideInWithTail 1.75s ease-out forwards;
   width: 100%;
 }
 
@@ -457,7 +457,7 @@ address {
         rgba(112, 188, 59, 1) 80%,
         rgba(79, 168, 43, 1) 100%);
 
-    animation: appearingHeader 2s ease-in forwards !important;
+    animation: appearingHeader 1s ease-out forwards !important;
     -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
     mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
   }
@@ -494,7 +494,7 @@ address {
       url('./svg/flower.svg') 5px 5px / 40px 40px no-repeat;
     opacity: 0;
     z-index: 1500;
-    animation: flowerShow 1s ease-in 1.5s forwards;
+    animation: flowerShow 1.75s ease-in forwards;
   }
 
   @keyframes flowerShow {
@@ -531,7 +531,7 @@ address {
     z-index: -1;
     width: 100%;
     max-width: 500px;
-    animation: flowerShow 1s ease-in 3s forwards !important;
+    animation: flowerShow 1s ease-out 1s forwards;
   }
 
 
