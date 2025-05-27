@@ -125,9 +125,7 @@ body {
   #logo {
     filter: brightness(0) invert(100%) contrast(100%);
   }
-
 }
-
 
 @keyframes logoJump {
   from {
