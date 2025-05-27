@@ -251,7 +251,7 @@ li {
 
 @media (prefers-color-scheme: dark) {
   li {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(60, 60, 60, 0.45);
   }
 }
 
