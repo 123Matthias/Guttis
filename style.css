@@ -21,8 +21,8 @@
     --col-bg-primary: #1e1e1e;
     --col-bg-content: #2a2a2a;
 
-    --col-bg-primary-small-display: #362d2d;
-    --col-bg-content-small-display: #121212;
+    --col-bg-primary-small-display: #1e1e1e;
+    --col-bg-content-small-display: #2a2a2a;
 
     --col-bg-content-important: rgb(45, 30, 30);
     --col-text: rgb(224, 224, 224);
@@ -119,12 +119,13 @@ body {
 #logo {
   height: 100%;
   width: auto;
+  content: url("svg/logo.svg");
 }
 
 @media (prefers-color-scheme: dark) {
 
   #logo {
-    filter: brightness(0) invert(100%) contrast(100%);
+    content: url("svg/logo-dark.svg");
   }
 }
 
@@ -301,17 +302,19 @@ li {
 }
 
 @media (prefers-color-scheme: dark) {
-  .footer-card,  .hidden-link {
+
+  .footer-card,
+  .hidden-link {
     filter: invert(100%);
   }
 
- 
 
-  .footer-bg-wood{
+
+  .footer-bg-wood {
     filter: invert(100%);
   }
 
-  
+
 }
 
 .footer-bg-wood {
@@ -498,7 +501,7 @@ address {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.card-icon:visited{
+.card-icon:visited {
   color: var(--col-link-visited);
 }
 
@@ -633,11 +636,11 @@ address {
     mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0.1) 98%);
   }
 
-@media (prefers-color-scheme: dark) {
-  .header::before {
-    filter: invert(100%) brightness(40%);
+  @media (prefers-color-scheme: dark) {
+    .header::before {
+      filter: invert(100%) brightness(40%);
+    }
   }
-}
 
 
   .scrolled .header {
