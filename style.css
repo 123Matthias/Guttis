@@ -497,9 +497,14 @@ address {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.card-icon:visited{
+  color: var(--col-link-visited);
+}
+
 
 .card-icon:hover {
   transform: scale(1.2);
+  color: var(--col-link-hover);
 }
 
 @keyframes cardAppearing {
