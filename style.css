@@ -85,7 +85,8 @@ body {
 @media (prefers-color-scheme: dark) {
   .header {
     color: var(--col-text);
-    background: linear-gradient(135deg, rgb(147, 116, 78) 470px, rgb(165, 83, 0) 470px);
+    background: linear-gradient(135deg, var(--col-bg-primary) 469px, orangered 470px, var(--col-bg-content) 471px);
+    border: 1px solid orangered;
   }
 }
 
