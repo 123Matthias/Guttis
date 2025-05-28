@@ -217,13 +217,14 @@ body {
 
 /* native links */
 
+a:visited {
+  color: var(--col-link-visited);
+}
+
 a {
   color: var(--col-link);
 }
 
-a:visited {
-  color: var(--col-link-visited);
-}
 
 a:hover {
   color: var(--col-link-hover);
@@ -494,19 +495,19 @@ address {
   cursor: pointer;
   text-decoration: none;
   font-size: 3.2rem;
-  /* Large Displays Font Size Slogan */
   color: var(--col-link);
+  /* Large Displays Font Size Slogan */
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.card-icon:visited {
-  color: var(--col-link-visited);
+  color:green;
 }
 
 .card-icon:hover {
-  transform: scale(1.3);
+  transition: color 5s ease;
+}
+
+.card-icon:visited {
+  transition: color 5s ease;
 }
 
 @keyframes cardAppearing {
