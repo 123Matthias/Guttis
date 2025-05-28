@@ -215,21 +215,6 @@ body {
 }
 
 
-/* native links */
-
-a:visited {
-  color: var(--col-link-visited);
-}
-
-a {
-  color: var(--col-link);
-}
-
-
-a:hover {
-  color: var(--col-link-hover);
-}
-
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -434,7 +419,7 @@ li {
 
 
 .footer-link {
-  color: blue;
+  color: var(--col-link);
   text-decoration: none;
   padding: 10px;
   text-align: center;
@@ -443,22 +428,14 @@ li {
 .footer-link:hover,
 .footer-whiteLink:hover {
   text-decoration: underline;
+  color: var(--col-link-hover);
 }
 
 .footer-link:visited {
-  color: purple;
+  color: var(--col-link-visited);
 
 }
 
-@media (prefers-color-scheme: dark) {
-  .footer-link {
-    color: var(--col-link);
-  }
-
-  .footer-link:visited {
-    color: var(--col-link-visited);
-  }
-}
 
 .footer-link-container {
   display: flex;
@@ -499,16 +476,35 @@ address {
   /* Large Displays Font Size Slogan */
   opacity: 0;
   animation: cardAppearing 2s ease 2s forwards;
-  color:green;
 }
 
-.card-icon:hover {
-  transition: color 5s ease;
+.card-icon i {
+  color: var(--col-link);
+  transition: 
+    color 4s ease 0s,               /* Farbe sofort oder mit kleinem Delay */
+    text-shadow 4s ease 2s,         /* Textschatten mit Delay starten */
+    transform 0.3s ease;
+  transform-origin: bottom center;
+  display: inline-block;
+  text-shadow: 0 0 3px black,
+    0 0 8px black;;
 }
 
-.card-icon:visited {
-  transition: color 5s ease;
+.card-icon:hover i {
+  color: orangered;
+  transform: scale(1.2);
+  text-shadow:
+    0 0 8px rgb(255, 255, 255),
+    0 0 15px rgb(246, 165, 107),
+    0 0 20px rgb(245, 123, 123);  /* Glühen mit Verzögerung */
 }
+
+.card-icon span{
+    text-shadow:   0 0 3px black,
+    0 0 8px black;
+}
+
+
 
 @keyframes cardAppearing {
   to {
