@@ -505,10 +505,8 @@ address {
   color: var(--col-link-visited);
 }
 
-
 .card-icon:hover {
-  transform: scale(1.2);
-  color: var(--col-link-hover);
+  transform: scale(1.3);
 }
 
 @keyframes cardAppearing {
@@ -516,8 +514,6 @@ address {
     opacity: 1;
   }
 }
-
-
 
 @keyframes slideInWithTail {
   0% {
