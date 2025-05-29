@@ -74,11 +74,10 @@ body {
   background: linear-gradient(135deg, rgb(247, 216, 178) 470px, rgb(237, 124, 2) 470px);
   color: white;
   text-shadow:
-    -1px -1px 0 #a04000,
-    1px -1px 0 #145a32,
-    -1px 1px 0 #a04000,
-    1px 1px 0 #145a32;
+    0px 0px 5px #000000,
+    0px 0px 10px #000000;
   animation: slideInWithTail 1.75s ease-out forwards;
+  border-bottom: 2px solid black;
 }
 
 
@@ -86,7 +85,7 @@ body {
   .header {
     color: var(--col-text);
     background: linear-gradient(135deg, var(--col-bg-primary) 469px, orangered 470px, var(--col-bg-content) 471px);
-    border: 1px solid orangered;
+    border-bottom: 2px solid orangered;
   }
 }
 
@@ -480,27 +479,48 @@ address {
 
 .card-icon i {
   color: var(--col-link);
-  transition: 
-    color 4s ease 0s,               /* Farbe sofort oder mit kleinem Delay */
-    text-shadow 4s ease 2s,         /* Textschatten mit Delay starten */
-    transform 0.3s ease;
+  transition:
+    color 4s ease 0s,
+    text-shadow 4s ease 2s,
+    transform 1s ease;
   transform-origin: bottom center;
   display: inline-block;
   text-shadow: 0 0 3px black,
-    0 0 8px black;;
+    0 0 8px black;
 }
+
+@keyframes flicker {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0px 6px rgb(255, 255, 255),
+      0 0px 8px rgb(246, 165, 107),
+      0 0px 10px rgb(245, 123, 123);
+  }
+
+  50% {
+    text-shadow:
+      0 0px 4px rgb(255, 255, 255),
+      0 0px 6px rgb(246, 165, 107),
+      0 0px 12px rgb(251, 247, 217);
+  }
+}
+
 
 .card-icon:hover i {
-  color: orangered;
+  color: rgb(255, 230, 120);
   transform: scale(1.2);
-  text-shadow:
-    0 0 8px rgb(255, 255, 255),
-    0 0 15px rgb(246, 165, 107),
-    0 0 20px rgb(245, 123, 123);  /* Glühen mit Verzögerung */
+  text-shadow: 0 0px 6px rgb(255, 255, 255),
+    0 0px 8px rgb(246, 165, 107),
+    0 0px 10px rgb(245, 123, 123);
+  ;
+  animation: flicker 2s infinite alternate;
 }
 
-.card-icon span{
-    text-shadow:   0 0 3px black,
+
+.card-icon span {
+  text-shadow: 0 0 3px black,
     0 0 8px black;
 }
 
@@ -612,7 +632,6 @@ address {
     z-index: -50;
     width: 100%;
     height: 100%;
-
     opacity: 0;
     background: linear-gradient(to bottom,
         rgba(0, 156, 255, 1) 0%,
