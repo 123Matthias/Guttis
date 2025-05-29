@@ -7,6 +7,9 @@
   --col-bg-primary: antiquewhite;
   --col-bg-content: antiquewhite;
 
+  --col-bg-primary-small-display: snow;
+  --col-bg-content-small-display: snow;
+
   --col-bg-content-important: rgb(252, 227, 208);
   --col-text: black;
 
@@ -47,8 +50,8 @@ body {
   body {
     background-color: var(--col-bg-primary) !important;
   }
-
 }
+
 
 /*
 .visually-hidden {
@@ -551,10 +554,19 @@ address {
   }
 }
 
-
-
 .basic-shadow {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 -8px 20px rgba(0, 0, 0, 0.2), 8px 0 20px rgba(0, 0, 0, 0.2), -8px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 2s ease, transform 0.5s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*-------------------Large Screens -----------------------------  */
@@ -591,11 +603,11 @@ address {
 @media (max-width: 1200px) {
 
   body {
-    background-color: var(--col-bg-primary-small-display);
+    background-color: var(--col-bg-primary-small-display) !important;
   }
 
   .content {
-    background-color: var(--col-bg-content-small-display);
+    background-color: var(--col-bg-content-small-display) !important;
   }
 
   .slogan {
@@ -760,8 +772,7 @@ address {
     width: 100%;
     border-radius: 0;
     background-color: var(--col-bg-content-small-display);
-    border: 1px solid black;
-    box-shadow: none;
+    border: none;
   }
 }
 
