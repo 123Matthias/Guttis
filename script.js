@@ -10,13 +10,12 @@ window.onscroll = function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
   addFadeToList();
   cardObserver();
   contentFade();
-
 });
 
+window.addEventListener('resize', contentFade);
 
 function addFadeToList() {
   document.querySelectorAll("li").forEach(element => {
@@ -44,39 +43,16 @@ function cardObserver() {
   observer.observe(card);
 }
 
-
 function contentFade() {
   const elements = document.querySelectorAll('.fade-in-up');
-  console.log("Scroll in Y = " + window.scrollY);
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
       }
-
     });
-  }, { threshold: 0.2 });
-
-  window.addEventListener('scroll', () => {
-    // console.log("Scroll in Y = " + window.scrollY);
-    if (window.scrollY <= 0) {
-      document.querySelectorAll('.fade-in-up.visible').forEach(el => {
-        el.classList.remove('visible');
-      });
-
-      const elements = document.querySelectorAll('.fade-in-up');
-      elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          el.classList.add('visible');
-        }
-      });
-
-    }
-  });
-
+  }, { threshold: 0, rootMargin: '0px 0px 50px 0px' });
 
   elements.forEach(el => observer.observe(el));
-
 }
 

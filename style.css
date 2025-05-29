@@ -17,6 +17,8 @@
   --col-link-hover: darkblue;
   --col-link-visited: mediumvioletred;
 
+  --margin-top-section: 150px;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -159,11 +161,11 @@ body {
   width: 100%;
   padding: 10px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: calc(var(--margin-top-section) - 60px);
   background-color: var(--col-bg-content);
   color: var(--col-text);
   background-image: url('./images/Rosenranke.png'), url('./images/Schneeschaufel.png');
-  background-position: bottom 320px right, bottom right;
+  background-position: bottom 360px right, bottom right;
   background-repeat: no-repeat;
   background-size: 15% auto, 15% auto;
 }
@@ -171,7 +173,7 @@ body {
 .carousel-container {
   width: 95%;
   height: 95vh;
-  margin-top: 50px;
+  margin-top: var(--margin-top-section);
   border-radius: 20px;
   overflow: hidden;
   background-color: var(--col-bg-content);
@@ -209,11 +211,14 @@ body {
 .summer_h {
   color: rgb(195, 52, 0);
   border-left: 5px solid rgb(195, 52, 0);
+  margin-bottom: 30px;
 }
 
 .winter_h {
   color: blueviolet;
   border-left: 5px solid blueviolet;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 
@@ -286,7 +291,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: var(--margin-top-section);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -560,11 +565,14 @@ address {
 
 .fade-in-up {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s ease, transform 0.5s ease-out;
+  transform: translateY(150px);
+  transition: opacity 0.5s ease, transform 1.5s ease, filter 1s;
+  will-change: transform, opacity;
+  filter: blur(5px);
 }
 
 .fade-in-up.visible {
+  filter: none;
   opacity: 1;
   transform: translateY(0);
 }
