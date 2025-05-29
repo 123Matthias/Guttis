@@ -24,6 +24,8 @@ Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO).
 
 - **Responsive Design**, vollständig eigenständig umgesetzt. Obwohl Bootstrap eingebunden ist, wurde es für das Responsive Design nicht verwendet. Bootstrap könnte sogar entfernt werden, da es kaum genutzt wird.
 
+- **Dark Mode** welcher im css mit media queries sehr leicht umsetzbar ist. css Variablen und filter Attribute vereinfachen das zusätzlich.
+
 - **Ladezeitoptimierung** durch z. B. Bildkomprimierung mit verschiedenen Tools, die `.png`-Dateien verkleinern, oder durch die Verwendung von `.jpg`, die bereits komprimiert sind. **Lazy Loading** sorgt zusätzlich dafür, dass die Website unabhängig von ihrer Größe schnell lädt. Allerdings ist das Lazy Loading unvollständig, was bei den Bildinhalten im Carousel-Container aber nicht weiter ins Gewicht fällt.
 
 - **HTTPS/SSL-Verschlüsselung**, da sichere Verbindungen ein SEO-Rankingfaktor sind. Viele Nutzer und Browser blockieren mittlerweile unsichere `http`-Verbindungen.
