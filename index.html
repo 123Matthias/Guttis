@@ -145,67 +145,69 @@
     </h1>
   </header>
 
-  <section class="content">
-    <h2 class="content-header summer_h">Unsere Leistungen im Sommer</h2>
-    <ul class="content-list summer">
-      <li>Gartenpflege &amp; Rasenmähen</li>
-      <li>Sträucher, Hecken &amp; Bäume schneiden</li>
-      <li>Bepflanzung &amp; Holzbereitstellung</li>
-      <li>Poolservice &amp; Reinigung</li>
-      <li>Müllentsorgung</li>
-      <li>Reparatur von Terrassen und Zäunen</li>
-      <li>Reparaturen im Haus</li>
-    </ul>
+  <main>
+    <section class="content">
+      <h2 class="content-header summer_h">Unsere Leistungen im Sommer</h2>
+      <ul class="content-list summer">
+        <li>Gartenpflege &amp; Rasenmähen</li>
+        <li>Sträucher, Hecken &amp; Bäume schneiden</li>
+        <li>Bepflanzung &amp; Holzbereitstellung</li>
+        <li>Poolservice &amp; Reinigung</li>
+        <li>Müllentsorgung</li>
+        <li>Reparatur von Terrassen und Zäunen</li>
+        <li>Reparaturen im Haus</li>
+      </ul>
 
-    <h2 class="content-header winter_h">Im Winter</h2>
-    <ul class="content-list winter">
-      <li>Schneeräumen rund ums Haus und am Dach</li>
-      <li>Terrassen &amp; Parkplätze räumen &amp; streuen</li>
-      <li>Reparaturen im Haus</li>
-    </ul>
-  </section>
+      <h2 class="content-header winter_h">Im Winter</h2>
+      <ul class="content-list winter">
+        <li>Schneeräumen rund ums Haus und am Dach</li>
+        <li>Terrassen &amp; Parkplätze räumen &amp; streuen</li>
+        <li>Reparaturen im Haus</li>
+      </ul>
+    </section>
 
-  <div class="fade-in-up" style="display: flex; justify-content: center; width: 100%;">
-    <div id="carouselExampleControls" class="carousel slide carousel-fade basic-shadow carousel-container"
-      data-bs-ride="carousel">
-      <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: contain">
-        <!-- Bilder werden hier mit js eingefügt -->
+    <section>
+      <h2 class="section section-header text-center fade-in-up">Media-Galerie</h2>
+
+      <div class="fade-in-up" style="display: flex; justify-content: center; width: 100%;">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade basic-shadow carousel-container"
+          data-bs-ride="carousel">
+          <div class="carousel-inner" id="carouselImages" style="height: 100%; display: flex; object-fit: contain">
+            <!-- Bilder werden hier mit js eingefügt -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev" style="top: 50%; transform: translateY(-50%);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Vorheriges Bild</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next" style="top: 50%; transform: translateY(-50%);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Nächstes Bild</span>
+          </button>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
-        style="top: 50%; transform: translateY(-50%);">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Vorheriges Bild</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"
-        style="top: 50%; transform: translateY(-50%);">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Nächstes Bild</span>
-      </button>
-    </div>
-  </div>
 
-  <div class="fade-in-up" style="display: flex; justify-content: center; width: 100%;">
-    <div class="basic-shadow carousel-container">
-      <video width="100%" height="100%" controls preload="none" poster="./images/video1.jpeg"
-        style="object-fit: contain;">
-        <source src="./images/video1.mp4" type="video/mp4">
-        Dein Browser unterstützt das Video-Tag nicht.
-      </video>
-    </div>
-  </div>
+      <div class="fade-in-up" style="display: flex; justify-content: center; width: 100%;">
+        <div class="basic-shadow carousel-container">
+          <video width="100%" height="100%" controls preload="none" poster="./images/video1.jpeg"
+            style="object-fit: contain;">
+            <source src="./images/video1.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer">
-
+  <footer class="footer section">
     <div class="footer-bg-wood">
-
       <div class="footer-card" id="footer-card">
-
         <h3 style="font-weight: 600; font-size: 1.9rem; color: crimson; font-variant: small-caps;
                 font-style: italic; margin-bottom: 15px; padding: 8pt 0 5pt 5pt; text-align: left;
                 line-height: 1; border-left: 10px solid orangered;">
           Gutti's Hausmeisterservice
         </h3>
-
         <div style="padding: 0 0 0 10pt;">
           <p class="intro">🛠️ Ganzjährig für Sie im Einsatz</p>
           <p class="intro">🤝 Individuelle Betreuung & faire Preise</p>
@@ -221,12 +223,10 @@
           </address>
         </div>
       </div>
-
       <a href="/assets/gutti.vcf" download class="hidden-link" id="contact-download">
         💾 Kontakt speichern
       </a>
     </div>
-
   </footer>
 
   <div class="footer-link-container">
