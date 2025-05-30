@@ -17,7 +17,7 @@ const carouselContainer = document.getElementById('carouselImages');
     img.src = imageFolder + 'img' + i + '.jpg';
     img.alt = 'Bild ' + i;
 
-    img.loading = (i === 1) ? 'eager' : 'lazy';
+    img.loading = 'lazy';
     
     img.style.objectFit = 'contain';  
     img.style.width = '100%';   
