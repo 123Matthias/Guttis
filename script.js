@@ -11,6 +11,7 @@ window.onscroll = function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   addFadeToList();
+  makeTopOverflowVisible();
   contentFade();
   cardObserver();
 });
