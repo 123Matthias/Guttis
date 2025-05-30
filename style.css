@@ -173,7 +173,7 @@ body {
 .carousel-container {
   width: 95%;
   height: 95vh;
-  margin-top: 100px;
+  margin-top: 120px;
   border-radius: 20px;
   overflow: hidden;
   background-color: var(--col-bg-content);
@@ -765,6 +765,7 @@ address {
 
   .carousel-container {
     width: 100%;
+    margin-top: 80px;
     border-radius: 0;
     background-color: var(--col-bg-content-small-display);
     border: none;
@@ -787,6 +788,9 @@ address {
     width: 100%;
   }
 
+  .section-header{
+  font-size: 2rem;
+}
 
 }
 
