@@ -719,7 +719,7 @@ address {
       url('./svg/flower.svg') 5px 5px / 40px 40px no-repeat;
     opacity: 0;
     z-index: 1500;
-    animation: flowerShow 1.75s ease-in forwards;
+    animation: flowerShow 1s ease forwards;
 
   }
 
@@ -755,7 +755,7 @@ address {
     z-index: -1;
     width: 100%;
     max-width: 500px;
-    animation: flowerShow 1s ease-out 1s forwards;
+    animation: flowerShow 1s ease forwards;
   }
 
   #contact-jump {
