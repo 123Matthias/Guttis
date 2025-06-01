@@ -2,6 +2,11 @@
 
 Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO) einfachen Animationen und Dark-Mode.
 
+## Wichtige Dateien
+
+- Die Hauptseite ist `index.html`. Dort sind speziell die SEO relevanten Punkte im `<head>` und die Seitenstruktur ersichtlich. Andere Dinge wie Dark-Mode finden sich im style.css oder lazy-loading im carousel.js.
+
+
 ### SEO
 
 - **Meta-Tags** wie `title` und `description` verbessern die Auffindbarkeit in Suchmaschinen. Der `title`, der `h1`-Header und die `description` sind am wichtigsten für Suchanfragen. Keywords sollten hier enthalten sein, wobei sich **wiederholende Keywords** stärker gewichtet werden. Sind Title und Description korrekt als Meta-Tags gesetzt, werden sie in den Suchergebnissen angezeigt.
