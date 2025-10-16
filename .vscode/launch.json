@@ -5,19 +5,21 @@
     "version": "0.2.0",
     "configurations": [
 
+                {
+            "type": "safari",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        },
+
         {
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
             "name": "Launch index.html",
             "file": "${workspaceFolder}/index.html"
-        },       
-        {
-            "type": "safari",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html"
-        }
+        }     
+
     ]
 }
