@@ -674,9 +674,13 @@ address {
     width: 100%;
     z-index: 900;
     text-shadow: none;
-    background: none;
     animation: none;
-    border-bottom-right-radius: 50px;
+    background: linear-gradient(to bottom right,
+        var(--col-bg-primary) 0%,
+        var(--col-bg-primary) 95%,
+        var(--col-border-primary) 95%,
+        var(--col-border-primary) 100%);
+
   }
 
 
