@@ -39,6 +39,8 @@
     --col-bg-primary: #1e1e1e;
     --col-bg-content: #2a2a2a;
 
+     --background-color-2: #1e1e1e;
+
     --col-border-primary: orangered;
 
     --col-bg-primary-small-display: #1e1e1e;
@@ -697,11 +699,11 @@ address {
     text-shadow: none;
     animation: none;
     background: linear-gradient(to bottom right,
-        var(--col-bg-primary) 0%,
-        var(--col-bg-primary) 95%,
+        var(--background-color-2) 0%,
+        var(--background-color-2) 95%,
         var(--col-border-primary) 95%,
-        var(--col-bg-primary) 96%,
-        var(--col-bg-primary) 100%);
+        var(--background-color-2) 96%,
+        var(--background-color-2) 100%);
 
   }
 
