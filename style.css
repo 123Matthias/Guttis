@@ -9,6 +9,8 @@
   --col-bg-primary: antiquewhite;
   --col-bg-content: antiquewhite;
 
+  --background-color-2: rgb(247, 216, 178);
+
   --col-bg-primary-small-display: snow;
   --col-bg-content-small-display: snow;
 
@@ -69,6 +71,10 @@ body {
 
 }
 
+p {
+  color: var(--col-text);
+}
+
 .section-header {
   margin: var(--margin-top-section) auto 0 auto;
   padding: 5px 15px 5px 15px;
@@ -113,6 +119,10 @@ body {
 
 }
 
+.firstSection {
+  background-color: var(--background-color-2);
+}
+
 
 @media (prefers-color-scheme: dark) {
   .header {
@@ -120,6 +130,11 @@ body {
     background: linear-gradient(135deg, var(--col-bg-primary) 469px, var(--col-border-primary) 470px, var(--col-bg-content) 471px);
     border-bottom: 2px solid orangered;
   }
+
+  .firstSection {
+    background-color: var(--col-bg-primary);
+  }
+
 }
 
 .slogan {
@@ -187,7 +202,7 @@ body {
 
 .content {
   width: 100%;
-  padding: 10px;
+  padding: 50px 10px 50px 10px;
   margin: auto;
   margin-top: calc(var(--margin-top-section) - 60px);
   background-color: var(--col-bg-content);
@@ -246,6 +261,12 @@ body {
   color: blueviolet;
   border-left: 5px solid blueviolet;
   margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.common_h {
+  color: var(--col-text);
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -679,7 +700,8 @@ address {
         var(--col-bg-primary) 0%,
         var(--col-bg-primary) 95%,
         var(--col-border-primary) 95%,
-        var(--col-border-primary) 100%);
+        var(--col-bg-primary) 96%,
+        var(--col-bg-primary) 100%);
 
   }
 
