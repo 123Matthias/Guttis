@@ -667,7 +667,7 @@ address {
 /*------------------- END OF Large Screens -----------------------------  */
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 
   body {
     background-color: var(--col-bg-primary-small-display) !important;
@@ -819,7 +819,7 @@ address {
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
 
   .content {
     background-color: var(--col-bg-content-small-display);
