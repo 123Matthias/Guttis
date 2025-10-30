@@ -77,6 +77,10 @@ p {
   color: var(--col-text);
 }
 
+.footer-card p {
+  color: black;
+}
+
 .section-header {
   margin: var(--margin-top-section) auto 0 auto;
   padding: 5px 15px 5px 15px;
