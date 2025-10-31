@@ -763,7 +763,8 @@ address {
     z-index: 900;
     text-shadow: none;
     animation: none;
-    background: linear-gradient(135deg, rgb(247, 216, 178) 50%, rgb(237, 124, 2) 80%);
+    background: radial-gradient(rgb(247, 216, 178) 40%, rgb(237, 124, 2) 85%);
+
   }
 
   @media(prefers-color-scheme: dark){
