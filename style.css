@@ -39,7 +39,7 @@
     --col-bg-primary: #1e1e1e;
     --col-bg-content: #2a2a2a;
 
-     --background-color-2: #1e1e1e;
+    --background-color-2: #1e1e1e;
 
     --col-border-primary: orangered;
 
@@ -92,6 +92,66 @@ p {
   box-shadow: var(--shiny-shadow-around);
 }
 
+
+
+
+@media(min-width: 768px) {
+
+  .firstSection::before,
+  .firstSection::after {
+    content: "";
+    position: absolute;
+    top: 98%;
+    width: 80px;
+    height: 80px;
+    background-image: url("/svg/Heckenschere.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-100%);
+    z-index: 100;
+  }
+
+
+  .firstSection::after {
+    right: 0;
+  }
+
+  .firstSection::before {
+    left: 0;
+  }
+}
+
+@media(min-width: 992px) {
+
+  .firstSection::after,
+  .firstSection::before {
+    width: 120px;
+    height: 120px;
+  }
+
+}
+
+@media(min-width:1700px) {
+
+  /* Links außerhalb vom Container */
+  .firstSection::before {
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    /* Abstand anpassen */
+  }
+
+  /* Rechts außerhalb (gespiegelt) */
+  .firstSection::after {
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+  }
+}
 
 /*
 .visually-hidden {
@@ -703,14 +763,15 @@ address {
     z-index: 900;
     text-shadow: none;
     animation: none;
-    background: linear-gradient(to bottom right,
-        var(--background-color-2) 0%,
-        var(--background-color-2) 95%,
-        var(--col-border-primary) 95%,
-        var(--background-color-2) 96%,
-        var(--background-color-2) 100%);
-
+    background: linear-gradient(135deg, rgb(247, 216, 178) 50%, rgb(237, 124, 2) 80%);
   }
+
+  @media(prefers-color-scheme: dark){
+      .header {
+      background: linear-gradient(135deg, rgb(0, 0, 0) 50%, rgb(39, 38, 37) 80%);
+      }
+  }
+  
 
 
 
@@ -815,9 +876,6 @@ address {
   }
 }
 
-/*-----------------------END OF MOBIELE VIEW MEDIA QUERY-------------------------------*/
-
-/* ----------------------- MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
 @media (max-width: 992px) {
 
@@ -833,12 +891,10 @@ address {
 
   .section-header {
     font-size: 2rem;
-      background-color: var(--col-bg-content-small-display);
+    background-color: var(--col-bg-content-small-display);
   }
 
 }
-
-/* ----------------------- END OF MOBILE VIEW MEDIA QUERY VERY SMALL DISPLAYS------------------------------*/
 
 
 .datenschutz-content {
