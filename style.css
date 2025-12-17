@@ -11,8 +11,8 @@
 
   --background-color-2: rgb(247, 216, 178);
 
-  --col-bg-primary-small-display: rgb(240, 210, 160);
-  --col-bg-content-small-display: snow;
+  --col-bg-primary-small-display: antiquewhite;
+  --col-bg-content-small-display: antiquewhite;
 
   --col-bg-content-important: rgb(252, 227, 208);
   --col-text: black;
@@ -87,11 +87,10 @@ p {
   width: fit-content;
   color: var(--col-text);
   font-size: 3rem;
-  border: 2px solid var(--col-border-primary);
+  border: 1px solid var(--col-border-primary);
   border-radius: 15px;
   box-shadow: var(--shiny-shadow-around);
 }
-
 
 
 
@@ -348,16 +347,28 @@ ul {
 .content-list {
   width: 88%;
   max-width: 1400px;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 li {
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.25);
   margin: 10px;
-  padding: 15px;
-  border-radius: 10px 35px 10px 35px;
-  transition: all 0.3s ease;
+  padding: 30px 20px 30px 20px;
+  border-radius: 20px 50px 20px 50px;
+  border: 2px solid var(--col-border-primary);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.summer li {
+    border: 2px solid var(--col-summer);
+}
+
+.winter li {
+    border: 2px solid var(--col-winter);
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   li {
@@ -718,6 +729,7 @@ address {
   .content-list {
     width: 68% !important;
     max-width: 1400px;
+    font-size: 1.5rem;
   }
 
 }
@@ -875,10 +887,6 @@ address {
       height: 100vh;
     }
   }
-}
-
-
-@media (max-width: 992px) {
 
   .content {
     background-color: var(--col-bg-content-small-display);
@@ -893,6 +901,9 @@ address {
   .section-header {
     font-size: 2rem;
     background-color: var(--col-bg-content-small-display);
+  }
+  .firstSection{
+    background-color: var(--background-color-2);
   }
 
 }
