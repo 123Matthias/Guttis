@@ -1,38 +1,4 @@
-/* CSS color variablen */
-:root {
-  --col-winter: rgb(34, 168, 251);
-  --col-summer: green;
-  --alpha-rainbow: 0.15;
-
-  --col-border-primary: black;
-
-  --col-bg-primary: antiquewhite;
-  --col-bg-content: antiquewhite;
-
-  --col-bg-primary-small-display: antiquewhite;
-  --col-bg-content-small-display: antiquewhite;
-
-  --background-text: rgba(255, 255, 255, 0.25);
-
-  --col-bg-content-important: rgb(252, 227, 208);
-  --col-text: black;
-
-  --col-link: dodgerblue;
-  --col-link-hover: darkblue;
-  --col-link-visited: mediumvioletred;
-
-  --margin-top-section: 150px;
-
-  --shiny-shadow: 0 5px 5px rgba(0, 0, 0, 0.3),
-    0 8px 8px rgba(0, 0, 0, 0.1),
-    0 10px 10px rgba(0, 0, 0, 0.05);
-
-  --shiny-shadow-around: 0 0 10px rgba(0, 0, 0, 0.4),
-    0 0 13px rgba(0, 0, 0, 0.2),
-    0 0 16px rgba(0, 0, 0, 0.1);
-
-
-}
+@import url(./root.css);
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -275,6 +241,32 @@ p {
   background-position: bottom 360px right, bottom right;
   background-repeat: no-repeat;
   background-size: 15% auto, 15% auto;
+}
+
+.galerie-link {
+  color: var(--col-link);
+  text-decoration: none;
+  font-weight: bold;
+  background: var(--col-bg-primary);
+  font-size: 25px;
+  border: 1px solid var(--col-border-primary);
+  border-radius: 5px;
+  box-shadow: var(--shiny-shadow-around);
+  padding: 15px;
+  z-index: 1000px;
+  display: inline-block;
+  margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.galerie-link:hover {
+  color: var(--col-link-hover);
+  z-index: 1000px;
+  display: inline-block;
+  margin-top: 30px;
+  z-index: 1000px;
+  transform: translateY(-10px) !important;
+
 }
 
 .carousel-container {
@@ -963,3 +955,5 @@ address {
     border: 1px solid #555;
   }
 }
+
+

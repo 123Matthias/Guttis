@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie – Gutti's Hausmeisterservice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Galerie – Eindrücke aus unserer Arbeit bei Gutti's Hausmeisterservice">
+
+  <link rel="stylesheet" href="galerie.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <a href="index.html" class="back-link">
+    <i class="fa-solid fa-arrow-left"></i> Zurück zur Startseite
+  </a>
+<header class="gallery-header">
+  <h1>🍃 Unsere Galerie 🍃</h1>
+  <p>Echte Eindrücke aus unserer täglichen Arbeit</p>
+</header>
+
+<main>
+  <section class="gallery-grid" id="galleryGrid">
+    <!-- Bilder werden per JS automatisch eingefügt -->
+    <noscript>
+      <p>Bitte JavaScript aktivieren, um die Galerie zu sehen.</p>
+    </noscript>
+  </section>
+</main>
+
+<!-- Floating Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightboxImg" alt="">
+</div>
+
+<script src="galerie.js"></script>
+</body>
+</html>
