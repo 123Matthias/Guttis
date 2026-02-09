@@ -41,7 +41,7 @@ body {
 /* Masonry Grid mit Grid statt Columns */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 30px 30px 30px 30px; /* oben + unten + seitlich */
   background: var(--col-bg-content);
