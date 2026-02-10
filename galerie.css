@@ -16,23 +16,30 @@ body {
 }
 
 .back-link {
-  display: inline-block;
-  position: sticky;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 15px;
+  position: fixed;
+  top: 25px;
+  left: 35px;
+
+  font-size: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
   color: var(--col-link);
   text-decoration: none;
-  font-weight: bold;
+
   background: var(--col-bg-content);
-  font-size: 25px;
   border: 1px solid var(--col-border-primary);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: var(--shiny-shadow-around);
-  padding: 15px;
+
   z-index: 1000;
 }
+
 
 .back-link:hover {
   color: var(--col-link-hover);
@@ -92,6 +99,10 @@ body {
   top: 25px;
   right: 30px;
   font-size: 40px;
-  color: white;
+  color: var(--col-text);
   cursor: pointer;
+}
+
+.lightbox-close:hover {
+  color: var(--col-link-hover);
 }
