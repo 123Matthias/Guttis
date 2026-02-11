@@ -1,32 +1,6 @@
 @import url(./root.css);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --col-bg-primary: #1e1e1e;
-    --col-bg-content: #2a2a2a;
 
-    --col-border-primary: orangered;
-
-    --col-bg-primary-small-display: #1e1e1e;
-    --col-bg-content-small-display: #2a2a2a;
-
-    --background-text: rgba(38, 38, 38, 0.25);
-
-    --col-bg-content-important: rgb(45, 30, 30);
-    --col-text: rgb(224, 224, 224);
-    --col-link: rgb(210, 210, 255);
-    --col-link-hover: salmon;
-    --col-link-visited: lightsalmon;
-
-    --shiny-shadow: 0 5px 5px rgba(255, 68, 0, 0.3),
-      0 8px 8px rgba(255, 68, 0, 0.1),
-      0 10px 10px rgba(255, 68, 0, 0.05);
-    --shiny-shadow-around: 0 0 10px rgba(255, 68, 0, 0.4),
-      0 0 13px rgba(255, 68, 0, 0.2),
-      0 0 16px rgba(255, 68, 0, 0.1);
-
-  }
-}
 
 html {
   scroll-behavior: smooth;
@@ -38,7 +12,6 @@ body {
   cursor: url('./Heckenschere_cursor.png'), auto;
 
 }
-
 
 p {
   color: var(--col-text);
@@ -120,20 +93,6 @@ p {
   }
 }
 
-/*
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
-*/
-
 .header {
   display: flex;
   align-items: center;
@@ -161,7 +120,7 @@ p {
 @media (prefers-color-scheme: dark) {
   .header {
     color: var(--col-text);
-    background: linear-gradient(135deg, var(--col-bg-primary) 469px, var(--col-border-primary) 470px, var(--col-bg-content) 471px);
+    background: linear-gradient(135deg, var(--col-bg-primary) 469px, var(--col-border-primary) 470px, var(--col-bg-primary) 471px);
     border-bottom: 2px solid orangered;
   }
 
@@ -237,7 +196,6 @@ p {
   margin-top: calc(var(--margin-top-section) - 60px);
   background-color: var(--col-bg-content);
   color: var(--col-text);
-  background-image: url('./images/Rosenranke.png'), url('./images/Schneeschaufel.png');
   background-position: bottom 360px right, bottom right;
   background-repeat: no-repeat;
   background-size: 15% auto, 15% auto;
@@ -300,24 +258,24 @@ p {
 }
 
 .content-header {
-  padding-left: 10px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
   font-weight: 600;
 }
 
 
 .summer_h {
   color: rgb(195, 52, 0);
-  border-left: 5px solid rgb(195, 52, 0);
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .winter_h {
   color: blueviolet;
-  border-left: 5px solid blueviolet;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .common_h {
@@ -326,90 +284,61 @@ p {
   margin-bottom: 30px;
 }
 
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0 5px 0 5px;
-  width: 100%;
-  max-width: 1000px;
-}
-
 .content-list {
-  width: 88%;
-  max-width: 1400px;
-  font-size: 1.3rem;
-  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  margin: 40px auto 80px auto;
 }
 
-li {
-  background-color: var(--background-text);
-  margin: 12px 0;
-  padding: 22px 24px;
-  border-radius: 12px;
-  border: 1px solid color-mix(in srgb, var(--col-border-primary) 60%, transparent);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .2),
-    0 -5px 10px rgba(0, 0, 0, .15),
-    5px 0 10px rgba(0, 0, 0, .15),
-    -5px 0 10px rgba(0, 0, 0, .15);
-  border-left: 5px solid var(--col-border-primary);
-
-
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  background: var(--background-text);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shiny-shadow-around);
+  transition: all 0.35s ease;
 }
 
-.summer li {
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 22px;
+  margin: 0;
+  border-bottom: 2px solid var(--col-border-primary);
+}
+
+.card img {
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  flex-grow: 1;
+}
+
+/* Saison-Farben */
+
+.summer .card {
   border: 2px solid var(--col-summer);
+
 }
 
-.winter li {
+.summer .card h3 {
+  background-color: var(--background-card-color-summer);
+}
+
+.winter .card {
   border: 2px solid var(--col-winter);
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-  li {
-    background-color: rgba(60, 60, 60, 0.45);
-  }
+.winter .card h3 {
+  background-color: var(--background-card-color-winter);
 }
 
-.winter li {
-  border-left: 5px solid var(--col-winter);
-}
-
-.summer li {
-  border-left: 5px solid var(--col-summer);
-}
-
-@media (prefers-color-scheme: dark) {
-  .summer li {
-    color: var(--col-text);
-  }
-}
-
-/*
-.summer li:hover {
-  background-color: lightseagreen;
-  transform: translateX(5px);
-}
-
-.winter li:hover {
-  background-color: cornflowerblue;
-  transform: translateX(5px);
-}
-
-@media (prefers-color-scheme: dark) {
-  .summer li:hover {
-    background-color: rgb(20, 59, 37);
-    transform: translateX(5px);
-  }
-
-  .winter li:hover {
-    background-color: rgb(28, 42, 68);
-    transform: translateX(5px);
-  }
-}
-*/
 
 .footer {
   display: flex;
@@ -713,27 +642,11 @@ address {
     font-size: 3.2rem;
   }
 
-  .content {
-    background-image: url('./images/background-content.png');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 30% auto;
-    background-clip: padding-box;
-    background-color: var(--col-bg-content);
-  }
-
-  .content-list {
-    width: 68% !important;
-    max-width: 1400px;
-    font-size: 1.5rem;
-  }
-
 }
 
-
-
 /*------------------- END OF Large Screens -----------------------------  */
+
+
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
 @media (max-width: 992px) {
@@ -761,28 +674,29 @@ address {
     margin-bottom: 5px;
   }
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px;
-    height: 50vh;
-    width: 100%;
-    z-index: 900;
-    text-shadow: none;
-    animation: none;
-    background:
-      linear-gradient(135deg,
-        rgba(255, 255, 255, 0) 70%,
-        rgba(255, 112, 22, 1) 70%)
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  height: 50vh;
+  width: 100%;
+  z-index: 900;
+  text-shadow: none;
+  animation: none;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 112, 22, 1) 70%);
+}
 
-  @media(prefers-color-scheme: dark) {
-    .header {
-      background: linear-gradient(135deg, rgb(0, 0, 0) 50%, rgb(39, 38, 37) 80%);
-    }
+@media (prefers-color-scheme: dark) {
+  .header {
+    background: linear-gradient(135deg, rgb(0, 0, 0) 50%, rgb(39, 38, 37) 80%);
   }
+}
+
+
   .scrolled .header {
     -webkit-mask-image: none !important;
     mask-image: none !important;
@@ -852,10 +766,6 @@ address {
     display: none !important;
   }
 
-  ul {
-    padding: 0 !important;
-    width: 100%;
-  }
 
   .content-list {
     padding: 5px;
@@ -953,5 +863,3 @@ address {
     border: 1px solid #555;
   }
 }
-
-

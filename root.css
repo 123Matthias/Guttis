@@ -12,7 +12,7 @@
   --col-bg-primary-small-display: antiquewhite;
   --col-bg-content-small-display: antiquewhite;
 
-  --background-text: rgba(255, 255, 255, 0.25);
+  --background-text: rgba(255, 255, 255, 0.50);
 
   --col-bg-content-important: rgb(252, 227, 208);
   --col-text: black;
@@ -20,6 +20,9 @@
   --col-link: dodgerblue;
   --col-link-hover: darkblue;
   --col-link-visited: mediumvioletred;
+
+  --background-card-color-summer: rgba(0, 91, 9, 0.5);
+  --background-card-color-winter: rgba(34, 168, 251, 0.5);
 
   --margin-top-section: 150px;
 
@@ -38,6 +41,11 @@
   :root {
     --col-bg-primary: #1e1e1e;
     --col-bg-content: #2a2a2a;
+
+
+    --col-winter: orangered;
+    --col-summer: orangered;
+
 
     --col-border-primary: orangered;
 
@@ -58,6 +66,10 @@
     --shiny-shadow-around: 0 0 10px rgba(255, 68, 0, 0.4),
       0 0 13px rgba(255, 68, 0, 0.2),
       0 0 16px rgba(255, 68, 0, 0.1);
+
+    --background-card-color-summer: rgba(0, 93, 9, 0.5);
+    --background-card-color-winter: rgba(2, 86, 138, 0.5);
+
 
   }
 }
