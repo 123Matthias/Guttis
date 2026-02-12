@@ -116,7 +116,20 @@ li {
   position: relative;
   height: 300px;
   width: 100%;
-  background: linear-gradient(135deg, rgb(247, 216, 178) 470px, rgb(237, 124, 2) 470px);
+  /* cooler Hintergrund */
+  background: linear-gradient(
+    135deg,
+    /* Heller Bereich links oben für Logo */
+    rgb(247, 216, 178) 0px,
+    rgb(247, 216, 178) 470px,
+    /* orangener Streifen 150px breit */
+    rgb(0,0,0) 470px,
+    rgb(0, 0, 0) 471px,
+    /* dunkler Hintergrund */
+    rgb(76, 76, 76) 472px,
+    rgb(44, 48, 48) 70%,
+    rgb(0, 0, 0) 100%
+  );
   color: white;
   text-shadow:
     0px 0px 5px #000000,
@@ -657,7 +670,7 @@ address {
 .card-icon i {
   color: var(--col-link);
   transition:
-    color 4s ease 0s,
+    color 2s ease 0s,
     text-shadow 4s ease 2s,
     transform 1s ease;
   transform-origin: bottom center;
@@ -666,42 +679,13 @@ address {
     0 0 8px black;
 }
 
-@keyframes flicker {
-
-  0%,
-  100% {
-    text-shadow:
-      0 0px 6px rgb(255, 255, 255),
-      0 0px 8px rgb(246, 165, 107),
-      0 0px 10px rgb(245, 123, 123);
-  }
-
-  50% {
-    text-shadow:
-      0 0px 4px rgb(255, 255, 255),
-      0 0px 6px rgb(246, 165, 107),
-      0 0px 12px rgb(251, 247, 217);
-  }
+.card-icon span {
+  color: var(--col-link);
 }
-
 
 .card-icon:hover i {
-  color: rgb(255, 230, 120);
   transform: scale(1.2);
-  text-shadow: 0 0px 6px rgb(255, 255, 255),
-    0 0px 8px rgb(246, 165, 107),
-    0 0px 10px rgb(245, 123, 123);
-  ;
-  animation: flicker 2s infinite alternate;
 }
-
-
-.card-icon span {
-  text-shadow: 0 0 3px black,
-    0 0 8px black;
-}
-
-
 
 @keyframes cardAppearing {
   to {
