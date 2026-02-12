@@ -117,7 +117,8 @@ li {
   height: 300px;
   width: 100%;
   /* cooler Hintergrund */
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     135deg,
     /* Heller Bereich links oben für Logo */
     rgb(247, 216, 178) 0px,
@@ -126,8 +127,7 @@ li {
     rgb(0,0,0) 470px,
     rgb(0, 0, 0) 471px,
     /* dunkler Hintergrund */
-    rgb(76, 76, 76) 472px,
-    rgb(44, 48, 48) 70%,
+    rgb(40, 40, 40) 472px,
     rgb(0, 0, 0) 100%
   );
   color: white;
@@ -137,7 +137,6 @@ li {
   animation: slideInWithTail 1.75s ease-out forwards;
   border-bottom: 2px solid var(--col-border-primary);
   box-shadow: var(--shiny-shadow);
-
 }
 
 .firstSection {
