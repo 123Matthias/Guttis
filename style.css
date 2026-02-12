@@ -17,6 +17,22 @@ p {
   color: var(--col-text);
 }
 
+a {
+  color: var(--col-link);
+}
+
+a:hover {
+  color: var(--col-link-hover);
+}
+
+a:visited {
+  color: var(--col-link-visited);
+}
+
+li {
+  color: var(--col-text);
+}
+
 .footer-card p {
   color: black;
 }
@@ -353,7 +369,7 @@ p {
 @media (prefers-color-scheme: dark) {
 
   .footer-card,
-  .hidden-link {
+  .save-link {
     filter: invert(100%);
   }
 
@@ -382,16 +398,17 @@ p {
   }
 }
 
+/* === Footer Card === */
 .footer-card {
-  text-shadow:
-    0 0 3px #ffffff,
-    0 0 6px #6cc7ff;
   position: relative;
   text-align: left;
-  padding: 0pt;
+  padding: 0;
   margin-top: 30px;
   width: 95%;
   max-width: 430px;
+  overflow: visible;
+
+  /* Background: benutze vorhandene Root-Variablen oder fallback */
   background:
     repeating-linear-gradient(135deg,
       rgba(255, 128, 64, 0.3) 0,
@@ -406,42 +423,41 @@ p {
     linear-gradient(to bottom left,
       rgb(251, 165, 122) 0%,
       #fff5eb 60%);
-  border-left: 4px solid orangered;
-  border-right: 4px solid orangered;
-  border-top: 1px solid orangered;
-  border-bottom: 1px solid orangered;
+
+  border-left: 4px solid var(--col-border-primary, orangered);
+  border-right: 4px solid var(--col-border-primary, orangered);
+  border-top: 1px solid var(--col-border-primary, orangered);
+  border-bottom: 1px solid var(--col-border-primary, orangered);
+
+
   opacity: 0;
   transform: translateY(40px) rotate(-8deg);
   transition: opacity 1.5s ease-out, transform 3s ease-out;
-  overflow: visible;
+  will-change: transform;
 }
 
+/* Sichtbar machen */
+.footer-card.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(-3deg);
+}
 
-
-
+/* Pseudo-Elemente */
 .footer-card::before {
   content: "";
   width: 300px;
   height: 300px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: -100px;
   background-image: url('./images/hand.PNG');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
   transform: translateY(40px) scale(1);
-  /* <- hier Handposition & Größe einstellen */
   transition: opacity 3s ease-out 3s, transform 3s ease-out;
   pointer-events: none;
   z-index: 1500;
-
-}
-
-.footer-card.visible {
-  opacity: 1;
-  content: none;
-  transform: translateY(0) rotate(-3deg);
 }
 
 .footer-card.visible::before {
@@ -462,22 +478,116 @@ p {
   background-repeat: no-repeat;
 }
 
-
-.hidden-link {
-  opacity: 0;
-  color: rgb(255, 0, 89) !important;
-  transform: translateY(40px);
-  font-size: 1.25rem;
-  transition: opacity 2s ease-out, transform 4s ease-out;
+/* Überschrift */
+.footer-card h3 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  font-variant: small-caps;
   font-style: italic;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  padding: 8pt 0 5pt 5pt;
+  text-align: left;
+  line-height: 1;
+  border-left: 10px solid var(--col-border-primary, orangered);
+  color: var(--col-text);
 }
 
-.hidden-link.visible {
+
+.footer-card address p {
+  color: var(--col-text, black);
+  padding-left: 50px;
+}
+
+.tel {
+  color: var(--col-link, dodgerblue);
+  font-weight: bold;
+}
+
+.email {
+  color: var(--col-link, darkgreen);
+  font-weight: bold;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .footer-card {
+    background:
+      repeating-linear-gradient(135deg,
+        darkslategray 0,
+        darkslategray 1px,
+        transparent 2px,
+        transparent 20px),
+      repeating-linear-gradient(45deg,
+        darkslategray 0,
+        darkslategray 1px,
+        transparent 2px,
+        transparent 20px),
+      var(--col-bg-content, #2a2a2a);
+  }
+
+  .footer-card h3 {
+    color: var(--col-text, rgb(224, 224, 224));
+  }
+
+  .footer-card p,
+  .footer-card address p {
+    color: var(--col-text, rgb(224, 224, 224));
+  }
+
+  .footer-card a.tel,
+  .footer-card a.email {
+    color: var(--col-link, rgb(210, 210, 255));
+  }
+}
+
+
+
+
+.save-link {
+  display: inline-block;           
+  padding: 0.6rem 1.2rem;          
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: bold;
+  margin: 20px 0;
+  text-decoration: none;          
+  text-align: center;
+  color: var(--col-link);                    
+  background-color: var(--col-bg-primary); /* Standard Light Mode */
+  border: 1px solid var(--col-border-primary); 
+  border-radius: 8px;                
+  cursor: pointer;
+
+  /* Animation + Hover-Transition zusammen */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 
+    opacity 2s ease-out, 
+    transform 4s ease-out,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: var(--shiny-shadow-around);
+}
+
+.save-link.visible {
   opacity: 1;
   transform: translateY(0);
+}
 
+
+.save-link:hover {
+  color: var(--col-link-hover); 
+}
+
+.save-link:active {
+  transform: translateY(1px);
+}
+
+/* Focus */
+.save-link:focus {
+  outline: 2px solid var(--col-link, #2C4E70);
+  outline-offset: 2px;
 }
 
 
@@ -515,7 +625,10 @@ p {
   font-weight: bold;
   font-size: 0.9rem;
   margin-bottom: 4px;
+  color: var(--col-text, black);
+  padding-left: 20px;
 }
+
 
 address {
   color: #000000;
@@ -674,27 +787,27 @@ address {
     margin-bottom: 5px;
   }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  height: 50vh;
-  width: 100%;
-  z-index: 900;
-  text-shadow: none;
-  animation: none;
-  background: linear-gradient(135deg,
-    rgba(255, 255, 255, 0) 70%,
-    rgba(255, 112, 22, 1) 70%);
-}
-
-@media (prefers-color-scheme: dark) {
   .header {
-    background: linear-gradient(135deg, rgb(0, 0, 0) 50%, rgb(39, 38, 37) 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    height: 50vh;
+    width: 100%;
+    z-index: 900;
+    text-shadow: none;
+    animation: none;
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0) 70%,
+        rgba(255, 112, 22, 1) 70%);
   }
-}
+
+  @media (prefers-color-scheme: dark) {
+    .header {
+      background: linear-gradient(135deg, rgb(0, 0, 0) 50%, rgb(39, 38, 37) 80%);
+    }
+  }
 
 
   .scrolled .header {
