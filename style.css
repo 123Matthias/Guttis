@@ -124,16 +124,13 @@ li {
     rgb(247, 216, 178) 0px,
     rgb(247, 216, 178) 470px,
     /* orangener Streifen 150px breit */
-    rgb(0,0,0) 470px,
+    rgb(0, 0, 0) 470px,
     rgb(0, 0, 0) 471px,
     /* dunkler Hintergrund */
-    rgb(40, 40, 40) 472px,
-    rgb(0, 0, 0) 100%
+    antiquewhite 472px,
+    antiquewhite 100%
   );
-  color: white;
-  text-shadow:
-    0px 0px 5px #000000,
-    0px 0px 10px #000000;
+  color: var(--col-text);
   animation: slideInWithTail 1.75s ease-out forwards;
   border-bottom: 2px solid var(--col-border-primary);
   box-shadow: var(--shiny-shadow);
