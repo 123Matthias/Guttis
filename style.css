@@ -42,7 +42,8 @@ li {
   margin: auto;
   width: fit-content;
   color: var(--col-text);
-  font-size: 3rem;
+  font-size: 2.7rem;
+  font-weight: 600;
   border: 1px solid var(--col-border-primary);
   border-radius: 15px;
   box-shadow: var(--shiny-shadow-around);
@@ -117,19 +118,17 @@ li {
   height: 300px;
   width: 100%;
   /* cooler Hintergrund */
-  background: 
-    linear-gradient(
-    135deg,
-    /* Heller Bereich links oben für Logo */
-    rgb(247, 216, 178) 0px,
-    rgb(247, 216, 178) 470px,
-    /* orangener Streifen 150px breit */
-    rgb(0, 0, 0) 470px,
-    rgb(0, 0, 0) 471px,
-    /* dunkler Hintergrund */
-    antiquewhite 472px,
-    antiquewhite 100%
-  );
+  background:
+    linear-gradient(135deg,
+      /* Heller Bereich links oben für Logo */
+      rgb(247, 216, 178) 0px,
+      rgb(247, 216, 178) 470px,
+      /* orangener Streifen 150px breit */
+      rgb(0, 0, 0) 470px,
+      rgb(0, 0, 0) 471px,
+      /* dunkler Hintergrund */
+      antiquewhite 472px,
+      antiquewhite 100%);
   color: var(--col-text);
   animation: slideInWithTail 1.75s ease-out forwards;
   border-bottom: 2px solid var(--col-border-primary);
@@ -292,16 +291,26 @@ li {
 
 .summer_h {
   color: rgb(195, 52, 0);
+  margin-top: 150px;
   margin-bottom: 30px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .winter_h {
   color: blueviolet;
   margin-top: 150px;
   margin-bottom: 30px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
+
+.ganzjährig_h {
+  color: var(--col-text);
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+
 
 .common_h {
   color: var(--col-text);
@@ -553,25 +562,26 @@ li {
 
 
 .save-link {
-  display: inline-block;           
-  padding: 0.6rem 1.2rem;          
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
   font-size: 1.25rem;
   font-style: italic;
   font-weight: bold;
   margin: 20px 0;
-  text-decoration: none;          
+  text-decoration: none;
   text-align: center;
-  color: var(--col-link);                    
-  background-color: var(--col-bg-primary); /* Standard Light Mode */
-  border: 1px solid var(--col-border-primary); 
-  border-radius: 8px;                
+  color: var(--col-link);
+  background-color: var(--col-bg-primary);
+  /* Standard Light Mode */
+  border: 1px solid var(--col-border-primary);
+  border-radius: 8px;
   cursor: pointer;
 
   /* Animation + Hover-Transition zusammen */
   opacity: 0;
   transform: translateY(40px);
-  transition: 
-    opacity 2s ease-out, 
+  transition:
+    opacity 2s ease-out,
     transform 4s ease-out,
     background-color 0.3s ease,
     color 0.3s ease,
@@ -586,7 +596,7 @@ li {
 
 
 .save-link:hover {
-  color: var(--col-link-hover); 
+  color: var(--col-link-hover);
 }
 
 .save-link:active {
