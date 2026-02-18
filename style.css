@@ -50,6 +50,9 @@ li {
   background-color: var(--background-text);
 }
 
+.preisangabe {
+  color: var(--text-color-preisangabe);
+}
 
 
 @media(min-width: 768px) {
@@ -381,6 +384,7 @@ li {
 .winter .card h3 {
   background-color: var(--background-card-color-winter);
 }
+
 
 
 .footer {

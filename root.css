@@ -39,6 +39,8 @@
     0 0 13px rgba(0, 0, 0, 0.2),
     0 0 16px rgba(0, 0, 0, 0.1);
 
+  --text-color-preisangabe: rgb(0, 128, 0);
+
 
 }
 
@@ -75,8 +77,8 @@
 
     --background-card-color-summer: rgba(0, 93, 9, 0.5);
     --background-card-color-winter: rgba(2, 86, 138, 0.5);
-      --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
+    --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
 
-
+    --text-color-preisangabe: rgb(0, 180, 0);
   }
 }
