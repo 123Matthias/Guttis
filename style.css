@@ -357,12 +357,12 @@ li {
 /* Saison-Farben */
 
 .ganzjährig .card {
-  border: 2px solid orange;
+  border: 2px solid var(--col-ganzjährig);
 
 }
 
 .ganzjährig .card h3 {
-  background-color: lightyellow;
+  background-color: var(--background-card-color-ganzjährig);
 }
 
 .summer .card {

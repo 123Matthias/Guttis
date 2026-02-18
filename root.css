@@ -3,7 +3,10 @@
 
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
+  --col-ganzjährig: black;
   --alpha-rainbow: 0.15;
+
+
 
   --col-border-primary: black;
 
@@ -24,6 +27,7 @@
 
   --background-card-color-summer: rgba(0, 91, 9, 0.5);
   --background-card-color-winter: rgba(34, 168, 251, 0.5);
+  --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
 
   --margin-top-section: 150px;
 
@@ -46,6 +50,7 @@
 
     --col-winter: orangered;
     --col-summer: orangered;
+    --col-ganzjährig: orangered;
 
 
     --col-border-primary: orangered;
@@ -70,6 +75,7 @@
 
     --background-card-color-summer: rgba(0, 93, 9, 0.5);
     --background-card-color-winter: rgba(2, 86, 138, 0.5);
+      --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
 
 
   }
