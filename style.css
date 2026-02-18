@@ -356,6 +356,15 @@ li {
 
 /* Saison-Farben */
 
+.ganzjährig .card {
+  border: 2px solid orange;
+
+}
+
+.ganzjährig .card h3 {
+  background-color: lightyellow;
+}
+
 .summer .card {
   border: 2px solid var(--col-summer);
 
