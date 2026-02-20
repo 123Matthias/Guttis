@@ -1,5 +1,5 @@
 const imageFolder = "images/carousel/";
-const imageCount = 38; // <-- Anzahl deiner Bilder
+const imageCount = 40; // <-- Anzahl deiner Bilder
 
 const galleryGrid = document.getElementById("galleryGrid");
 const lightbox = document.getElementById("lightbox");
