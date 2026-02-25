@@ -148,7 +148,7 @@ li {
   .header {
     color: var(--col-text);
     background: linear-gradient(135deg, var(--col-bg-primary) 469px, var(--col-border-primary) 470px, var(--col-bg-primary) 471px);
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid var(--shiny-shadow);
   }
 
 }
@@ -245,11 +245,8 @@ li {
 }
 
 .galerie-link:hover {
-  color: var(--col-link-hover);
-  z-index: 1000px;
-  display: inline-block;
-  margin-top: 30px;
-  z-index: 1000px;
+  color: var(--col-text-hover);
+  background: var(--background-text-hover);
 }
 
 .carousel-container {

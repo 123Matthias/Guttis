@@ -17,9 +17,12 @@
   --col-bg-content-small-display: antiquewhite;
 
   --background-text: rgba(255, 255, 255, 0.50);
+  --background-text-hover: black;
+
 
   --col-bg-content-important: rgb(252, 227, 208);
   --col-text: black;
+  --col-text-hover: white;
 
   --col-link: dodgerblue;
   --col-link-hover: darkblue;
@@ -50,30 +53,32 @@
     --col-bg-content: #2a2a2a;
 
 
-    --col-winter: orangered;
-    --col-summer: orangered;
-    --col-ganzjährig: orangered;
+    --col-winter: white;
+    --col-summer: white;
+    --col-ganzjährig: white;
 
 
-    --col-border-primary: orangered;
+    --col-border-primary: rgb(255, 255, 255);
 
     --col-bg-primary-small-display: #1e1e1e;
     --col-bg-content-small-display: #2a2a2a;
 
     --background-text: rgba(38, 38, 38, 0.25);
+    --background-text-hover: white;
 
     --col-bg-content-important: rgb(45, 30, 30);
-    --col-text: rgb(224, 224, 224);
+    --col-text: rgb(255, 255, 255);
+    --col-text-hover: black;
     --col-link: rgb(210, 210, 255);
     --col-link-hover: salmon;
     --col-link-visited: lightsalmon;
 
-    --shiny-shadow: 0 5px 5px rgba(255, 68, 0, 0.3),
-      0 8px 8px rgba(255, 68, 0, 0.1),
-      0 10px 10px rgba(255, 68, 0, 0.05);
-    --shiny-shadow-around: 0 0 10px rgba(255, 68, 0, 0.4),
-      0 0 13px rgba(255, 68, 0, 0.2),
-      0 0 16px rgba(255, 68, 0, 0.1);
+    --shiny-shadow: 0 5px 5px rgba(217, 217, 217, 0.3),
+      0 8px 8px rgba(136, 136, 136, 0.1),
+      0 10px 10px rgba(43, 43, 43, 0.05);
+    --shiny-shadow-around: 0 0 10px rgba(183, 183, 183, 0.4),
+      0 0 13px rgba(111, 111, 111, 0.2),
+      0 0 16px rgba(163, 163, 163, 0.1);
 
     --background-card-color-summer: rgba(0, 93, 9, 0.5);
     --background-card-color-winter: rgba(2, 86, 138, 0.5);
