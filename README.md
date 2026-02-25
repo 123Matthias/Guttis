@@ -1,14 +1,16 @@
-# Willkommen bei Gutti's Hausmeisterservice
-
-Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO) einfachen Animationen und Dark-Mode.
+# Gutti's Hausmeisterservice
+statische Website (html, css, js), Suchmaschinenoptimierung (SEO), einfachen Animationen, Dark-Mode, ([link-zur-website](https://guttis-hausmeisterservice.at)).
 
 ## Wichtige Dateien
-
 - Die Hauptseite ist `index.html`. Dort sind speziell die SEO relevanten Punkte im `<head>` und die Seitenstruktur ersichtlich. Andere Dinge wie Dark-Mode finden sich im style.css oder lazy-loading im carousel.js.
 
+## Inhaltsverzeichnis
+- [SEO](#seo)
+- [Weitere Features](#weitere-features)
+- [Link zur Website](#link-zur-website)
+- [Zusammenfassung](#zusammenfassung)
 
-### SEO
-
+## SEO
 - **Meta-Tags** wie `title` und `description` verbessern die Auffindbarkeit in Suchmaschinen. Der `title`, der `h1`-Header und die `description` sind am wichtigsten für Suchanfragen. Keywords sollten hier enthalten sein, wobei sich **wiederholende Keywords** stärker gewichtet werden. Sind Title und Description korrekt als Meta-Tags gesetzt, werden sie in den Suchergebnissen angezeigt.
 
 - Eine **Sitemap** hilft Suchmaschinen, den Aufbau der Website zu verstehen. Sie sollte mindestens bei der [Google Search Console](https://search.google.com/search-console/about) und dem [Bing Webmaster Tool](https://www.bing.com/webmasters) eingereicht werden.  
@@ -39,8 +41,7 @@ Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO) einfachen 
 - Auch die **Struktur der Website** spielt eine große Rolle. HTML-Tags wie `<main>`, `<section>`, `<article>`, `<header>`, `<footer>`, `<h1>`, `<h2>` usw. sollten sinnvoll eingesetzt werden, damit Crawler die Website schneller verstehen.
 
 
-### Weitere Features
-
+## Weitere Features
 - **Responsive Design**, vollständig eigenständig umgesetzt. Obwohl Bootstrap eingebunden ist, wurde es für das Responsive Design nicht verwendet. Bootstrap könnte sogar entfernt werden, da es kaum genutzt wird.
 
 - **Dark Mode**, der im CSS mit Media Queries sehr leicht umsetzbar ist. CSS-Variablen und Filter-Attribute vereinfachen das zusätzlich.
@@ -51,15 +52,15 @@ Gutti's ist eine statische Website mit Suchmaschinenoptimierung (SEO) einfachen 
 
 - Eine **.vcf-Datei** ermöglicht ein schnelles Speichern des Kontakts auf jedem Gerät.
 
-> Die Kombination all dieser Punkte beeinflusst das Ranking bei den Crawler-Programmen und damit das Suchergebnis.  
-> Ein 301-Redirect auf die HTTPS-Seite in einer `.htaccess`-Datei oder auf andere Weise muss eingerichtet werden.  
-> Dasselbe gilt für die Weiterleitung der `www`-Subdomain auf die Hauptdomain — in diesem Fall also von  
-> `https://www.guttis-hausmeisterservice.at` per 301-Redirect auf  
-> `https://guttis-hausmeisterservice.at`.  
->
-> Auf dieser Website wurde das mit dem CDN von Cloudflare umgesetzt. Cloudflare arbeitet hier als Proxy, der alles zwischenspeichert, auch HTML, durch selbst eingetragene Regeln. Außerdem sind dort HTTPS-only und der angesprochene Redirect konfiguriert.
+
+## Zusammenfassung
+Alle Punkte beeinflussen das Ranking bei den Crawler-Programmen und damit das Suchergebnis.  
+Ein 301-Redirect auf die HTTPS-Seite in einer `.htaccess`-Datei oder auf andere Weise muss eingerichtet werden.  
+Dasselbe gilt für die Weiterleitung der `www`-Subdomain auf die Hauptdomain — in diesem Fall also von  
+`https://www.guttis-hausmeisterservice.at` per 301-Redirect auf  
+`https://guttis-hausmeisterservice.at`.  
+Auf dieser Website wurde das mit dem CDN von Cloudflare umgesetzt. Cloudflare arbeitet hier als Proxy, der alles zwischenspeichert, auch HTML, durch selbst eingetragene Regeln. Außerdem sind dort HTTPS-only und der angesprochene   Redirect konfiguriert.
 
 ## Link zur Website
-
 [https://guttis-hausmeisterservice.at](https://guttis-hausmeisterservice.at)
 
