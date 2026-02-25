@@ -755,17 +755,29 @@ address {
 
 /*-------------------Large Screens -----------------------------  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
 
   .slogan {
     font-size: 3.2rem;
   }
 
+  .carousel-container{
+    width: 50%;
+    height: 60vh;
+  }
+
 }
 
 /*------------------- END OF Large Screens -----------------------------  */
 
+
+@media (max-width: 1100px){
+   .carousel-container{
+    width: 90%;
+    height: 66vh;
+  }
+}
 
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
