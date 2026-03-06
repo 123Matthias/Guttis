@@ -59,6 +59,41 @@ li {
 
 }
 
+/*------------------- Geldschein -------------------------------------------------------*/
+.section-content-preis {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.25) 0%, transparent 40%),
+    repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(0, 0, 0, 0.02) 2px,
+      rgba(0, 0, 0, 0.02) 4px),
+    linear-gradient(to bottom,
+      rgba(184, 230, 163, 0.3) 0%,
+      rgba(159, 220, 136, 0.2) 40%,
+      rgba(142, 210, 118, 0.2) 60%,
+      rgba(184, 230, 163, 0.3) 100%);
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  .section-content-preis {
+    background:
+      radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 40%),
+      repeating-linear-gradient(45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        rgba(0, 0, 0, 0.2) 2px,
+        rgba(0, 0, 0, 0.2) 4px),
+      linear-gradient(to bottom,
+        rgba(47, 107, 47, 0.1) 0%,
+        rgba(36, 85, 36, 0.05) 40%,
+        rgba(28, 66, 28, 0.05) 60%,
+        rgba(47, 107, 47, 0.1) 100%);
+  }
+}
+/*------------------- Geldschein -------------------------------------------------------*/
+
 .preisangabe {
   color: var(--text-color-preisangabe);
   font-weight: 600;
@@ -244,7 +279,7 @@ li {
   text-decoration: none;
   font-weight: bold;
   background: var(--background-text);
-  font-size: 25px;
+  font-size: 2rem;
   border: 1px solid var(--col-border-primary);
   border-radius: 8px;
   box-shadow: var(--shiny-shadow-around);
@@ -772,7 +807,7 @@ address {
     font-size: 3.2rem;
   }
 
-  .carousel-container{
+  .carousel-container {
     width: 50%;
     height: 60vh;
   }
@@ -782,8 +817,8 @@ address {
 /*------------------- END OF Large Screens -----------------------------  */
 
 
-@media (max-width: 1100px){
-   .carousel-container{
+@media (max-width: 1100px) {
+  .carousel-container {
     width: 90%;
     height: 66vh;
   }
@@ -945,13 +980,16 @@ address {
     width: 100%;
   }
 
-  .section-header {
+  .section-header,
+  .ganzjährig_h,
+  .winter_h,
+  .summer_h,
+  .common_h {
     font-size: 2rem;
 
   }
 
 }
-
 
 .datenschutz-content {
   display: flex;
