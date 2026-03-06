@@ -16,9 +16,7 @@
   --col-bg-primary-small-display: antiquewhite;
   --col-bg-content-small-display: antiquewhite;
 
-  --background-text: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.25),
-      rgba(250, 235, 215, 0.55));
+  --background-text: rgba(250, 235, 215, 0.55);
 
   --background-text-hover: black;
 
@@ -66,9 +64,8 @@
     --col-bg-primary-small-display: #1e1e1e;
     --col-bg-content-small-display: #2a2a2a;
 
-    --background-text: linear-gradient(135deg,
-        rgba(255, 255, 255, 0.75),
-        rgba(240, 240, 240, 0.50));
+    --background-text: rgba(38, 38, 38, 0.45);
+
     --background-text-hover: white;
 
     --col-bg-content-important: rgb(45, 30, 30);

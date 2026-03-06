@@ -258,7 +258,7 @@ li {
 
 .galerie-link:hover {
   color: var(--col-text-hover);
-  background: var(--background-text-hover);
+  background: var(--background-text-hover) !important;
 }
 
 .carousel-container {
