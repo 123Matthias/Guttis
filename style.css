@@ -44,14 +44,26 @@ li {
   color: var(--col-text);
   font-size: 2.7rem;
   font-weight: 600;
-  border: 1px solid var(--col-border-primary);
+  border-radius: 8px;
+}
+
+.section-content {
+  padding: 50px 20px 50px 20px;
+  margin: auto;
+  width: fit-content;
+  color: var(--col-text);
+  font-size: 1.3rem;
+  font-weight: 400;
   border-radius: 8px;
   box-shadow: var(--shiny-shadow-around);
   background-color: var(--background-text);
+    margin-top: 50px;
 }
 
 .preisangabe {
   color: var(--text-color-preisangabe);
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
 
@@ -140,7 +152,7 @@ li {
 
 .firstSection {
   background-color: var(--background-text);
-  margin-top: 50px;
+
 }
 
 
@@ -286,6 +298,7 @@ li {
   margin: auto;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 
@@ -347,7 +360,7 @@ li {
   font-weight: 600;
   padding: 22px;
   margin: 0;
-  border-bottom: 2px solid var(--col-border-primary);
+  border-bottom: 1px solid var(--col-border-primary);
 }
 
 .card img {
@@ -361,7 +374,7 @@ li {
 /* Saison-Farben */
 
 .ganzjährig .card {
-  border: 2px solid var(--col-ganzjährig);
+  border: 1px solid var(--col-ganzjährig);
 
 }
 
@@ -370,7 +383,7 @@ li {
 }
 
 .summer .card {
-  border: 2px solid var(--col-summer);
+  border: 1px solid var(--col-summer);
 
 }
 
@@ -379,7 +392,7 @@ li {
 }
 
 .winter .card {
-  border: 2px solid var(--col-winter);
+  border: 1px solid var(--col-winter);
 }
 
 .winter .card h3 {
@@ -554,7 +567,7 @@ li {
         darkslategray 1px,
         transparent 2px,
         transparent 20px),
-      var(--col-bg-content, #2a2a2a);
+      var(--col-bg-content, #4a4a4a4a);
   }
 
   .footer-card h3 {

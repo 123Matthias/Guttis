@@ -16,7 +16,10 @@
   --col-bg-primary-small-display: antiquewhite;
   --col-bg-content-small-display: antiquewhite;
 
-  --background-text: rgba(255, 255, 255, 0.50);
+  --background-text: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(250, 235, 215, 0.55));
+
   --background-text-hover: black;
 
 
@@ -63,7 +66,9 @@
     --col-bg-primary-small-display: #1e1e1e;
     --col-bg-content-small-display: #2a2a2a;
 
-    --background-text: rgba(38, 38, 38, 0.25);
+    --background-text: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.75),
+        rgba(240, 240, 240, 0.50));
     --background-text-hover: white;
 
     --col-bg-content-important: rgb(45, 30, 30);
@@ -84,6 +89,6 @@
     --background-card-color-winter: rgba(2, 86, 138, 0.5);
     --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
 
-    --text-color-preisangabe: rgb(0, 180, 0);
+    --text-color-preisangabe: #16a34a;
   }
 }
