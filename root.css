@@ -54,12 +54,12 @@
     --col-bg-content: #2a2a2a;
 
 
-    --col-winter: white;
-    --col-summer: white;
-    --col-ganzjährig: white;
+    --col-winter: darkblue;
+    --col-summer: darkgreen;
+    --col-ganzjährig: black;
 
 
-    --col-border-primary: rgb(255, 255, 255);
+    --col-border-primary: rgb(0,0,0);
 
     --col-bg-primary-small-display: #1e1e1e;
     --col-bg-content-small-display: #2a2a2a;
