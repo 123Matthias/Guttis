@@ -3,9 +3,14 @@
 
   --col-winter: rgb(34, 168, 251);
   --col-summer: green;
-  --col-ganzjährig: black;
-  --alpha-rainbow: 0.15;
+  --col-yearround: black;
 
+  --col-winter-border: rgba(34, 168, 251, 0.2);
+  --col-summer-border: rgba(0, 128, 0, 0.2);
+  --col-yearround-border: rgba(0, 0, 0, 0.2);
+
+
+  --alpha-rainbow: 0.15;
 
 
   --col-border-primary: black;
@@ -31,7 +36,7 @@
 
   --background-card-color-summer: rgba(0, 91, 9, 0.5);
   --background-card-color-winter: rgba(34, 168, 251, 0.5);
-  --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
+  --background-card-color-yearround: rgba(120, 120, 120, 0.5);
 
   --margin-top-section: 150px;
 
@@ -56,7 +61,11 @@
 
     --col-winter: darkblue;
     --col-summer: darkgreen;
-    --col-ganzjährig: black;
+    --col-yearround: black;
+
+    --col-winter-border: rgba(0, 0, 139, 0.2);
+    --col-summer-border: rgba(0, 91, 9, 0.2);
+    --col-yearround-border: rgba(120, 120, 120, 0.2);
 
 
     --col-border-primary: rgb(0,0,0);
@@ -84,7 +93,7 @@
 
     --background-card-color-summer: rgba(0, 93, 9, 0.5);
     --background-card-color-winter: rgba(2, 86, 138, 0.5);
-    --background-card-color-ganzjährig: rgba(120, 120, 120, 0.5);
+    --background-card-color-yearround: rgba(120, 120, 120, 0.5);
 
     --text-color-preisangabe: #16a34a;
   }
