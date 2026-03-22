@@ -61,6 +61,7 @@ li {
 
 /*------------------- Geldschein -------------------------------------------------------*/
 .section-content-preis {
+  position: relative;
   background:
     radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.25) 0%, transparent 40%),
     repeating-linear-gradient(45deg,
@@ -73,6 +74,29 @@ li {
       rgba(159, 220, 136, 0.2) 40%,
       rgba(142, 210, 118, 0.2) 60%,
       rgba(184, 230, 163, 0.3) 100%);
+}
+
+.section-content-preis::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* füllt die ganze Fläche */
+
+  background:
+    url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
+    url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
+    url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
+    url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 10px bottom 10px / 100px;
+
+  opacity: 0.6;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  /* 🔥 wichtig */
+  pointer-events: none;
+}
+
+.section-content-preis p {
+  font-style: italic;
 }
 
 /* Dark Theme */
@@ -91,15 +115,35 @@ li {
         rgba(28, 66, 28, 0.05) 60%,
         rgba(47, 107, 47, 0.1) 100%);
   }
+
+  .section-content-preis::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* füllt die ganze Fläche */
+
+    background:
+      url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
+      url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
+      url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
+      url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 10px bottom 10px / 100px;
+
+    opacity: 1;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    /* 🔥 wichtig */
+    pointer-events: none;
+  }
+
 }
-/*------------------- Geldschein -------------------------------------------------------*/
 
 .preisangabe {
   color: var(--text-color-preisangabe);
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 2.5rem;
 }
 
+/*------------------- Geldschein ENDE-------------------------------------------------------*/
 
 @media(min-width: 768px) {
 
@@ -175,6 +219,7 @@ li {
       /* orangener Streifen 150px breit */
       rgb(0, 0, 0) 470px,
       rgb(0, 0, 0) 471px,
+      rgba(0, 0, 0, 0.2) 475px,
       /* dunkler Hintergrund */
       antiquewhite 472px,
       antiquewhite 100%);
@@ -193,7 +238,7 @@ li {
 @media (prefers-color-scheme: dark) {
   .header {
     color: var(--col-text);
-    background: linear-gradient(135deg, var(--col-bg-primary) 469px, var(--col-border-primary) 470px, var(--col-bg-primary) 471px);
+    background: linear-gradient(135deg, var(--col-bg-primary) 469px, rgba(255, 255, 255, 0.2) 470px, rgba(255, 255, 255, 0.1) 474px, var(--col-bg-primary) 471px);
     border-bottom: 2px solid var(--shiny-shadow);
   }
 
@@ -500,9 +545,10 @@ li {
       rgba(255, 128, 64, 0.3) 1px,
       transparent 2px,
       transparent 20px),
-    linear-gradient(to bottom left,
-      rgb(251, 165, 122) 0%,
-      #fff5eb 60%);
+    linear-gradient(135deg,
+      #fff7f0 0%,
+      #f9e3d6 35%,
+      #fbd5c2 100%);
 
   border-left: 4px solid var(--col-border-primary, orangered);
   border-right: 4px solid var(--col-border-primary, orangered);
@@ -592,18 +638,28 @@ li {
 @media (prefers-color-scheme: dark) {
   .footer-card {
     background:
+      /* Maschendraht (dunkel orange) */
       repeating-linear-gradient(135deg,
-        darkslategray 0,
-        darkslategray 1px,
+        rgba(255, 120, 0, 0.35) 0,
+        rgba(255, 120, 0, 0.35) 1px,
         transparent 2px,
-        transparent 20px),
+        transparent 18px),
       repeating-linear-gradient(45deg,
-        darkslategray 0,
-        darkslategray 1px,
+        rgba(255, 120, 0, 0.35) 0,
+        rgba(255, 120, 0, 0.35) 1px,
         transparent 2px,
-        transparent 20px),
-      var(--col-bg-content, #4a4a4a4a);
+        transparent 18px),
+
+      /* Verlauf (rechts oben heller) */
+      linear-gradient(to bottom left,
+        #ffffff22,
+        #ffffff10 40%,
+        #00000033),
+
+      /* Grundfarbe (heller & neutral) */
+      var(--col-bg-content, #9a9a9a44);
   }
+
 
   .footer-card h3 {
     color: var(--col-text, rgb(224, 224, 224));
@@ -619,8 +675,6 @@ li {
     color: var(--col-link, rgb(210, 210, 255));
   }
 }
-
-
 
 
 .save-link {
