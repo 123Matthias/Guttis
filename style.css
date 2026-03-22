@@ -957,7 +957,7 @@ address {
     z-index: 900;
     text-shadow: none;
     animation: none;
-    margin-top: 100px;
+    padding-top: 80px;
     background: linear-gradient(135deg,
         rgba(255, 255, 255, 0) 70%,
         rgb(249, 206, 179) 100%);
@@ -1020,6 +1020,7 @@ address {
     content: "";
     position: absolute;
     inset: 0;
+    margin-top: 65px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -1051,12 +1052,12 @@ address {
   @keyframes rainbow {
     0% {
       opacity: 0;
-      transform: translateX(-50%) scale(0.8);
+      transform: translateX(-50%) scale(0.6);
     }
 
     50% {
       opacity: 1;
-      transform: translateX(-50%) scale(1.05);
+      transform: translateX(-50%) scale(1.1);
     }
 
     100% {
