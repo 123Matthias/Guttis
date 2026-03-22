@@ -244,16 +244,26 @@ li {
 
 }
 
-.slogan {
+.header-content {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
   text-align: end;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.slogan {
   font-size: 2.3rem;
   font-weight: 600;
-  margin-right: 2%;
+  margin-right: 40px;
   margin-bottom: 0;
 }
 
