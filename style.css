@@ -827,10 +827,10 @@ address {
   color: var(--col-link);
   /* Large Displays Font Size Slogan */
   opacity: 0;
-  animation: cardAppearing 2s ease 2s forwards;
+  animation: cardAppearing 2s ease 0.5s forwards;
 }
 
-.card-icon *{
+.card-icon * {
   color: var(--col-link);
 }
 
@@ -925,7 +925,7 @@ address {
     gap: 30px;
   }
 
-  nav{
+  nav {
     gap: 80px;
   }
 
@@ -947,7 +947,7 @@ address {
     background-color: var(--col-bg-content-small-display) !important;
   }
 
-    .header {
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -957,7 +957,7 @@ address {
     z-index: 900;
     text-shadow: none;
     animation: none;
-    margin-top: 30px;
+    margin-top: 100px;
     background: linear-gradient(135deg,
         rgba(255, 255, 255, 0) 70%,
         rgb(249, 206, 179) 100%);
@@ -970,18 +970,16 @@ address {
     text-align: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
-nav {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 0 70px; 
-  width: 100%;
-}
-
-
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    width: 100%;
+  }
 
   .slogan {
     font-size: 1.3rem;
@@ -990,9 +988,7 @@ nav {
     font-weight: 800;
     margin: 10px 0 10px 0;
     padding: 15px;
-
   }
-
 
 
   @media (prefers-color-scheme: dark) {
@@ -1020,42 +1016,54 @@ nav {
   }
 
 
-.header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  background:
-    radial-gradient(ellipse at 50% 50%,
-      transparent 58%,
-      rgba(255, 0, 0, var(--alpha-rainbow)) 60%, rgba(255, 0, 0, var(--alpha-rainbow)) 61.25%,
-      rgba(255, 165, 0, var(--alpha-rainbow)) 61.25%, rgba(255, 165, 0, var(--alpha-rainbow)) 62.5%,
-      rgba(255, 255, 0, var(--alpha-rainbow)) 62.5%, rgba(255, 255, 0, var(--alpha-rainbow)) 63.75%,
-      rgba(0, 128, 0, var(--alpha-rainbow)) 63.75%, rgba(0, 128, 0, var(--alpha-rainbow)) 65%,
-      rgba(0, 0, 255, var(--alpha-rainbow)) 65%, rgba(0, 0, 255, var(--alpha-rainbow)) 66.25%,
-      rgba(75, 0, 130, var(--alpha-rainbow)) 66.25%, rgba(75, 0, 130, var(--alpha-rainbow)) 67.5%,
-      rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
-      transparent 70.75%);
+  .header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    background:
+      radial-gradient(ellipse at 50% 50%,
+        transparent 58%,
+        rgba(255, 0, 0, var(--alpha-rainbow)) 60%, rgba(255, 0, 0, var(--alpha-rainbow)) 61.25%,
+        rgba(255, 165, 0, var(--alpha-rainbow)) 61.25%, rgba(255, 165, 0, var(--alpha-rainbow)) 62.5%,
+        rgba(255, 255, 0, var(--alpha-rainbow)) 62.5%, rgba(255, 255, 0, var(--alpha-rainbow)) 63.75%,
+        rgba(0, 128, 0, var(--alpha-rainbow)) 63.75%, rgba(0, 128, 0, var(--alpha-rainbow)) 65%,
+        rgba(0, 0, 255, var(--alpha-rainbow)) 65%, rgba(0, 0, 255, var(--alpha-rainbow)) 66.25%,
+        rgba(75, 0, 130, var(--alpha-rainbow)) 66.25%, rgba(75, 0, 130, var(--alpha-rainbow)) 67.5%,
+        rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
+        transparent 70.75%);
 
-  /* Ändern Sie diese Werte, um den Regenbogen nach oben zu verschieben */
-  mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
+    /* Ändern Sie diese Werte, um den Regenbogen nach oben zu verschieben */
+    mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
 
-  pointer-events: none;
-  z-index: -1;
-  width: 100%;
-  max-width: 500px;
-  animation: rainbow 2s ease 1.6s forwards;
-  top: -20px; /* Optional: zusätzlich nach oben verschieben */
-}
+    pointer-events: none;
+    z-index: -1;
+    width: 100%;
+    max-width: 500px;
+    animation: rainbow 2s ease 1.6s forwards;
+    top: -20px;
+    /* Optional: zusätzlich nach oben verschieben */
+  }
 
   @keyframes rainbow {
-  0% { opacity: 0; transform: translateX(-50%) scale(0.8); }
-  50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
-  100% { opacity: 1; transform: translateX(-50%) scale(1); }
-}
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.8);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
 
 
   .section-content-preis::before {
