@@ -82,11 +82,11 @@ li {
   inset: 0;
   /* füllt die ganze Fläche */
 
-    background:
-      url("/svg/euro.svg") no-repeat left 15px top 15px / 30px,
-      url("/svg/euro.svg") no-repeat right 15px top 15px / 30px,
-      url("/svg/euro.svg") no-repeat left 15px bottom 15px / 30px,
-      url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 0px bottom 0px / 150px;
+  background:
+    url("/svg/euro.svg") no-repeat left 15px top 15px / 30px,
+    url("/svg/euro.svg") no-repeat right 15px top 15px / 30px,
+    url("/svg/euro.svg") no-repeat left 15px bottom 15px / 30px,
+    url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 0px bottom 0px / 150px;
 
   opacity: 0.6;
   z-index: 0;
@@ -440,24 +440,24 @@ nav {
   margin: 30px;
 }
 
-.card-border{
+.card-border {
   width: 360px;
   border-radius: 8px;
   box-shadow: var(--shiny-shadow-around);
 
 }
 
-.card-border-yearround{
+.card-border-yearround {
   background-color: var(--col-yearround-border);
   border: 1px solid var(--col-yearround);
 }
 
-.card-border-summer{
+.card-border-summer {
   background-color: var(--col-summer-border);
   border: 1px solid var(--col-summer);
 }
 
-.card-border-winter{
+.card-border-winter {
   background-color: var(--col-winter-border);
   border: 1px solid var(--col-winter);
 }
@@ -475,8 +475,8 @@ nav {
 .card h3 {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
 
   font-size: 1.25rem;
   line-height: 1.3em;
@@ -487,7 +487,8 @@ nav {
   box-sizing: border-box;
 
   border-bottom: 1px solid var(--col-border-primary);
-  text-align: center; /* für Text innerhalb von Zeilen */
+  text-align: center;
+  /* für Text innerhalb von Zeilen */
 }
 
 
@@ -829,6 +830,10 @@ address {
   animation: cardAppearing 2s ease 2s forwards;
 }
 
+.card-icon *{
+  color: var(--col-link);
+}
+
 .card-icon i {
   color: var(--col-link);
   transition:
@@ -841,9 +846,6 @@ address {
     0 0 8px black;
 }
 
-.card-icon span {
-  color: var(--col-link);
-}
 
 .card-icon:hover i {
   transform: scale(1.2);
@@ -911,12 +913,27 @@ address {
 /*------------------- END OF Large Screens -----------------------------  */
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .carousel-container {
     width: 90%;
     height: 66vh;
   }
+
+  .header-content {
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+  }
+
+  nav{
+    gap: 80px;
+  }
+
 }
+
+
+
+
 
 
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
@@ -930,36 +947,53 @@ address {
     background-color: var(--col-bg-content-small-display) !important;
   }
 
-  .slogan {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    font-size: 1.3rem;
-    font-style: italic;
-    color: var(--col-text);
-    font-weight: 800;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
-  .header {
+    .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
-    height: 50vh;
+    min-height: fit-content;
     width: 100%;
     z-index: 900;
     text-shadow: none;
     animation: none;
+    margin-top: 30px;
     background: linear-gradient(135deg,
         rgba(255, 255, 255, 0) 70%,
-        rgba(255, 112, 22, 1) 70%);
+        rgb(249, 206, 179) 100%);
   }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 70px; 
+  width: 100%;
+}
+
+
+
+  .slogan {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--col-text);
+    font-weight: 800;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+
+  }
+
+
 
   @media (prefers-color-scheme: dark) {
     .header {
@@ -985,60 +1019,47 @@ address {
     max-width: 85%;
   }
 
-  .slogan::before {
-    content: "";
-    width: 45px;
-    height: 50px;
-    position: relative;
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%,
+      transparent 58%,
+      rgba(255, 0, 0, var(--alpha-rainbow)) 60%, rgba(255, 0, 0, var(--alpha-rainbow)) 61.25%,
+      rgba(255, 165, 0, var(--alpha-rainbow)) 61.25%, rgba(255, 165, 0, var(--alpha-rainbow)) 62.5%,
+      rgba(255, 255, 0, var(--alpha-rainbow)) 62.5%, rgba(255, 255, 0, var(--alpha-rainbow)) 63.75%,
+      rgba(0, 128, 0, var(--alpha-rainbow)) 63.75%, rgba(0, 128, 0, var(--alpha-rainbow)) 65%,
+      rgba(0, 0, 255, var(--alpha-rainbow)) 65%, rgba(0, 0, 255, var(--alpha-rainbow)) 66.25%,
+      rgba(75, 0, 130, var(--alpha-rainbow)) 66.25%, rgba(75, 0, 130, var(--alpha-rainbow)) 67.5%,
+      rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
+      transparent 70.75%);
+
+  /* Ändern Sie diese Werte, um den Regenbogen nach oben zu verschieben */
+  mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 25%);
+
+  pointer-events: none;
+  z-index: -1;
+  width: 100%;
+  max-width: 500px;
+  animation: rainbow 2s ease 1.6s forwards;
+  top: -20px; /* Optional: zusätzlich nach oben verschieben */
+}
+
+  @keyframes rainbow {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.8); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+  100% { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
+
+  .section-content-preis::before {
     background:
-      url('./svg/flower.svg') 5px 5px / 40px 40px no-repeat;
-    opacity: 0;
-    z-index: 1500;
-    animation: flowerShow 2s ease 0.5s forwards;
-
-  }
-
-  @keyframes flowerShow {
-    to {
-      opacity: 1;
-    }
-  }
-
-  .header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    background:
-      radial-gradient(ellipse at 50% 50%,
-        transparent 58%,
-        rgba(255, 0, 0, var(--alpha-rainbow)) 60%, rgba(255, 0, 0, var(--alpha-rainbow)) 61.25%,
-        rgba(255, 165, 0, var(--alpha-rainbow)) 61.25%, rgba(255, 165, 0, var(--alpha-rainbow)) 62.5%,
-        rgba(255, 255, 0, var(--alpha-rainbow)) 62.5%, rgba(255, 255, 0, var(--alpha-rainbow)) 63.75%,
-        rgba(0, 128, 0, var(--alpha-rainbow)) 63.75%, rgba(0, 128, 0, var(--alpha-rainbow)) 65%,
-        rgba(0, 0, 255, var(--alpha-rainbow)) 65%, rgba(0, 0, 255, var(--alpha-rainbow)) 66.25%,
-        rgba(75, 0, 130, var(--alpha-rainbow)) 66.25%, rgba(75, 0, 130, var(--alpha-rainbow)) 67.5%,
-        rgba(238, 130, 238, var(--alpha-rainbow)) 67.5%, rgba(238, 130, 238, 0) 68.75%,
-        transparent 70.75%);
-
-    mask-image: linear-gradient(to bottom, black 0%, black 28%, transparent 40%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 28%, transparent 40%);
-
-    pointer-events: none;
-    z-index: -1;
-    width: 100%;
-    max-width: 500px;
-    animation: flowerShow 2s ease 1.6s forwards;
-  }
-
-  #contact-jump {
-    display: none !important;
-  }
-
-  .section-content-preis::before{
-        background:
       url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
       url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
       url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
