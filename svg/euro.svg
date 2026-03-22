@@ -2,34 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="21.383013mm"
-   height="26.8435mm"
-   viewBox="0 0 21.383013 26.8435"
+   width="23.828976mm"
+   height="26.912329mm"
+   viewBox="0 0 23.828975 26.912329"
    version="1.1"
    id="svg1"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm">
-    <inkscape:page
-       x="0"
-       y="0"
-       width="21.383013"
-       height="26.8435"
-       id="page2"
-       margin="0"
-       bleed="0" />
-  </sodipodi:namedview>
   <defs
      id="defs1">
     <rect
@@ -40,22 +19,19 @@
        id="rect1" />
   </defs>
   <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-100.75173,-145.76342)">
+     transform="translate(-99.4254,-145.72894)">
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text1"
        style="font-size:133.333px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#0a7d3e;stroke:#000000"
        x="15.963532"
-       y="0"
-       inkscape:export-filename="text1.svg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         x="381.29405"
+       y="0"><tspan
+         x="376.28105"
          y="650.11443"
-         id="tspan2">€</tspan></text>
+         id="tspan4"><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan1">€</tspan></tspan></text>
   </g>
 </svg>

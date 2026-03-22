@@ -86,7 +86,7 @@ li {
     url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
     url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
     url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
-    url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 10px bottom 10px / 100px;
+    url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 0px bottom 0px / 100px;
 
   opacity: 0.6;
   z-index: 0;
@@ -126,7 +126,7 @@ li {
       url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
       url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
       url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
-      url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 10px bottom 10px / 100px;
+      url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 0px bottom 0px / 100px;
 
     opacity: 1;
     z-index: 0;
@@ -161,6 +161,13 @@ li {
     z-index: 100;
   }
 
+  .section-content-preis::before {
+    background:
+      url("/svg/euro.svg") no-repeat left 15px top 15px / 20px,
+      url("/svg/euro.svg") no-repeat right 15px top 15px / 20px,
+      url("/svg/euro.svg") no-repeat left 15px bottom 15px / 20px,
+      url("/svg/Guttenbrunner_logo_money.svg") no-repeat right 0px bottom 0px / 50px;
+  }
 
   .firstSection::after {
     right: 10px;
