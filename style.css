@@ -441,6 +441,7 @@ nav {
 }
 
 .card-border {
+  min-width: 320px;
   width: 360px;
   border-radius: 8px;
   box-shadow: var(--shiny-shadow-around);
@@ -534,11 +535,9 @@ nav {
 
 @media (prefers-color-scheme: dark) {
 
-  .footer-card,
-  .save-link {
+  .footer-card {
     filter: invert(100%);
   }
-
 
 
   .footer-bg-wood {
@@ -570,22 +569,13 @@ nav {
   text-align: left;
   padding: 0;
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 95%;
-  max-width: 430px;
+  max-width: 460px;
   overflow: visible;
 
   /* Background: benutze vorhandene Root-Variablen oder fallback */
   background:
-    repeating-linear-gradient(135deg,
-      rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 1px,
-      transparent 2px,
-      transparent 20px),
-    repeating-linear-gradient(45deg,
-      rgba(255, 128, 64, 0.3) 0,
-      rgba(255, 128, 64, 0.3) 1px,
-      transparent 2px,
-      transparent 20px),
     linear-gradient(135deg,
       #fff7f0 0%,
       #f9e3d6 35%,
@@ -646,64 +636,39 @@ nav {
 }
 
 /* Überschrift */
-.footer-card h3 {
-  font-weight: 600;
-  font-size: 1.9rem;
-  font-variant: small-caps;
-  font-style: italic;
-  margin-bottom: 15px;
-  padding: 8pt 0 5pt 5pt;
-  text-align: left;
-  line-height: 1;
-  border-left: 10px solid var(--col-border-primary, orangered);
-  color: var(--col-text);
+.schriftzug-card {
+  min-width: 230px;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  padding: 20px;
 }
 
 
 .footer-card address p {
   color: var(--col-text, black);
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .tel {
-  color: var(--col-link, dodgerblue);
-  font-weight: bold;
+  color: var(--col-link);
+
 }
 
 .email {
-  color: var(--col-link, darkgreen);
-  font-weight: bold;
+  color: var(--col-link);
 }
+
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   .footer-card {
     background:
-      /* Maschendraht (dunkel orange) */
-      repeating-linear-gradient(135deg,
-        rgba(255, 120, 0, 0.35) 0,
-        rgba(255, 120, 0, 0.35) 1px,
-        transparent 2px,
-        transparent 18px),
-      repeating-linear-gradient(45deg,
-        rgba(255, 120, 0, 0.35) 0,
-        rgba(255, 120, 0, 0.35) 1px,
-        transparent 2px,
-        transparent 18px),
-
       /* Verlauf (rechts oben heller) */
-      linear-gradient(to bottom left,
-        #ffffff22,
-        #ffffff10 40%,
-        #00000033),
-
-      /* Grundfarbe (heller & neutral) */
-      var(--col-bg-content, #9a9a9a44);
-  }
-
-
-  .footer-card h3 {
-    color: var(--col-text, rgb(224, 224, 224));
+      linear-gradient(to bottom right,
+        #000000,
+        #222222 70%,
+        #555555)
   }
 
   .footer-card p,
@@ -715,55 +680,6 @@ nav {
   .footer-card a.email {
     color: var(--col-link, rgb(210, 210, 255));
   }
-}
-
-
-.save-link {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: bold;
-  margin: 20px 0;
-  text-decoration: none;
-  text-align: center;
-  color: var(--col-link);
-  background-color: var(--col-bg-primary);
-  /* Standard Light Mode */
-  border: 1px solid var(--col-border-primary);
-  border-radius: 8px;
-  cursor: pointer;
-
-  /* Animation + Hover-Transition zusammen */
-  opacity: 0;
-  transform: translateY(40px);
-  transition:
-    opacity 2s ease-out,
-    transform 4s ease-out,
-    background-color 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease;
-  box-shadow: var(--shiny-shadow-around);
-}
-
-.save-link.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.save-link:hover {
-  color: var(--col-link-hover);
-}
-
-.save-link:active {
-  transform: translateY(1px);
-}
-
-/* Focus */
-.save-link:focus {
-  outline: 2px solid var(--col-link, #2C4E70);
-  outline-offset: 2px;
 }
 
 
@@ -989,6 +905,10 @@ address {
     font-weight: 800;
     margin: 10px 0 10px 0;
     padding: 15px;
+  }
+
+  .card {
+    margin: 20px;
   }
 
 
