@@ -16,10 +16,8 @@
   --col-border-primary: black;
 
   --col-bg-primary: antiquewhite;
-  --col-bg-content: antiquewhite;
+  --col-bg-content: rgb(255, 233, 206);
 
-  --col-bg-primary-small-display: antiquewhite;
-  --col-bg-content-small-display: antiquewhite;
 
   --background-text: rgba(250, 235, 215, 0.55);
 
@@ -70,8 +68,6 @@
 
     --col-border-primary: rgb(0,0,0);
 
-    --col-bg-primary-small-display: #1e1e1e;
-    --col-bg-content-small-display: #2a2a2a;
 
     --background-text: rgba(38, 38, 38, 0.45);
 

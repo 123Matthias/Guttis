@@ -6,12 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--col-bg-primary) !important;
-  cursor: url('./Heckenschere_cursor.png'), auto;
-
-}
 
 p {
   color: var(--col-text);
@@ -35,6 +29,10 @@ li {
 
 .footer-card p {
   color: black;
+}
+
+.section {
+  margin-top: 200px;
 }
 
 .section-header {
@@ -230,7 +228,7 @@ li {
 }
 
 .firstSection {
-  background-color: var(--background-text);
+  background-color: var(--col-bg-content);
 
 }
 
@@ -255,9 +253,9 @@ li {
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .slogan {
@@ -317,23 +315,18 @@ nav {
   padding: 10px 10px 0 10px;
 }
 
-.content {
-  width: 100%;
+.card-section {
   padding: 50px 10px 50px 10px;
-  margin: auto;
-  margin-top: calc(var(--margin-top-section) - 60px);
+  margin-top: 100px;
   background-color: var(--col-bg-content);
   color: var(--col-text);
-  background-position: bottom 360px right, bottom right;
-  background-repeat: no-repeat;
-  background-size: 15% auto, 15% auto;
 }
 
 .galerie-link {
   color: var(--col-link);
   text-decoration: none;
   font-weight: bold;
-  background: var(--background-text);
+  background: var(--col-bg-content);
   font-size: 2rem;
   border: 1px solid var(--col-border-primary);
   border-radius: 8px;
@@ -356,7 +349,7 @@ nav {
   margin-top: 100px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: var(--col-bg-content);
+  background-color: var(--col-bg-primary);
 }
 
 
@@ -496,7 +489,7 @@ nav {
 /* Saison-Farben */
 
 .yearround .card {
-  border: 1px solid var(--col-yearround-border);
+  border: none;
 
 }
 
@@ -505,7 +498,7 @@ nav {
 }
 
 .summer .card {
-  border: 1px solid var(--col-summer);
+  border: none;
 
 }
 
@@ -514,7 +507,7 @@ nav {
 }
 
 .winter .card {
-  border: 1px solid var(--col-winter);
+  border: none;
 }
 
 .winter .card h3 {
@@ -527,11 +520,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 
-.section {
-  margin-top: var(--margin-top-section);
-}
 
 @media (prefers-color-scheme: dark) {
 
@@ -842,7 +833,7 @@ address {
   }
 
   nav {
-    gap: 80px;
+    gap: 50px;
   }
 
 }
@@ -855,13 +846,12 @@ address {
 /* ----------------------- MOBILE VIEW MEDIA QUERY SMALL DISPLAYS------------------------------*/
 @media (max-width: 992px) {
 
-  body {
-    background-color: var(--col-bg-primary-small-display) !important;
+
+
+  .section {
+    margin-top: 130px;
   }
 
-  .content {
-    background-color: var(--col-bg-content-small-display) !important;
-  }
 
   .header {
     display: flex;
@@ -892,10 +882,21 @@ address {
 
   nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0 70px;
-    width: 100%;
+    margin: 0px;
+    gap: 40px;
+  }
+
+  .zickzack {
+    position: relative;
+    top: 35px;
+  }
+
+
+  .card-icon {
+    font-size: 2.8rem;
   }
 
   .slogan {
